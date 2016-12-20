@@ -1,12 +1,18 @@
 .site-header {
-	// position: relative;
+
 }
 
 .site-branding {
-	// background-color: green;
 	float: left;
-	position: absolute;
-	line-height: 40px;
+	display: inline-block;
+
+	& h1 {
+		margin: 0;
+	}
+
+	& .site-title a {
+		line-height: 50px;
+	}
 
 	& .site-description {
 		display: none;
@@ -14,8 +20,6 @@
 }
 
 .main-navigation {
-	clear: both;
-	// background-color: red;
 	float: right;
 
 	ul {
@@ -25,10 +29,8 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
 			left: -999em;
 			z-index: 99999;
 
@@ -86,7 +88,7 @@
 		color: #ffffff;
 
 		&:hover {
-			color: #DAB075;
+			color: $color__link-hover;
 			transition: 0.3s all;
 		}
 	}

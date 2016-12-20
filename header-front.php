@@ -27,7 +27,7 @@
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php
 					endif; ?>
 				</div><!-- .site-branding -->
@@ -37,8 +37,8 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '___return_false' ) ); ?>
 				</nav><!-- #site-navigation -->
 
-				<div class="front">
-					<div class="front-subtitle">
+				<div class="front-header">
+					<div class="front-header-subtitle">
 						<?php $front_subtitle = get_field( 'subtitle' );
 							if ($front_subtitle) {
 								echo $front_subtitle;
@@ -49,7 +49,7 @@
 						?>
 					</div>
 
-					<div class="front-title">
+					<div class="front-header-title">
 						<?php $front_title = get_field( 'title' );
 							if ($front_title) {
 								echo $front_title;
@@ -62,13 +62,13 @@
 
 					<img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
 
-					<button class="front-button">
+					<a class="button button-primary" href="#">
 						<?php $front_button = get_field( 'button' );
 							if ($front_button) {
 								echo $front_button;
 							}
 						?>
-					</button>
+					</a>
 
 				</div>
 

@@ -26,12 +26,22 @@
 			?>
 		</h1>
 
+		<img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
+
 		<p class="section-text">
 			<?php
 				$section1_text = get_field('section_1_text');
 				echo $section1_text;
 			?>
 		</p>
+
+		<a class="button button-secondary" href="#">
+			<?php $front_button = get_field( 'button' );
+				if ($front_button) {
+					echo $front_button;
+				}
+			?>
+		</a>
 
 		<?php
 			wp_link_pages( array(

@@ -23,4 +23,9 @@ a {
 	font-size: 28px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+
+	&:hover {
+		color: $color__link-hover;
+		transition: .5s all;
+	}
 }

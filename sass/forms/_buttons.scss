@@ -24,3 +24,37 @@ input[type="submit"] {
 		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 	}
 }
+
+.button {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	margin: auto;
+	padding: 12px 30px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 2px;
+	letter-spacing: 2px;
+
+	&.button-primary {
+		color: $color_white;
+		border: 1px solid $color_white;
+
+		&:hover {
+			background: $color_white;
+			border: 1px solid $color_white;
+			transition: .5s all;
+			color: $color_black;
+		}
+	}
+
+	&.button-secondary {
+		background: $color__background-button;
+		color: $color_white;
+
+		&:hover {
+			background: $color__background-button;
+			transition: .5s all;
+			color: $color_white;
+		}
+	}
+}
