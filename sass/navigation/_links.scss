@@ -1,0 +1,26 @@
+a {
+	color: $color__link;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.site-title a {
+	font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
