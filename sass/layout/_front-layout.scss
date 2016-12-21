@@ -3,7 +3,7 @@
 }
 
 .main-page {
-	width: 1200px;
+	width: 1024px;
 	margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@
 	color: $color_gold;
 	text-align: center;
 	line-height: 40px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .section-title {
@@ -44,9 +44,24 @@
 
 .front-content {
 	width: 50%;
-	float: left;
-	padding-right: 50px;
 	text-align: center;
+	height: 384px;
+
+	&.text {
+		padding: 0 20px;
+	}
+}
+
+.entry-content {
+	margin: 60px 0;
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
 }
 
 .front-content-right {
@@ -76,7 +91,7 @@
 
 .stars-front {
 	display: block;
-	margin: 30px auto;
+	margin: 25px auto;
 }
 
 .img-right {

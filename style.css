@@ -224,7 +224,7 @@ th {
   width: 100%; }
 
 .main-page {
-  width: 1200px;
+  width: 1024px;
   margin: 0 auto; }
 
 .inner {
@@ -237,7 +237,7 @@ th {
   color: #DAB075;
   text-align: center;
   line-height: 40px;
-  margin-top: 50px; }
+  margin-top: 40px; }
 
 .section-title {
   font-family: "Raleway", sans-serif;
@@ -259,9 +259,19 @@ th {
 
 .front-content {
   width: 50%;
-  float: left;
-  padding-right: 50px;
-  text-align: center; }
+  text-align: center;
+  height: 384px; }
+  .front-content.text {
+    padding: 0 20px; }
+
+.entry-content {
+  margin: 60px 0; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
 
 .front-content-right {
   width: 50%;
@@ -286,7 +296,7 @@ th {
 
 .stars-front {
   display: block;
-  margin: 30px auto; }
+  margin: 25px auto; }
 
 .img-right {
   float: right;
@@ -734,7 +744,8 @@ a {
 # Footers
 --------------------------------------------------------------*/
 .entry-footer {
-  background: red; }
+  background: red;
+  margin-top: 40px; }
 
 /*--------------------------------------------------------------
 # Widgets

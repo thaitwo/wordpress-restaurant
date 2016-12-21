@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="front-content-container" >
 
 	<div class="entry-content">
-		<div class="front-content">
+		<div class="front-content text float-l">
 			<h2 class="section-subtitle">
 				<?php
 					$section1_subtitle = get_field('section_1_subtitle');
@@ -45,7 +45,9 @@
 			</a>
 		</div>
 
-		<img class="front-content" src="wp-content/themes/dojo/assets/pizza.png">
+		<div class="front-content float-r">
+			<img src="wp-content/themes/dojo/assets/pizza.png" class="float-r" width="468">
+		</div>
 
 		<?php
 			wp_link_pages( array(
