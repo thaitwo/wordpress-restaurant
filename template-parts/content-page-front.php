@@ -11,37 +11,41 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="front-content-container" >
 
-	<div class="entry-content front-content">
-		<h2 class="section-subtitle">
-			<?php
-				$section1_subtitle = get_field('section_1_subtitle');
-				echo $section1_subtitle;
-			?>
-		</h2>
+	<div class="entry-content">
+		<div class="front-content">
+			<h2 class="section-subtitle">
+				<?php
+					$section1_subtitle = get_field('section_1_subtitle');
+					echo $section1_subtitle;
+				?>
+			</h2>
 
-		<h1 class="section-title">
-			<?php
-				$section1_title = get_field('section_1_title');
-				echo $section1_title;
-			?>
-		</h1>
+			<h1 class="section-title">
+				<?php
+					$section1_title = get_field('section_1_title');
+					echo $section1_title;
+				?>
+			</h1>
 
-		<img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
+			<img class="stars-front" src="wp-content/themes/dojo/assets/stars.png">
 
-		<p class="section-text">
-			<?php
-				$section1_text = get_field('section_1_text');
-				echo $section1_text;
-			?>
-		</p>
+			<p class="section-text">
+				<?php
+					$section1_text = get_field('section_1_text');
+					echo $section1_text;
+				?>
+			</p>
 
-		<a class="button button-secondary" href="#">
-			<?php $front_button = get_field( 'button' );
-				if ($front_button) {
-					echo $front_button;
-				}
-			?>
-		</a>
+			<a class="button button-secondary" href="#">
+				<?php $front_button = get_field( 'button' );
+					if ($front_button) {
+						echo $front_button;
+					}
+				?>
+			</a>
+		</div>
+
+		<img class="front-content" src="wp-content/themes/dojo/assets/pizza.png">
 
 		<?php
 			wp_link_pages( array(

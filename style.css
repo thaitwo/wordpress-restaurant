@@ -241,7 +241,7 @@ th {
 
 .section-title {
   font-family: "Raleway", sans-serif;
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 900;
   margin: 0;
   color: #263238;
@@ -461,21 +461,21 @@ input[type="submit"] {
   text-decoration: none;
   display: inline-block;
   border-radius: 2px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: all .4s; }
   .button.button-primary {
     color: #ffffff;
     border: 1px solid #ffffff; }
     .button.button-primary:hover {
       background: #ffffff;
       border: 1px solid #ffffff;
-      transition: .5s all;
       color: #000000; }
   .button.button-secondary {
     background: #DAB075;
     color: #ffffff; }
     .button.button-secondary:hover {
-      background: #DAB075;
-      transition: .5s all;
+      background: #C79C5F;
+      transition: .4s all;
       color: #ffffff; }
 
 input[type="text"],
@@ -731,6 +731,12 @@ a {
   clear: both; }
 
 /*--------------------------------------------------------------
+# Footers
+--------------------------------------------------------------*/
+.entry-footer {
+  background: red; }
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -758,11 +764,6 @@ a {
 .single .byline,
 .group-blog .byline {
   display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
 
 .page-links {
   clear: both;
