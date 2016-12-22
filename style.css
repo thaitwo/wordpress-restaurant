@@ -235,6 +235,11 @@ th {
 .inner {
   padding: 20px 0; }
 
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .section-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
@@ -260,12 +265,13 @@ th {
 
 .front-content-container {
   display: flex;
-  display-direction: column; }
+  flex-direction: column; }
 
 .front-content {
   width: 50%;
   text-align: center;
-  height: 384px; }
+  height: 384px;
+  align-self: auto; }
   .front-content.text {
     padding: 0 20px; }
 
@@ -297,7 +303,7 @@ th {
   width: 100%;
   text-align: center;
   display: block;
-  margin-top: 80px;
+  margin: 80px 0;
   display: flex;
   display-direction: row; }
 
@@ -593,7 +599,8 @@ a {
   .site-branding h1 {
     margin: 0; }
   .site-branding .site-title a {
-    line-height: 50px; }
+    line-height: 50px;
+    transition: all .4s; }
   .site-branding .site-description {
     display: none; }
 
@@ -632,10 +639,10 @@ a {
     display: block;
     text-decoration: none;
     padding: 0 20px;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: 0.4s all; }
     .main-navigation a:hover {
-      color: #DAB075;
-      transition: 0.3s all; }
+      color: #DAB075; }
 
 /* Small menu. */
 .menu-toggle,
@@ -776,8 +783,18 @@ a {
 # Footers
 --------------------------------------------------------------*/
 .entry-footer {
-  background: red;
   margin-top: 40px; }
+
+.post-edit-link {
+  background: #DAB075;
+  color: #ffffff;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all .4s; }
+  .post-edit-link:hover {
+    color: #ffffff;
+    background: #C79C5F; }
 
 /*--------------------------------------------------------------
 # Widgets

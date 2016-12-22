@@ -17,6 +17,12 @@
 	padding: 20px 0;
 }
 
+.section-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .section-subtitle {
 	font-family: "Great Vibes", cursive;
 	font-size: 64px;
@@ -45,13 +51,14 @@
 
 .front-content-container {
 	display: flex;
-	display-direction: column;
+	flex-direction: column;
 }
 
 .front-content {
 	width: 50%;
 	text-align: center;
 	height: 384px;
+	align-self: auto;
 
 	&.text {
 		padding: 0 20px;
@@ -92,7 +99,7 @@
 	width: 100%;
 	text-align: center;
 	display: block;
-	margin-top: 80px;
+	margin: 80px 0;
 	display: flex;
 	display-direction: row;
 }
