@@ -77,7 +77,3 @@
 
 	</div>
 
-	<div class="main-content-area full">
-		<div class="hours-bar"></div>
-		<div class="main-page">
-			<div id="content" class="site-content inner">

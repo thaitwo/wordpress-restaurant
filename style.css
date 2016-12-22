@@ -260,8 +260,7 @@ th {
 
 .section-text {
   text-align: center;
-  padding: 0 30px;
-  margin: 30px 0; }
+  padding: 0 30px; }
 
 .front-content-container {
   display: flex;
@@ -303,7 +302,6 @@ th {
   width: 100%;
   text-align: center;
   display: block;
-  margin: 80px 0;
   display: flex;
   display-direction: row; }
 
