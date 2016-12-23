@@ -229,7 +229,7 @@ th {
   clear: both; }
 
 .main-page {
-  width: 1024px;
+  width: 1200px;
   margin: 0 auto; }
 
 .inner {
@@ -261,6 +261,10 @@ th {
 .section-text {
   text-align: center;
   padding: 0 30px; }
+
+.section-image {
+  width: 550px;
+  height: 384px; }
 
 .front-content-container {
   display: flex;
@@ -298,7 +302,7 @@ th {
   text-decoration: none; }
 
 .section-divider {
-  height: 350px;
+  height: 400px;
   width: 100%;
   text-align: center;
   display: block;
@@ -332,7 +336,7 @@ th {
   margin-top: 50px; }
 
 .footer-area {
-  background: #37474F;
+  background: #263238;
   line-height: 400px; }
 
 /*--------------------------------------------------------------

@@ -47,7 +47,7 @@
 								</a>
 							</div>
 							<div class="front-content float-r">
-								<img src="wp-content/themes/dojo/assets/pizza.png" class="float-r" width="468">
+								<div class="section-image float-r" style="background: url( <?php echo the_field('section_1_image'); ?>); background-size: cover;"></div>
 							</div>
 						</div>
 
@@ -66,7 +66,7 @@
 
 
 
-		<div class="section-divider full" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
+		<div class="section-divider full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
 			<div class="section-divider-text">
 				<div class="section-divider-subtitle">
 					<?php $section_subtitle = get_field( 'section_1_divider_subtitle' );
@@ -103,7 +103,7 @@
 
 						<div class="section-content">
 							<div class="front-content float-l">
-								<img src="wp-content/themes/dojo/assets/table.jpg" class="float-l" width="468" height="360" style="background-size: cover">
+								<div class="section-image" style="background: url( <?php echo the_field('section_2_image'); ?>); background-size: cover;"></div>
 							</div>
 							<div class="front-content text float-r">
 								<h2 class="section-subtitle">
