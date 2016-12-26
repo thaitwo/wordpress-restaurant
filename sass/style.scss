@@ -52,6 +52,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 
 /*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@import "layout/layouts";
+
+/*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
 @import "layout/front-layout";

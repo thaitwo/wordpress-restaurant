@@ -17,8 +17,8 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<div class="entry-content">
-						<div class="section-content">
-							<div class="front-content text float-l">
+						<div class="l-flex is-hori align-vert">
+							<div class="front-content text">
 								<h2 class="section-subtitle">
 									<?php
 										$section1_subtitle = get_field('section_1_subtitle');
@@ -32,7 +32,7 @@
 									?>
 								</h1>
 								<img class="stars-front" src="wp-content/themes/dojo/assets/stars.png">
-								<p class="section-text">
+								<p class="section-description">
 									<?php
 										$section1_text = get_field('section_1_text');
 										echo $section1_text;
@@ -46,7 +46,7 @@
 									?>
 								</a>
 							</div>
-							<div class="front-content float-r">
+							<div class="front-content">
 								<div class="section-image float-r" style="background: url( <?php echo the_field('section_1_image'); ?>); background-size: cover;"></div>
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 
 
 
-		<div class="section-divider full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
+		<div class="section-divider full l-flex is-hori align-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
 			<div class="section-divider-text">
 				<div class="section-divider-subtitle">
 					<?php $section_subtitle = get_field( 'section_1_divider_subtitle' );
@@ -101,11 +101,8 @@
 
 					<div class="entry-content">
 
-						<div class="section-content">
-							<div class="front-content float-l">
-								<div class="section-image" style="background: url( <?php echo the_field('section_2_image'); ?>); background-size: cover;"></div>
-							</div>
-							<div class="front-content text float-r">
+						<div class="l-flex is-hori-rev align-vert">
+							<div class="front-content text">
 								<h2 class="section-subtitle">
 									<?php
 										$section2_subtitle = get_field('section_2_subtitle');
@@ -119,7 +116,7 @@
 									?>
 								</h1>
 								<img class="stars-front" src="wp-content/themes/dojo/assets/stars.png">
-								<p class="section-text">
+								<p class="section-description">
 									<?php
 										$section2_text = get_field('section_2_text');
 										echo $section2_text;
@@ -132,6 +129,9 @@
 										}
 									?>
 								</a>
+							</div>
+							<div class="front-content">
+								<div class="section-image" style="background: url( <?php echo the_field('section_2_image'); ?>); background-size: cover;"></div>
 							</div>
 						</div>
 

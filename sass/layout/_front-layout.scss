@@ -17,10 +17,7 @@
 	padding: 20px 0;
 }
 
-.section-content {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.section-text {
 }
 
 .section-subtitle {
@@ -29,8 +26,6 @@
 	margin: 0;
 	color: $color_gold;
 	text-align: center;
-	line-height: 40px;
-	margin-top: 40px;
 }
 
 .section-title {
@@ -38,12 +33,13 @@
 	font-size: 64px;
 	font-weight: 900;
 	margin: 0;
+	margin-top: -25px;
 	color: #263238;
 	text-align: center;
 	line-height: 60px;
 }
 
-.section-text {
+.section-description {
 	text-align: center;
 	padding: 0 30px;
 }
@@ -51,6 +47,7 @@
 .section-image {
 	width: 550px;
 	height: 384px;
+	border-radius: 2px;
 }
 
 .front-content-container {
@@ -61,8 +58,6 @@
 .front-content {
 	width: 50%;
 	text-align: center;
-	height: 384px;
-	align-self: auto;
 
 	&.text {
 		padding: 0 20px;
@@ -100,22 +95,16 @@
 
 .section-divider {
 	height: 400px;
-	width: 100%;
 	text-align: center;
-	display: block;
-	display: flex;
-	display-direction: row;
 }
 
 .section-divider-text {
-	align-self: center;
 	margin: auto;
 }
 
 .section-divider-subtitle {
 	font-family: "Great Vibes", cursive;
 	font-size: 64px;
-	line-height: 40px;
 	color: $color_gold;
 }
 
@@ -124,8 +113,9 @@
 	font-size: 64px;
 	font-weight: 900;
 	margin: 0;
-	color: $color_white;
+	margin-top: -25px;
 	line-height: 60px;
+	color: $color_white;
 }
 
 .stars-front {

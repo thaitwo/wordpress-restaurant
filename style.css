@@ -218,6 +218,24 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+.l-flex {
+  display: flex; }
+  .l-flex.is-hori {
+    flex-direction: row; }
+  .l-flex.is-hori-rev {
+    flex-direction: row-reverse; }
+  .l-flex.is-vert {
+    flex-direction: column; }
+  .l-flex.is-vert-rev {
+    flex-direction: column-reverse; }
+  .l-flex.align-hori {
+    justify-content: center; }
+  .l-flex.align-vert {
+    align-items: center; }
+
+/*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
 .full {
@@ -235,36 +253,31 @@ th {
 .inner {
   padding: 20px 0; }
 
-.section-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
 .section-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
   margin: 0;
   color: #DAB075;
-  text-align: center;
-  line-height: 40px;
-  margin-top: 40px; }
+  text-align: center; }
 
 .section-title {
   font-family: "Raleway", sans-serif;
   font-size: 64px;
   font-weight: 900;
   margin: 0;
+  margin-top: -25px;
   color: #263238;
   text-align: center;
   line-height: 60px; }
 
-.section-text {
+.section-description {
   text-align: center;
   padding: 0 30px; }
 
 .section-image {
   width: 550px;
-  height: 384px; }
+  height: 384px;
+  border-radius: 2px; }
 
 .front-content-container {
   display: flex;
@@ -272,9 +285,7 @@ th {
 
 .front-content {
   width: 50%;
-  text-align: center;
-  height: 384px;
-  align-self: auto; }
+  text-align: center; }
   .front-content.text {
     padding: 0 20px; }
 
@@ -303,20 +314,14 @@ th {
 
 .section-divider {
   height: 400px;
-  width: 100%;
-  text-align: center;
-  display: block;
-  display: flex;
-  display-direction: row; }
+  text-align: center; }
 
 .section-divider-text {
-  align-self: center;
   margin: auto; }
 
 .section-divider-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
-  line-height: 40px;
   color: #DAB075; }
 
 .section-divider-title {
@@ -324,8 +329,9 @@ th {
   font-size: 64px;
   font-weight: 900;
   margin: 0;
-  color: #ffffff;
-  line-height: 60px; }
+  margin-top: -25px;
+  line-height: 60px;
+  color: #ffffff; }
 
 .stars-front {
   display: block;
