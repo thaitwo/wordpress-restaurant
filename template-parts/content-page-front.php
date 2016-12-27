@@ -164,5 +164,4 @@
 				</article><!-- #post-## -->
 			</div><!-- #content -->
 		</div>
-
 	</div>
