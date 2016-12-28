@@ -1,3 +1,21 @@
+.full {
+	width: 100%;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
 .l-flex {
 	display: flex;
 
@@ -17,11 +35,15 @@
 		flex-direction: column-reverse;
 	}
 
-	&.align-hori {
+	&.align-hori-center {
 		justify-content: center;
 	}
 
-	&.align-vert {
+	&.align-vert-center {
 		align-items: center;
 	}
+}
+
+.l-center {
+	text-align: center;
 }

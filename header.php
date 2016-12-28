@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="header-area full l-flex is-vert align-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('header_page_bg_image'); ?>); background-size: cover">
+	<div class="header-area full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
 		<div class="main-page">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
 
@@ -50,25 +50,23 @@
 		</div>
 
 		<div class="header-text">
-			<div class="header-subtitle">
-				<?php $header_subtitle = get_field( 'header_page_subtitle' );
-					if ($header_subtitle) {
-						echo $header_subtitle;
-					}
-					else {
-						echo "Welcome";
-					}
-				?>
-			</div>
+				<?php
+				$header_subtitle = get_field( 'header_page_subtitle' );
+				if ($header_subtitle) : ?>
+					<div class="header-subtitle"><?php echo $header_subtitle ?></div>
+				<?php
+				endif; ?>
 
 			<div class="header-title">
-				<?php $header_title = get_field( 'header_page_title' );
-					if ($header_title) {
-						echo $header_title;
-					}
-					else {
-						echo bloginfo( 'name' );
-					}
+				<?php
+				$header_title = get_field( 'header_page_title' );
+				$page_title = the_title_attribute();
+				if ($header_title) {
+					echo $header_title;
+				}
+				else {
+					echo $page_title;
+				}
 				?>
 			</div>
 

@@ -17,7 +17,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<div class="entry-content">
-						<div class="l-flex is-hori align-vert">
+						<div class="l-flex is-hori align-vert-center">
 							<div class="front-content text">
 								<h2 class="section-subtitle">
 									<?php
@@ -66,7 +66,7 @@
 
 
 
-		<div class="section-divider full l-flex is-hori align-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
+		<div class="section-divider full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
 			<div class="section-divider-text">
 				<div class="section-divider-subtitle">
 					<?php $section_subtitle = get_field( 'section_1_divider_subtitle' );
@@ -101,7 +101,7 @@
 
 					<div class="entry-content">
 
-						<div class="l-flex is-hori-rev align-vert">
+						<div class="l-flex is-hori-rev align-vert-center">
 							<div class="front-content text">
 								<h2 class="section-subtitle">
 									<?php
