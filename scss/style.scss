@@ -29,19 +29,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+    ## Posts and pages
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -50,6 +50,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 @import "normalize";
+
+/*--------------------------------------------------------------
+# Settings
+--------------------------------------------------------------*/
+@import "settings";
 
 /*--------------------------------------------------------------
 # Layouts

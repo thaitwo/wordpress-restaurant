@@ -28,19 +28,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+    ## Posts and pages
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -218,6 +218,24 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
+# Settings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Units
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Font Size
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Mobile Sizing
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
 .full {
@@ -228,10 +246,10 @@ th {
   display: table;
   clear: both; }
 
-.float-l {
+.l-left {
   float: left; }
 
-.float-r {
+.l-right {
   float: right; }
 
 .l-flex {
@@ -281,7 +299,8 @@ th {
 .section-description {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  padding: 5px 30px; }
+  padding: 5px 30px;
+  font-size: 16px; }
 
 .section-image {
   width: 550px;
@@ -320,15 +339,14 @@ th {
 .section-divider-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
-  color: #DAB075; }
+  color: #DAB075;
+  margin-bottom: -50px; }
 
 .section-divider-title {
   font-family: "Raleway", sans-serif;
   font-size: 64px;
   font-weight: 900;
   margin: 0;
-  margin-top: -25px;
-  line-height: 60px;
   color: #ffffff; }
 
 .stars-front {
@@ -694,13 +712,13 @@ a {
 
 .header-subtitle {
   font-family: "Great Vibes", cursive;
-  font-size: 56px;
+  font-size: 64px;
   color: #DAB075;
   margin-bottom: -40px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 155px; }
+  top: 150px; }
 
 .header-title {
   font-family: "Raleway", sans-serif;
