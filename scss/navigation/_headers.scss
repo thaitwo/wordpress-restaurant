@@ -1,27 +1,50 @@
 .header-area-front {
-	color: #ffffff;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header-subtitle {
+    font-family: "Great Vibes", cursive;
+    font-size: 64px;
+    color: #DAB075;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 145px;
+    text-align: center;
+}
+
+.header-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .front-header {
-	margin: auto;
-	text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
-.front-header-subtitle {
-	margin: -80px auto 0;
-	font-family: "Great Vibes", cursive;
-	font-size: 72px;
-	line-height: 55px;
-	color: $color_gold;
+.header-subtitle-front {
+    font-family: "Great Vibes", cursive;
+    font-size: 72px;
+    line-height: 55px;
+    color: $color_gold;
+    margin-top: -60px;
 }
 
-.front-header-title {
-	font-family: "Raleway", sans-serif;
-	font-size: 100px;
-	font-weight: 800;
-	line-height: 75px;
+.header-title-front {
+    font-family: "Raleway", sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    margin-top: -35px;
+    margin-bottom: -15px;
 }

@@ -41,7 +41,7 @@
 		</div>
 
 		<div class="front-header">
-			<div class="front-header-subtitle">
+			<div class="header-subtitle-front">
 				<?php $front_subtitle = get_field( 'subtitle' );
 					if ($front_subtitle) {
 						echo $front_subtitle;
@@ -52,7 +52,7 @@
 				?>
 			</div>
 
-			<div class="front-header-title">
+			<div class="header-title-front">
 				<?php $front_title = get_field( 'title' );
 					if ($front_title) {
 						echo $front_title;

@@ -17,7 +17,7 @@
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                     <div class="entry-content l-flex is-hori align-vert-center">
-                        <div class="front-content text">
+                        <div class="front-content">
                             <h2 class="section-subtitle">
                                 <?php
                                     $section1_subtitle = get_field('section_1_subtitle');
@@ -98,7 +98,7 @@
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                     <div class="entry-content l-flex is-hori-rev align-vert-center">
-                        <div class="front-content text">
+                        <div class="front-content">
                             <h2 class="section-subtitle">
                                 <?php
                                     $section2_subtitle = get_field('section_2_subtitle');

@@ -1,3 +1,11 @@
+.l-left {
+    float: left;
+}
+
+.l-right {
+    float: right;
+}
+
 .l-flex {
 	display: flex;
 
@@ -17,11 +25,11 @@
 		flex-direction: column-reverse;
 	}
 
-	&.align-hori {
+	&.align-hori-center {
 		justify-content: center;
 	}
 
-	&.align-vert {
+	&.align-vert-center {
 		align-items: center;
 	}
 }
