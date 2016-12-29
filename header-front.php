@@ -17,7 +17,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="header-area-front full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('bg_image'); ?>); background-size: cover">
+	<div class="header-area-front full l-flex is-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('bg_image'); ?>); background-size: cover">
 		<div class="main-page">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
 
@@ -74,6 +74,5 @@
 			</a>
 
 		</div>
-
 	</div>
 

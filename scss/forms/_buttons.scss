@@ -39,6 +39,7 @@ input[type="submit"] {
 	&.button-primary {
 		color: $color_white;
 		border: 1px solid $color_white;
+		margin-top: 25px;
 
 		&:hover {
 			background: $color_white;

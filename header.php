@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="header-area full">
+	<div class="header-area full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
 		<div class="main-page">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
 
@@ -31,7 +31,7 @@
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></p>
 					<?php
 					endif;
 
@@ -47,6 +47,30 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '___return_false' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
+		</div>
+
+		<div class="header-text">
+				<?php
+				$header_subtitle = get_field( 'header_page_subtitle' );
+				if ($header_subtitle) : ?>
+					<div class="header-subtitle"><?php echo $header_subtitle ?></div>
+				<?php
+				endif; ?>
+
+			<div class="header-title">
+				<?php
+				$header_title = get_field( 'header_page_title' );
+				$page_title = the_title_attribute();
+				if ($header_title) {
+					echo $header_title;
+				}
+				else {
+					echo $page_title;
+				}
+				?>
+			</div>
+
+			<img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
 		</div>
 	</div>
 
