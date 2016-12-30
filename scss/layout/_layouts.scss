@@ -1,0 +1,35 @@
+.l-left {
+    float: left;
+}
+
+.l-right {
+    float: right;
+}
+
+.l-flex {
+	display: flex;
+
+	&.is-hori {
+		flex-direction: row;
+	}
+
+	&.is-hori-rev {
+		flex-direction: row-reverse;
+	}
+
+	&.is-vert {
+		flex-direction: column;
+	}
+
+	&.is-vert-rev {
+		flex-direction: column-reverse;
+	}
+
+	&.align-hori-center {
+		justify-content: center;
+	}
+
+	&.align-vert-center {
+		align-items: center;
+	}
+}

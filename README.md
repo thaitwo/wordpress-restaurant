@@ -1,3 +1,68 @@
+# Install WordPress Locally
+#### STEP 1. INSTALL WORDPRESS
+
+Download latest version of WordPress as zip file
+
+Create new folder in directory and place zip file in it
+
+
+#### STEP 2. INSTALL & LAUNCH MAMP ON COMPUTER
+
+Download free version of MAMP (must run Mac OS X 10.6.6 or later)
+
+Install and launch MAMP (go to Applications folder)
+
+#### STEP 3. SET THE PORTS
+
+A window should appear. Click on "Preferences".
+
+Select the "Ports" tab. Default should have Apache as 8888 and MySQL as 8889. Go ahead a leave as is.
+
+#### STEP 4. CONFIGURE WEB SERVE & DOCUMENT ROOT
+
+Select "Web Server" tab.
+
+Change document root to the folder that you created earlier with the WordPress zip file in it. (You're specifying where MAMP will be looking for all your files)
+
+#### STEP 5. START SERVERS
+
+Click "Start Servers"
+
+A window should open with info indicating your setup and other MAMP info.
+
+#### STEP 6. CREATE A MYSQL DATABASE
+
+You need to go to phpMyAdmin by either clicking on the phpMyAdmin link on the MAMP start page or visiting http://localhost:888/phpMyAdmin
+
+You should see these databases on the side panel:
+
+* information_schema
+* mysql
+* performance_schema
+
+Click on the "databases" tab in the top navigation.
+
+Name your database (ie. "website_db").
+
+Click the "create" button.
+
+#### STEP 7. UNZIP WORDPRESS INSTALL
+
+Head back over to foot folder you set up in step one.
+
+Upzip the WordPress zip file.
+
+Rename new folder to something relevant to site.
+
+Open the folder.
+
+#### STEP 8. CONFIGURE WP-CONFIG.PHP FILE
+
+Find and open the "wp-config-sample.php" file with text editor.
+
+Replace 'database__name__here' with name of your database (ie. 'website_db')
+
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
