@@ -37,16 +37,17 @@
                                     echo $section1_text;
                                 ?>
                             </p>
-                            <a class="button button-secondary" href="#">
-                                <?php $front_button = get_field( 'button' );
-                                    if ($front_button) {
-                                        echo $front_button;
-                                    }
-                                ?>
-                            </a>
+
+                            <?php $section_1_button = get_field( 'section_1_button_text' );
+                            if ($section_1_button) : ?>
+                                <a class="button button-secondary" href="<?php echo the_field('section_1_button_link') ?>">
+                                <?php echo $section_1_button; ?>
+                                </a>
+                            <?php
+                            endif; ?>
                         </div>
                         <div class="front-content">
-                            <div class="section-image l-right" style="background: url( <?php echo the_field('section_1_image'); ?>); background-size: cover;"></div>
+                            <div class="section-image is-rounded l-right" style="background: url( <?php echo the_field('section_1_image'); ?>); background-size: cover;"></div>
                         </div>
 
                         <div class="clearfix"></div>
@@ -118,16 +119,17 @@
                                     echo $section2_text;
                                 ?>
                             </p>
-                            <a class="button button-secondary" href="#">
-                                <?php $front_button = get_field( 'button' );
-                                    if ($front_button) {
-                                        echo $front_button;
-                                    }
-                                ?>
-                            </a>
+
+                            <?php $section_2_button = get_field( 'section_2_button_text' );
+                            if ($section_2_button) : ?>
+                                <a class="button button-secondary" href="<?php echo the_field('section_2_button_link') ?>">
+                                <?php echo $section_2_button; ?>
+                                </a>
+                            <?php
+                            endif; ?>
                         </div>
                         <div class="front-content">
-                            <div class="section-image" style="background: url( <?php echo the_field('section_2_image'); ?>); background-size: cover;"></div>
+                            <div class="section-image is-rounded l-left " style="background: url( <?php echo the_field('section_2_image'); ?>); background-size: cover;"></div>
                         </div>
 
                         <div class="clearfix"></div>
