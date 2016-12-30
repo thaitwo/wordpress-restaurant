@@ -34,15 +34,16 @@ input[type="submit"] {
 	display: inline-block;
 	border-radius: 2px;
 	letter-spacing: 2px;
+	transition: all .4s;
 
 	&.button-primary {
 		color: $color_white;
 		border: 1px solid $color_white;
+		margin-top: 25px;
 
 		&:hover {
 			background: $color_white;
 			border: 1px solid $color_white;
-			transition: .5s all;
 			color: $color_black;
 		}
 	}
@@ -52,8 +53,8 @@ input[type="submit"] {
 		color: $color_white;
 
 		&:hover {
-			background: $color__background-button;
-			transition: .5s all;
+			background: $color_gold_darker;
+			transition: .4s all;
 			color: $color_white;
 		}
 	}

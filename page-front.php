@@ -15,8 +15,6 @@ get_header( 'front' ); ?>
 
 				get_template_part( 'template-parts/content', 'page-front' ); ?>
 
-
-				<img class="front-content" src="wp-content/themes/dojo/assets/pizza.png">
 			<?php
 			endwhile; // End of the loop.
 			?>

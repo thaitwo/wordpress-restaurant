@@ -28,19 +28,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+    ## Posts and pages
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -218,10 +218,57 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
+# Settings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Units
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Font Size
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Mobile Sizing
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+.l-left {
+  float: left; }
+
+.l-right {
+  float: right; }
+
+.l-flex {
+  display: flex; }
+  .l-flex.is-hori {
+    flex-direction: row; }
+  .l-flex.is-hori-rev {
+    flex-direction: row-reverse; }
+  .l-flex.is-vert {
+    flex-direction: column; }
+  .l-flex.is-vert-rev {
+    flex-direction: column-reverse; }
+  .l-flex.align-hori-center {
+    justify-content: center; }
+  .l-flex.align-vert-center {
+    align-items: center; }
+
+/*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
 .full {
   width: 100%; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .main-page {
   width: 1200px;
@@ -235,33 +282,36 @@ th {
   font-size: 64px;
   margin: 0;
   color: #DAB075;
-  text-align: center;
-  line-height: 40px;
-  margin-top: 50px; }
+  text-align: center; }
 
 .section-title {
   font-family: "Raleway", sans-serif;
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 900;
-  margin: 0;
+  margin-top: -45px;
+  margin-bottom: -5px;
   color: #263238;
-  text-align: center;
-  line-height: 60px; }
+  text-align: center; }
 
-.section-text {
+.section-description {
   text-align: center;
-  padding: 0 30px;
-  margin: 30px 0; }
+  padding: 0 40px; }
+
+.section-image {
+  width: 550px;
+  height: 384px;
+  border-radius: 2px; }
 
 .front-content-container {
   display: flex;
-  display-direction: column; }
+  flex-direction: column; }
 
 .front-content {
   width: 50%;
-  float: left;
-  padding-right: 50px;
   text-align: center; }
+
+.entry-content {
+  margin: 60px 0; }
 
 .front-content-right {
   width: 50%;
@@ -275,25 +325,39 @@ th {
 .header-area {
   background: #FF5722;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  height: 350px; }
 
-.header-area-front {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%; }
+.section-divider {
+  height: 400px;
+  text-align: center; }
+
+.section-divider-text {
+  margin: auto; }
+
+.section-divider-subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  color: #DAB075; }
+
+.section-divider-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  margin-top: -45px;
+  color: #ffffff; }
 
 .stars-front {
   display: block;
-  margin: 30px auto; }
+  width: 112px;
+  margin: 0 auto; }
 
 .img-right {
   float: right;
   margin-top: 50px; }
 
 .footer-area {
-  background: #37474F;
+  background: #263238;
   line-height: 400px; }
 
 /*--------------------------------------------------------------
@@ -461,21 +525,22 @@ input[type="submit"] {
   text-decoration: none;
   display: inline-block;
   border-radius: 2px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: all .4s; }
   .button.button-primary {
     color: #ffffff;
-    border: 1px solid #ffffff; }
+    border: 1px solid #ffffff;
+    margin-top: 25px; }
     .button.button-primary:hover {
       background: #ffffff;
       border: 1px solid #ffffff;
-      transition: .5s all;
       color: #000000; }
   .button.button-secondary {
     background: #DAB075;
     color: #ffffff; }
     .button.button-secondary:hover {
-      background: #DAB075;
-      transition: .5s all;
+      background: #C79C5F;
+      transition: .4s all;
       color: #ffffff; }
 
 input[type="text"],
@@ -558,7 +623,8 @@ a {
   .site-branding h1 {
     margin: 0; }
   .site-branding .site-title a {
-    line-height: 50px; }
+    line-height: 50px;
+    transition: all .4s; }
   .site-branding .site-description {
     display: none; }
 
@@ -597,10 +663,10 @@ a {
     display: block;
     text-decoration: none;
     padding: 0 20px;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: 0.4s all; }
     .main-navigation a:hover {
-      color: #DAB075;
-      transition: 0.3s all; }
+      color: #DAB075; }
 
 /* Small menu. */
 .menu-toggle,
@@ -633,22 +699,50 @@ a {
 /*--------------------------------------------------------------
 ## Headers
 --------------------------------------------------------------*/
+.header-area-front {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+
+.header-subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  color: #DAB075;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 145px;
+  text-align: center; }
+
+.header-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  text-align: center; }
+
 .front-header {
   margin: auto;
   text-align: center; }
 
-.front-header-subtitle {
-  margin: 220px auto 0;
+.header-subtitle-front {
   font-family: "Great Vibes", cursive;
   font-size: 72px;
   line-height: 55px;
-  color: #DAB075; }
+  color: #DAB075;
+  margin-top: -60px; }
 
-.front-header-title {
+.header-title-front {
   font-family: "Raleway", sans-serif;
   font-size: 100px;
   font-weight: 800;
-  line-height: 75px; }
+  margin-top: -35px;
+  margin-bottom: -15px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -731,6 +825,23 @@ a {
   clear: both; }
 
 /*--------------------------------------------------------------
+# Footers
+--------------------------------------------------------------*/
+.entry-footer {
+  margin-top: 40px; }
+
+.post-edit-link {
+  background: #DAB075;
+  color: #ffffff;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all .4s; }
+  .post-edit-link:hover {
+    color: #ffffff;
+    background: #C79C5F; }
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -758,11 +869,6 @@ a {
 .single .byline,
 .group-blog .byline {
   display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
 
 .page-links {
   clear: both;

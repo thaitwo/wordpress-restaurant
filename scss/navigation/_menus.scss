@@ -12,6 +12,7 @@
 
 	& .site-title a {
 		line-height: 50px;
+		transition: all .4s;
 	}
 
 	& .site-description {
@@ -66,7 +67,6 @@
 	}
 
 	li {
-		// background: white;
 		font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
 		font-weight: 500;
 		float: left;
@@ -86,10 +86,10 @@
 		text-decoration: none;
 		padding: 0 20px;
 		color: #ffffff;
+		transition: 0.4s all;
 
 		&:hover {
 			color: $color__link-hover;
-			transition: 0.3s all;
 		}
 	}
 
