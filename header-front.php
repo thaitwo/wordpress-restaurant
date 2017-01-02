@@ -65,14 +65,13 @@
 
 			<img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
 
-			<a class="button button-primary" href="#">
-				<?php $front_button = get_field( 'button' );
-					if ($front_button) {
-						echo $front_button;
-					}
-				?>
-			</a>
-
+			<?php $front_button = get_field( 'header_front_button' );
+			if ($front_button) : ?>
+				<a class="button button-primary" href="<?php echo the_field('header_front_button_link') ?>">
+				<?php echo $front_button; ?>
+				</a>
+			<?php
+			endif; ?>
 		</div>
 	</div>
 
