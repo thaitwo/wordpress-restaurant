@@ -259,6 +259,9 @@ th {
   .l-flex.align-vert-center {
     align-items: center; }
 
+.is-rounded {
+  border-radius: 3px; }
+
 /*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
@@ -299,8 +302,7 @@ th {
 
 .section-image {
   width: 550px;
-  height: 384px;
-  border-radius: 2px; }
+  height: 384px; }
 
 .front-content-container {
   display: flex;
@@ -524,7 +526,7 @@ input[type="submit"] {
   padding: 12px 30px;
   text-decoration: none;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 3px;
   letter-spacing: 2px;
   transition: all .4s; }
   .button.button-primary {
