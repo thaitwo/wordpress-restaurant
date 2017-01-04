@@ -1,0 +1,33 @@
+
+.begin-col ~ h2,
+.begin-col ~ p,
+.begin-col ~ .highlight {
+    width: 50%;
+    background: green;
+}
+
+.begin-col ~ h2,
+.begin-col ~ p {
+    float: left;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    clear: both;
+}
+
+.begin-col ~ .highlight {
+    float: right;
+    clear: right;
+    margin-bottom: 1rem;
+}
+
+.end-col {
+    clear: both;
+}
+
+.end-col ~ p,
+.end-col ~ h2,
+.end-col ~ .highlight {
+    width: auto;
+    float: none;
+    clear: none;
+}

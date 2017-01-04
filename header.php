@@ -49,29 +49,28 @@
 			</header><!-- #masthead -->
 		</div>
 
-		<div class="header-text">
-				<?php
-				$header_subtitle = get_field( 'header_page_subtitle' );
-				if ($header_subtitle) : ?>
-					<div class="header-subtitle"><?php echo $header_subtitle ?></div>
-				<?php
-				endif; ?>
+		<?php
+		$header_subtitle = get_field( 'header_page_subtitle' );
+		if ($header_subtitle) : ?>
+			<div class="header-subtitle"><?php echo $header_subtitle ?></div>
+		<?php
+		endif; ?>
 
-			<div class="header-title">
-				<?php
-				$header_title = get_field( 'header_page_title' );
-				$page_title = the_title_attribute();
-				if ($header_title) {
-					echo $header_title;
-				}
-				else {
-					echo $page_title;
-				}
-				?>
-			</div>
-
-			<img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
+		<div class="header-title">
+			<?php
+			$header_title = get_field( 'header_page_title' );
+			$page_title = the_title_attribute();
+			if ($header_title) {
+				echo $header_title;
+			}
+			else {
+				echo $page_title;
+			}
+			?>
 		</div>
+
+		<img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
+
 	</div>
 
 	<div class="main-content-area full">
