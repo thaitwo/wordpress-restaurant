@@ -37,3 +37,11 @@
 .is-rounded {
     border-radius: 3px;
 }
+
+.grid {
+	width: 100%;
+
+	&.col-one-half {
+		width: 50%;
+	}
+}

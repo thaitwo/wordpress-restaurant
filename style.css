@@ -262,6 +262,11 @@ th {
 .is-rounded {
   border-radius: 3px; }
 
+.grid {
+  width: 100%; }
+  .grid.col-one-half {
+    width: 50%; }
+
 /*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
@@ -361,6 +366,37 @@ th {
 .footer-area {
   background: #263238;
   line-height: 400px; }
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+.begin-col ~ h2,
+.begin-col ~ p,
+.begin-col ~ .highlight {
+  width: 50%;
+  background: green; }
+
+.begin-col ~ h2,
+.begin-col ~ p {
+  float: left;
+  box-sizing: border-box;
+  padding-right: 1rem;
+  clear: both; }
+
+.begin-col ~ .highlight {
+  float: right;
+  clear: right;
+  margin-bottom: 1rem; }
+
+.end-col {
+  clear: both; }
+
+.end-col ~ p,
+.end-col ~ h2,
+.end-col ~ .highlight {
+  width: auto;
+  float: none;
+  clear: none; }
 
 /*--------------------------------------------------------------
 # Typography
