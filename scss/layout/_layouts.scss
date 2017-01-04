@@ -25,6 +25,10 @@
 		flex-direction: column-reverse;
 	}
 
+	&.align-hori-left {
+		justify-content: left;
+	}
+
 	&.align-hori-center {
 		justify-content: center;
 	}

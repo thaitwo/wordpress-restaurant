@@ -254,6 +254,8 @@ th {
     flex-direction: column; }
   .l-flex.is-vert-rev {
     flex-direction: column-reverse; }
+  .l-flex.align-hori-left {
+    justify-content: left; }
   .l-flex.align-hori-center {
     justify-content: center; }
   .l-flex.align-vert-center {
@@ -370,33 +372,11 @@ th {
 /*--------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/
-.begin-col ~ h2,
-.begin-col ~ p,
-.begin-col ~ .highlight {
-  width: 50%;
-  background: green; }
+.menu-item {
+  margin: 0; }
 
-.begin-col ~ h2,
-.begin-col ~ p {
-  float: left;
-  box-sizing: border-box;
-  padding-right: 1rem;
-  clear: both; }
-
-.begin-col ~ .highlight {
-  float: right;
-  clear: right;
-  margin-bottom: 1rem; }
-
-.end-col {
-  clear: both; }
-
-.end-col ~ p,
-.end-col ~ h2,
-.end-col ~ .highlight {
-  width: auto;
-  float: none;
-  clear: none; }
+.menu-item-description {
+  margin: 0; }
 
 /*--------------------------------------------------------------
 # Typography
