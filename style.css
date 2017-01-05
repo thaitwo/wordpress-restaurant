@@ -265,9 +265,61 @@ th {
   border-radius: 3px; }
 
 .grid {
-  width: 100%; }
-  .grid.col-one-half {
-    width: 50%; }
+  width: 1200px;
+  margin: auto;
+  box-sizing: border-box; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid .col-1 {
+    width: 80px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-2 {
+    width: 180px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-3 {
+    width: 280px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-4 {
+    width: 380px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-5 {
+    width: 480px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-6 {
+    width: 580px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-7 {
+    width: 680px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-8 {
+    width: 780px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-9 {
+    width: 880px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-10 {
+    width: 980px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-11 {
+    width: 1080px;
+    margin: 0 10px 10px 0;
+    float: left; }
+  .grid .col-12 {
+    width: 1180px;
+    margin: 0 10px 10px 0;
+    float: left; }
 
 /*--------------------------------------------------------------
 # Structure
@@ -372,10 +424,15 @@ th {
 /*--------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/
+.menu-category {
+  color: #DAB075; }
+
 .menu-item {
+  color: #263238;
   margin: 0; }
 
-.menu-item-description {
+.menu-item-des {
+  color: #90A4AE;
   margin: 0; }
 
 /*--------------------------------------------------------------

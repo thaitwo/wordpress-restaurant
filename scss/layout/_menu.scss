@@ -1,11 +1,13 @@
 .menu-category {
-
+    color: $color_gold;
 }
 
 .menu-item {
+    color: $color_bluegrey_900;
     margin: 0;
 }
 
-.menu-item-description {
+.menu-item-des {
+    color: $color_bluegrey_300;
     margin: 0;
 }
