@@ -1,13 +1,50 @@
 .menu-category {
+    margin: 0 0 30px;
     color: $color_gold;
+    font-family: $font_body;
+    letter-spacing: 1px;
+    border-bottom: 1px $color_bluegrey_80 solid;
+    padding-bottom: 5px;
 }
 
-.menu-item {
+.menu-section {
+    margin-bottom: 60px;
+}
+
+.menu-list-container {
+    margin-top: 25px;
+    position: relative;
+}
+
+.menu-list-item {
     color: $color_bluegrey_900;
     margin: 0;
+    font-size: 18px;
+    // background: green;
+    padding-right: 80px;
+    display: inline-block;
+    font-family: $font_body;
+    font-weight: 600;
 }
 
-.menu-item-des {
-    color: $color_bluegrey_300;
+.menu-list-item-price {
+    color: $color_bluegrey_200;
+    font-size: 18px;
     margin: 0;
+    float: right;
+    font-style: italic;
+    // background: red;
+    font-family: $font_body;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-list-item-des {
+    color: $color_bluegrey_200;
+    margin: 0;
+    font-size: 16px;
+    padding-right: 80px;
+    // background: yellow;
+    font-family: $font_body;
 }
