@@ -8,12 +8,23 @@
 }
 
 .menu-section {
-    margin-bottom: 60px;
+    margin: 50px auto 20px;
 }
 
 .menu-list-container {
     margin-top: 25px;
     position: relative;
+}
+
+.menu-container {
+    width: 46%;
+    // background: red;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 50px;
+    // background: green;
 }
 
 .menu-list-item {

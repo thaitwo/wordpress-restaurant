@@ -1,7 +1,7 @@
 <?php
 /*
 
-Template Name: Menu Page Template
+Template Name: Menu Template
 
 */
 

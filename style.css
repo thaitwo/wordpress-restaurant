@@ -264,6 +264,12 @@ th {
     justify-content: center; }
   .l-flex.align-vert-center {
     align-items: center; }
+  .l-flex.align-vert-flex-start {
+    align-items: flex-start; }
+  .l-flex.align-hori-space-between {
+    justify-content: space-between; }
+  .l-flex.flex-wrap {
+    flex-wrap: wrap; }
 
 .is-rounded {
   border-radius: 3px; }
@@ -392,7 +398,7 @@ th {
 .section-divider {
   height: 400px;
   text-align: center;
-  margin: 60px auto; }
+  margin: auto; }
 
 .section-divider-text {
   margin: auto; }
@@ -434,11 +440,18 @@ th {
   padding-bottom: 5px; }
 
 .menu-section {
-  margin-bottom: 60px; }
+  margin: 50px auto 20px; }
 
 .menu-list-container {
   margin-top: 25px;
   position: relative; }
+
+.menu-container {
+  width: 46%; }
+
+.container {
+  width: 100%;
+  margin-bottom: 50px; }
 
 .menu-list-item {
   color: #263238;

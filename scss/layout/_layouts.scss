@@ -41,6 +41,18 @@
 	&.align-vert-center {
 		align-items: center;
 	}
+
+	&.align-vert-flex-start {
+		align-items: flex-start;
+	}
+
+	&.align-hori-space-between {
+		justify-content: space-between;
+	}
+
+	&.flex-wrap {
+		flex-wrap: wrap;
+	}
 }
 
 .is-rounded {
