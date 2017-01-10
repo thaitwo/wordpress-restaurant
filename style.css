@@ -1028,13 +1028,12 @@ object {
 # Plugin - Contact
 --------------------------------------------------------------*/
 div.wpcf7 {
-  margin: 0;
-  margin-top: -16px;
+  margin: 0 !important;
+  margin-top: -16px !important;
   padding: 0;
-  float: left; }
+  float: left !important; }
 
 div.wpcf7-response-output {
-  margin: 2em 0.5em 1em;
   padding: 0.2em 1em; }
 
 div.wpcf7 .screen-reader-response {
@@ -1048,7 +1047,8 @@ div.wpcf7 .screen-reader-response {
   border: 0; }
 
 div.wpcf7-mail-sent-ok {
-  border: 2px solid #398f14; }
+  color: #43A047;
+  border: 2px solid #43A047 !important; }
 
 div.wpcf7-mail-sent-ng {
   border: 2px solid #ff0000; }
@@ -1057,13 +1057,15 @@ div.wpcf7-spam-blocked {
   border: 2px solid #ffa500; }
 
 div.wpcf7-validation-errors {
-  border: 2px solid #f7e700; }
+  color: #e53935 !important;
+  border: 2px solid #e53935 !important;
+  border-radius: 3px; }
 
 .wpcf7-form-control-wrap {
   position: relative; }
 
 span.wpcf7-not-valid-tip {
-  color: #f00;
+  color: #e53935 !important;
   font-size: 1em;
   display: block; }
 
