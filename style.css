@@ -378,7 +378,7 @@ th {
   text-align: center; }
 
 .entry-content {
-  margin: 20px 0; }
+  margin: 0; }
 
 .front-content-right {
   width: 50%;
@@ -440,16 +440,16 @@ th {
   padding-bottom: 5px; }
 
 .menu-section {
-  margin: 50px auto 20px; }
+  margin: 60px auto 30px; }
 
 .menu-list-container {
   margin-top: 25px;
   position: relative; }
 
-.menu-container {
+.menu-column-container {
   width: 46%; }
 
-.container {
+.menu-category-container {
   width: 100%;
   margin-bottom: 50px; }
 
@@ -466,6 +466,7 @@ th {
   color: #B0BEC5;
   font-size: 18px;
   margin: 0;
+  font-weight: 300;
   float: right;
   font-style: italic;
   font-family: "Raleway", sans-serif;

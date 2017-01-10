@@ -8,7 +8,7 @@
 }
 
 .menu-section {
-    margin: 50px auto 20px;
+    margin: 60px auto 30px;
 }
 
 .menu-list-container {
@@ -16,22 +16,20 @@
     position: relative;
 }
 
-.menu-container {
+.menu-column-container {
     width: 46%;
-    // background: red;
 }
 
-.container {
+.menu-category-container {
     width: 100%;
     margin-bottom: 50px;
-    // background: green;
 }
 
+// don't rename to .menu-item as it will conflict with navigation menu
 .menu-list-item {
     color: $color_bluegrey_900;
     margin: 0;
     font-size: 18px;
-    // background: green;
     padding-right: 80px;
     display: inline-block;
     font-family: $font_body;
@@ -42,9 +40,9 @@
     color: $color_bluegrey_200;
     font-size: 18px;
     margin: 0;
+    font-weight: 300;
     float: right;
     font-style: italic;
-    // background: red;
     font-family: $font_body;
     position: absolute;
     top: 0;
@@ -56,6 +54,5 @@
     margin: 0;
     font-size: 16px;
     padding-right: 80px;
-    // background: yellow;
     font-family: $font_body;
 }

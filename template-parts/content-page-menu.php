@@ -64,7 +64,7 @@
                             <div class="main-page">
                                 <div class="menu-section l-flex is-hori align-hori-space-between flex-wrap">
 
-                                    <div class="menu-container l-flex is-vert align-vert-flex-start">
+                                    <div class="menu-column-container l-flex is-vert align-vert-flex-start">
                                         <?php
 
                                         // child loop
@@ -77,7 +77,7 @@
 
                                                 ?>
 
-                                                <div class="container">
+                                                <div class="menu-category-container">
 
                                                     <h1 class="menu-category">
                                                         <?php
@@ -139,7 +139,7 @@
                                     </div>
 
 
-                                    <div class="menu-container l-flex is-vert align-vert-flex-start">
+                                    <div class="menu-column-container l-flex is-vert align-vert-flex-start">
                                         <?php
 
                                         // child loop
@@ -152,7 +152,7 @@
 
                                                 ?>
 
-                                                <div class="container">
+                                                <div class="menu-category-container">
 
                                                     <h1 class="menu-category">
                                                         <?php
@@ -236,7 +236,7 @@
 
 
             <?php if ( get_edit_post_link() ) : ?>
-                <footer class="entry-footer grid">
+                <footer class="entry-footer main-page">
                     <?php
                         edit_post_link(
                             sprintf(
