@@ -434,7 +434,7 @@ th {
 .menu-category {
   margin: 0 0 30px;
   color: #DAB075;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   border-bottom: 1px #ECEFF1 solid;
   padding-bottom: 5px; }
@@ -459,7 +459,7 @@ th {
   font-size: 18px;
   padding-right: 80px;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 600; }
 
 .menu-list-item-price {
@@ -469,7 +469,7 @@ th {
   font-weight: 300;
   float: right;
   font-style: italic;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   position: absolute;
   top: 0;
   right: 0; }
@@ -479,7 +479,7 @@ th {
   margin: 0;
   font-size: 16px;
   padding-right: 80px;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif; }
 
 /*--------------------------------------------------------------
 # Typography

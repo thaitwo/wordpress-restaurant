@@ -44,14 +44,15 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-$font_body: "Raleway", sans-serif;
+$font_body: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
 
 /*--------------------------------------------------------------
 ## Font Size
 --------------------------------------------------------------*/
-$font-size-h1: 64px;
-$font-size-h2: 56px;
-$font-size-body: 16px;
+$font_size_h1: 64px;
+$font_size_h2: 56px;
+$font_size_h6: 18px;
+$font_size_body: 16px;
 
 /*--------------------------------------------------------------
 ## Mobile Sizing
