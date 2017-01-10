@@ -71,7 +71,3 @@
 
 		<img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
 	</div>
-
-	<div class="main-content-area full">
-		<div class="main-page">
-			<div id="content" class="site-content inner">
