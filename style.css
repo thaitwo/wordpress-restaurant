@@ -492,23 +492,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #DAB075;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  color: #ffffff;
+  line-height: 1; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    background-color: #C79C5F;
+    border: 0 !important;
+    border-color: #C79C5F; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -516,8 +510,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 .button {
   font-family: "Raleway", sans-serif;
@@ -960,5 +953,44 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Plugin - Open Table
+--------------------------------------------------------------*/
+.reservation-ot-title {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #DAB075;
+  margin: 0 auto 50px;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.ot-title {
+  display: none !important; }
+
+.ot-dtp-picker {
+  padding: 0 !important; }
+  .ot-dtp-picker.wide {
+    width: 50.5rem;
+    background: 0 0;
+    margin: auto; }
+
+.ot-button {
+  background-color: #DAB075;
+  border-color: #DAB075 !important;
+  transition: all .5s !important; }
+
+.ot-dtp-picker .ot-dtp-picker-button {
+  box-shadow: 0 0 0 1px #DAB075 !important; }
+  .ot-dtp-picker .ot-dtp-picker-button:hover {
+    box-shadow: 0 0 0 1px #C79C5F !important; }
+
+.ot-dtp-picker.wide .ot-dtp-picker-form {
+  height: 50px !important; }
+
+.ot-dtp-picker.wide .ot-powered-by {
+  background: url(../dojo/assets/open-table.png) center no-repeat !important;
+  background-position: center !important;
+  margin-top: 40px !important; }
 
 /*# sourceMappingURL=style.css.map */

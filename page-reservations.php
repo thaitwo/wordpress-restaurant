@@ -1,11 +1,11 @@
 <?php
 /*
 
-Template Name: Front Template
+Template Name: Reservations Template
 
 */
 
-get_header( 'front' ); ?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -13,7 +13,7 @@ get_header( 'front' ); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page-front' ); ?>
+				get_template_part( 'template-parts/content', 'page-reservations' ); ?>
 
 			<?php
 			endwhile; // End of the loop.

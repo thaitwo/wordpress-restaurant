@@ -1,0 +1,46 @@
+.reservation-ot-title {
+	font-family: $font_body;
+	font-weight: 300;
+	color: $color_gold;
+	margin: 0 auto 50px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.ot-title {
+	display: none !important;
+}
+
+.ot-dtp-picker {
+	padding: 0 !important;
+
+	&.wide {
+		width: 50.5rem;
+	    background: 0 0;
+	    margin: auto;
+	}
+}
+
+.ot-button {
+	background-color: $color_gold;
+	border-color: $color_gold !important;
+	transition: all .5s !important;
+}
+
+.ot-dtp-picker .ot-dtp-picker-button {
+	box-shadow: 0 0 0 1px $color_gold !important;
+
+	&:hover {
+		box-shadow: 0 0 0 1px $color_gold_darker !important;
+	}
+}
+
+.ot-dtp-picker.wide .ot-dtp-picker-form {
+    height: 50px !important;
+}
+
+.ot-dtp-picker.wide .ot-powered-by {
+	background: url(../dojo/assets/open-table.png) center no-repeat !important;
+	background-position: center !important;
+	margin-top: 40px !important;
+}
