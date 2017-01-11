@@ -15,7 +15,9 @@
 
 		<?php the_content(); ?>
 
-			<h2 class="reservation-ot-title"><?php echo the_field('ot_title') ?></h2>
+			<h1 class="reservation-ot-title"><?php echo the_field('ot_title') ?></h1>
+
+			<p class="reservation-ot-description"><?php echo the_field('ot_description') ?></p>
 
 			<script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=<?php echo the_field('ot_restaurant_id') ?>&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false'></script>
 
