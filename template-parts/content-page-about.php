@@ -66,8 +66,7 @@
                                 ?>
 
                                 <div class="testimonial-container">
-                                    <div class="testimonial-quotes-image"></div>
-                                    <p class="testimonial-quotes">
+                                    <p class="testimonial-quotes has-image">
                                         <?php echo $testimonial_left; ?>
                                     </p>
 
@@ -94,7 +93,7 @@
                                 ?>
 
                                 <div class="testimonial-container">
-                                    <p class="testimonial-quotes">
+                                    <p class="testimonial-quotes has-image">
                                         <?php echo $testimonial_right; ?>
                                     </p>
 

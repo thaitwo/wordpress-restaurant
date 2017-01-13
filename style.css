@@ -378,23 +378,20 @@ th {
   width: 46%; }
 
 .testimonial-container {
-  position: relative; }
+  position: relative;
+  margin-bottom: 40px; }
 
 .testimonial-quotes {
-  z-index: 10; }
-
-.testimonial-quotes-image {
-  background-image: url("../dojo/assets/quotes.png");
-  background-size: contain;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 48px;
-  height: 48px;
-  z-index: 1; }
+  margin-bottom: 10px; }
+  .testimonial-quotes.has-image {
+    background: url("../dojo/assets/quotes.png") no-repeat;
+    background-size: 48px 48px;
+    padding: 25px 0 0 10px; }
 
 .testimonial-name {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  padding-left: 10px;
+  margin: 0; }
 
 /*--------------------------------------------------------------
 # Typography
