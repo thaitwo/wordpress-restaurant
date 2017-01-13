@@ -32,8 +32,20 @@
 	&.align-vert-center {
 		align-items: center;
 	}
+
+	&.align-vert-flex-start {
+		align-items: flex-start;
+	}
+
+	&.align-hori-space-between {
+		justify-content: space-between;
+	}
 }
 
 .is-rounded {
     border-radius: 3px;
+}
+
+.grid {
+	width: 1200px;
 }

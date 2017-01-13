@@ -83,6 +83,10 @@
 .section-divider {
 	height: 400px;
 	text-align: center;
+
+	&.has-vert-margin {
+		margin: 80px 0
+	}
 }
 
 .section-divider-text {
