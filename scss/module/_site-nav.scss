@@ -10,13 +10,24 @@
 		margin: 0;
 	}
 
-	& .site-title a {
-		line-height: 50px;
-		transition: all .4s;
-	}
-
 	& .site-description {
 		display: none;
+	}
+}
+
+.site-title a {
+	line-height: 50px;
+	font-weight: 700;
+	color: $color-white;
+	text-decoration: none;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all .4s;
+
+	&:hover {
+		color: $color__link-hover;
+		transition: .5s all;
 	}
 }
 

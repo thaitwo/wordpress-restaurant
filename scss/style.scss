@@ -9,124 +9,48 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dojo
 Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Dojo is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Structure
-# Typography
-# Elements
-# Forms
-# Navigation
-    ## Links
-    ## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-    ## Posts and pages
-    ## Comments
-# Infinite scroll
-# Media
-    ## Captions
-    ## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
+/*  ----  BASE  ----  */
 
-/*--------------------------------------------------------------
-# Settings
---------------------------------------------------------------*/
-@import "settings";
+@import "base/defaults";
+@import "base/mixins-master";
+@import "base/colors";
+@import "base/type";
+@import "base/elements";
+@import "base/tables";
+@import "base/lists";
+@import "base/links";
+@import "base/reset";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
+
+
+/*  ----  LAYOUT  ----  */
+
 @import "layout/layouts";
-
-/*--------------------------------------------------------------
-# Structure
---------------------------------------------------------------*/
 @import "layout/front-layout";
+@import "layout/food-menu";
 
-/*--------------------------------------------------------------
-# Menu
---------------------------------------------------------------*/
-@import "layout/menu";
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
+/*  ----  MODULE  ----  */
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
+@import "module/accessibility";
+@import "module/alignments";
+@import "module/buttons";
+@import "module/clearings";
+@import "module/comments";
+@import "module/form";
+@import "module/header";
+@import "module/infinite-scroll";
+@import "module/posts-and-pages";
+@import "module/site-footer";
+@import "module/site-nav";
+@import "module/widgets";
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
+/*  ----  MEDIA  ----  */
 
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Footers
---------------------------------------------------------------*/
-@import "modules/footers";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
 @import "media/media";
