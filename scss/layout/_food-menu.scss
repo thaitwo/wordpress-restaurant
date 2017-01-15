@@ -1,0 +1,58 @@
+.menu-category {
+    margin: 0 0 ($unit * 6);
+    color: $color_gold;
+    font-family: $font_body;
+    letter-spacing: 1px;
+    border-bottom: 1px $color-bluegrey-50 solid;
+    padding-bottom: $unit;
+}
+
+.menu-section {
+    margin: ($unit * 12) auto ($unit * 6);
+}
+
+.menu-list-container {
+    margin-top: $unit * 5;
+    position: relative;
+}
+
+.menu-column-container {
+    width: 46%;
+}
+
+.menu-category-container {
+    width: 100%;
+    margin-bottom: $unit * 10;
+}
+
+// don't rename to .menu-item as it will conflict with navigation menu
+.menu-list-item {
+    color: $color-bluegrey-900;
+    margin: 0;
+    font-size: $font-small;
+    padding-right: $unit * 16;
+    display: inline-block;
+    font-family: $font_body;
+    font-weight: 600;
+}
+
+.menu-list-item-price {
+    color: $color-bluegrey-200;
+    font-size: $font-small;
+    margin: 0;
+    font-weight: 300;
+    float: right;
+    font-style: italic;
+    font-family: $font_body;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-list-item-des {
+    color: $color-bluegrey-200;
+    margin: 0;
+    font-size: $font-standard;
+    padding-right: $unit * 16;
+    font-family: $font_body;
+}

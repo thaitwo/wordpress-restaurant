@@ -1,0 +1,31 @@
+$grid: '.grid' !default;
+$grid-column: '.col' !default;
+$grid-width: 80px;
+$grid-margin: 0 10px 10px;
+
+#{$grid} {
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@for $i from 1 through 12 {
+    $width: $grid-width;
+
+    @if($i > 1) {
+      $num: $i - 1;
+      $width: $grid-width * $i + ($num * 20); // Account for margins on additional columns
+    }
+
+    #{$grid-column}-#{$i} {
+      width: $width;
+      margin: $grid-margin;
+      float: left;
+    }
+}

@@ -1,3 +1,8 @@
+.main-page {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .l-left {
     float: left;
 }
@@ -7,31 +12,47 @@
 }
 
 .l-flex {
-	display: flex;
+    display: flex;
 
-	&.is-hori {
-		flex-direction: row;
-	}
+    &.is-hori {
+        flex-direction: row;
+    }
 
-	&.is-hori-rev {
-		flex-direction: row-reverse;
-	}
+    &.is-hori-rev {
+        flex-direction: row-reverse;
+    }
 
-	&.is-vert {
-		flex-direction: column;
-	}
+    &.is-vert {
+        flex-direction: column;
+    }
 
-	&.is-vert-rev {
-		flex-direction: column-reverse;
-	}
+    &.is-vert-rev {
+        flex-direction: column-reverse;
+    }
 
-	&.align-hori-center {
-		justify-content: center;
-	}
+    &.align-hori-left {
+        justify-content: left;
+    }
 
-	&.align-vert-center {
-		align-items: center;
-	}
+    &.align-hori-center {
+        justify-content: center;
+    }
+
+    &.align-vert-center {
+        align-items: center;
+    }
+
+    &.align-vert-flex-start {
+        align-items: flex-start;
+    }
+
+    &.align-hori-space-between {
+        justify-content: space-between;
+    }
+
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
 }
 
 .is-rounded {

@@ -37,25 +37,25 @@ input[type="submit"] {
 	transition: all .4s;
 
 	&.button-primary {
-		color: $color_white;
-		border: 1px solid $color_white;
+		color: $color-white;
+		border: 1px solid $color-white;
 		margin-top: 25px;
 
 		&:hover {
-			background: $color_white;
-			border: 1px solid $color_white;
-			color: $color_black;
+			background: $color-white;
+			border: 1px solid $color-white;
+			color: $color-black;
 		}
 	}
 
 	&.button-secondary {
 		background: $color__background-button;
-		color: $color_white;
+		color: $color-white;
 
 		&:hover {
 			background: $color_gold_darker;
 			transition: .4s all;
-			color: $color_white;
+			color: $color-white;
 		}
 	}
 }
