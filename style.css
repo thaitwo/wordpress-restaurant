@@ -10,18 +10,54 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dojo
 Tags:
 */
-/*  ----  BASE  ----  */
-/*  ----  Structure  ----  */
-/*  ----  Measurements  ----  */
-/*  ----  Red  ----  */
-/*  ----  Green  ----  */
-/*  ----  Orange  ----  */
-/*  ----  Blue Grey  ----  */
-/*  ----  Gold  ----  */
-/*  ----  Black & White  ----  */
-/*  ----  Font Type  ----  */
-/*  ----  Font Size  ----  */
-/*  ----  Headings  ----  */
+/*
+** BASE
+**
+*/
+/*
+** Structure
+**
+*/
+/*
+** Measurements
+**
+*/
+/*
+** Red
+**
+*/
+/*
+** Green
+**
+*/
+/*
+** Orange
+**
+*/
+/*
+** Blue Grey
+**
+*/
+/*
+** Gold
+**
+*/
+/*
+** Black & White
+**
+*/
+/*
+** Font Type
+**
+*/
+/*
+** Font Size
+**
+*/
+/*
+** Headings
+**
+*/
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
@@ -36,7 +72,10 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-/*  ----  Copy  ----  */
+/*
+** Copy
+**
+*/
 p {
   margin-bottom: 1.5em; }
 
@@ -345,7 +384,10 @@ td,
 th {
   padding: 0; }
 
-/*  ----  LAYOUT  ----  */
+/*
+** LAYOUT
+**
+*/
 .main-page {
   width: 1200px;
   margin: 0 auto; }
@@ -526,7 +568,10 @@ th {
   padding-right: 80px;
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif; }
 
-/*  ----  MODULE  ----  */
+/*
+** MODULE
+**
+*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -889,7 +934,10 @@ textarea {
   .widget select {
     max-width: 100%; }
 
-/*  ----  MEDIA  ----  */
+/*
+** MEDIA
+**
+*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -904,9 +952,7 @@ iframe,
 object {
   max-width: 100%; }
 
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
+/*  ----  CAPTIONS  ----  */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -920,9 +966,7 @@ object {
 .wp-caption-text {
   text-align: center; }
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
+/*  ----  GALLERIES  ----  */
 .gallery {
   margin-bottom: 1.5em; }
 
@@ -951,7 +995,10 @@ object {
 .gallery-caption {
   display: block; }
 
-/*  ----  MEDIA  ----  */
+/*
+** MEDIA
+**
+**/
 .reservation-ot-title {
   font-weight: 500;
   color: #DAB075;

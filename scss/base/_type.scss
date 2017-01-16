@@ -1,4 +1,7 @@
-/*  ----  Font Type  ----  */
+/*
+** Font Type
+**
+*/
 
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -10,7 +13,10 @@ $font_body: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
 
 
 
-/*  ----  Font Size  ----  */
+/*
+** Font Size
+**
+*/
 
 $font-x-large: 64px;
 $font-large: 56px;
@@ -20,7 +26,10 @@ $font-standard: 16px;
 
 
 
-/*  ----  Headings  ----  */
+/*
+** Headings
+**
+*/
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -39,7 +48,10 @@ textarea {
 
 
 
-/*  ----  Copy  ----  */
+/*
+** Copy
+**
+*/
 
 p {
 	margin-bottom: 1.5em;
