@@ -2,60 +2,58 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 0px;
+    border-radius: 3px;
+    background: $color-gold;
+    color: $color-white;
+    @include font-size(0.75);
+    line-height: 1;
+    padding: 12px 30px;
+    font-size: $font-standard;
+    transition: all .4s;
 
-	&:hover {
-		border-color: $color__border-button-hover;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
+    &:hover {
+        background: $color-gold-darker;
+        border-color: $color__border-button-hover;
+    }
 
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
+    &:active,
+    &:focus {
+        border-color: $color__border-button-focus;
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .button {
-	font-family: "Raleway", sans-serif;
-	font-size: 14px;
-	margin: auto;
-	padding: 12px 30px;
-	text-decoration: none;
-	display: inline-block;
-	border-radius: 3px;
-	letter-spacing: 2px;
-	transition: all .4s;
+    font-size: 14px;
+    margin: auto;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    transition: all .4s;
 
-	&.button-primary {
-		color: $color-white;
-		border: 1px solid $color-white;
-		margin-top: 25px;
+    &.button-primary {
+        color: $color-white;
+        border: 1px solid $color-white;
+        margin-top: 25px;
 
-		&:hover {
-			background: $color-white;
-			border: 1px solid $color-white;
-			color: $color-black;
-		}
-	}
+        &:hover {
+            background: $color-white;
+            border: 1px solid $color-white;
+            color: $color-black;
+        }
+    }
 
-	&.button-secondary {
-		background: $color__background-button;
-		color: $color-white;
+    &.button-secondary {
+        background: $color__background-button;
+        color: $color-white;
 
-		&:hover {
-			background: $color_gold_darker;
-			transition: .4s all;
-			color: $color-white;
-		}
-	}
+        &:hover {
+            background: $color-gold-darker;
+            transition: .4s all;
+            color: $color-white;
+        }
+    }
 }

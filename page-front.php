@@ -1,7 +1,7 @@
 <?php
 /*
 
-Template Name: Front Page Template
+Template Name: Front Template
 
 */
 
