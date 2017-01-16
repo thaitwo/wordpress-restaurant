@@ -930,6 +930,25 @@ textarea {
   text-align: right;
   width: 50%; }
 
+.testimonial-column-container {
+  width: 46%; }
+
+.testimonial-container {
+  position: relative;
+  margin-bottom: 40px; }
+
+.testimonial-quotes {
+  margin-bottom: 10px; }
+  .testimonial-quotes.has-image {
+    background: url("../dojo/assets/quotes.png") no-repeat;
+    background-size: 48px 48px;
+    padding: 25px 0 0 10px; }
+
+.testimonial-name {
+  letter-spacing: 1px;
+  padding-left: 10px;
+  margin: 0; }
+
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
