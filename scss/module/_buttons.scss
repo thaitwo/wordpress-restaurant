@@ -4,8 +4,8 @@ input[type="reset"],
 input[type="submit"] {
 	border: 0px;
 	border-radius: 3px;
-	background: $color_gold;
-	color: $color_white;
+	background: $color-gold;
+	color: $color-white;
 	@include font-size(0.75);
 	line-height: 1;
 	padding: 12px 30px;
@@ -13,7 +13,7 @@ input[type="submit"] {
 	transition: all .4s;
 
 	&:hover {
-		background: $color_gold_darker;
+		background: $color-gold-darker;
 		border-color: $color__border-button-hover;
 	}
 
@@ -25,7 +25,6 @@ input[type="submit"] {
 }
 
 .button {
-	font-family: "Raleway", sans-serif;
 	font-size: 14px;
 	margin: auto;
 	padding: 12px 30px;
@@ -36,25 +35,25 @@ input[type="submit"] {
 	transition: all .4s;
 
 	&.button-primary {
-		color: $color_white;
-		border: 1px solid $color_white;
+		color: $color-white;
+		border: 1px solid $color-white;
 		margin-top: 25px;
 
 		&:hover {
-			background: $color_white;
-			border: 1px solid $color_white;
-			color: $color_black;
+			background: $color-white;
+			border: 1px solid $color-white;
+			color: $color-black;
 		}
 	}
 
 	&.button-secondary {
 		background: $color__background-button;
-		color: $color_white;
+		color: $color-white;
 
 		&:hover {
-			background: $color_gold_darker;
+			background: $color-gold-darker;
 			transition: .4s all;
-			color: $color_white;
+			color: $color-white;
 		}
 	}
 }
