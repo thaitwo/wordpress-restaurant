@@ -351,7 +351,7 @@ th {
   margin: 0 auto; }
 
 .entry-content {
-  margin: 60px; }
+  margin: 0; }
 
 .l-left {
   float: left; }
@@ -953,15 +953,13 @@ object {
 
 /*  ----  MEDIA  ----  */
 .reservation-ot-title {
-  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: #DAB075;
-  margin: 0 auto 30px;
+  margin: 60px auto 30px;
   letter-spacing: 2px;
   text-align: center; }
 
 .reservation-ot-description {
-  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 60px; }
 
@@ -985,6 +983,8 @@ object {
   text-transform: uppercase;
   border-color: #DAB075 !important;
   transition: all .5s !important; }
+  .ot-button:focus {
+    background-color: #C79C5F !important; }
 
 .ot-dtp-picker .ot-dtp-picker-button {
   box-shadow: 0 0 0 1px #DAB075 !important; }

@@ -1,14 +1,12 @@
 .reservation-ot-title {
-	font-family: $font_body;
 	font-weight: 500;
 	color: $color_gold;
-	margin: 0 auto 30px;
+	margin: 60px auto 30px;
 	letter-spacing: 2px;
 	text-align: center;
 }
 
 .reservation-ot-description {
-	font-family: $font_body;
 	text-align: center;
 	margin-bottom: 60px;
 }
@@ -38,6 +36,10 @@
 	text-transform: uppercase;
 	border-color: $color_gold !important;
 	transition: all .5s !important;
+
+	&:focus {
+		background-color: $color-gold-darker !important;
+	}
 }
 
 .ot-dtp-picker .ot-dtp-picker-button {
