@@ -75,6 +75,10 @@
 	height: 400px;
 	text-align: center;
 	margin: auto;
+
+	&.has-vert-margin {
+		margin: 60px 0;
+	}
 }
 
 .section-divider-text {

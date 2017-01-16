@@ -15,13 +15,11 @@
 
             <div class="entry-content">
 
-                <div class="contact-container">
-                    <?php
-                        the_content();
-                    ?>
+                <?php
+                    the_content();
+                ?>
 
-                    <div class="section-image is-rounded l-right" style="background: url( <?php echo the_field('contact_image'); ?>); background-size: cover;"></div>
-                </div>
+                <div class="section-image is-rounded l-right" style="background: url( <?php echo the_field('contact_image'); ?>); background-size: cover;"></div>
 
                 <?php
                     wp_link_pages( array(

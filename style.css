@@ -393,7 +393,7 @@ th {
   margin: 0 auto; }
 
 .entry-content {
-  margin: 0; }
+  margin: 60px auto; }
 
 .l-left {
   float: left; }
@@ -489,6 +489,8 @@ th {
   height: 400px;
   text-align: center;
   margin: auto; }
+  .section-divider.has-vert-margin {
+    margin: 60px 0; }
 
 .section-divider-text {
   margin: auto; }
@@ -527,7 +529,7 @@ th {
   padding-bottom: 5px; }
 
 .menu-section {
-  margin: 60px auto 30px; }
+  margin: 0; }
 
 .menu-list-container {
   margin-top: 25px;
@@ -1002,7 +1004,7 @@ object {
 .reservation-ot-title {
   font-weight: 500;
   color: #DAB075;
-  margin: 60px auto 30px;
+  margin: 0 auto 30px;
   letter-spacing: 2px;
   text-align: center; }
 
