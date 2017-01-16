@@ -6,7 +6,7 @@ div.wpcf7 {
 }
 
 div.wpcf7-response-output {
-	padding: 0.2em 1em;
+	padding: 8px 15px !important;
 }
 
 div.wpcf7 .screen-reader-response {
@@ -21,8 +21,9 @@ div.wpcf7 .screen-reader-response {
 }
 
 div.wpcf7-mail-sent-ok {
-	color: $color_green_600;
-	border: 2px solid $color_green_600 !important;
+	background-color: $color-green-600 !important;
+	color: $color-white !important;
+	border-radius: 3px !important;
 }
 
 div.wpcf7-mail-sent-ng {
@@ -34,9 +35,9 @@ div.wpcf7-spam-blocked {
 }
 
 div.wpcf7-validation-errors {
-	color: $color_red_600 !important;
-	border: 2px solid $color_red_600 !important;
-	border-radius: 3px;
+	background-color: $color-red-600 !important;
+	color: $color-white !important;
+	border-radius: 3px !important;
 }
 
 .wpcf7-form-control-wrap {

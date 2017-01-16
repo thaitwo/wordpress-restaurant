@@ -9,7 +9,7 @@ input[type="submit"] {
 	@include font-size(0.75);
 	line-height: 1;
 	padding: 12px 30px;
-	font-size: $font_size_body;
+	font-size: $font-standard;
 	transition: all .4s;
 
 	&:hover {

@@ -1,6 +1,10 @@
 .main-page {
-	width: 1200px;
-	margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.entry-content {
+    margin: 20px 0;
 }
 
 .l-left {
@@ -12,77 +16,49 @@
 }
 
 .l-flex {
-	display: flex;
+    display: flex;
 
-	&.is-hori {
-		flex-direction: row;
-	}
+    &.is-hori {
+        flex-direction: row;
+    }
 
-	&.is-hori-rev {
-		flex-direction: row-reverse;
-	}
+    &.is-hori-rev {
+        flex-direction: row-reverse;
+    }
 
-	&.is-vert {
-		flex-direction: column;
-	}
+    &.is-vert {
+        flex-direction: column;
+    }
 
-	&.is-vert-rev {
-		flex-direction: column-reverse;
-	}
+    &.is-vert-rev {
+        flex-direction: column-reverse;
+    }
 
-	&.align-hori-center {
-		justify-content: center;
-	}
+    &.align-hori-left {
+        justify-content: left;
+    }
 
-	&.align-vert-center {
-		align-items: center;
-	}
+    &.align-hori-center {
+        justify-content: center;
+    }
 
-	&.align-vert-flex-start {
-	align-items: flex-start;
-	}
+    &.align-vert-center {
+        align-items: center;
+    }
 
-	&.align-hori-space-between {
-		justify-content: space-between;
-	}
+    &.align-vert-flex-start {
+        align-items: flex-start;
+    }
 
-	&.flex-wrap {
-		flex-wrap: wrap;
-	}
+    &.align-hori-space-between {
+        justify-content: space-between;
+    }
+
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
 }
 
 .is-rounded {
     border-radius: 3px;
-}
-
-$grid: '.grid' !default;
-$grid-column: '.col' !default;
-$grid-width: 80px;
-$grid-margin: 0 10px 10px;
-
-#{$grid} {
-	width: 1200px;
-	margin: 80px auto 30px;
-	box-sizing: border-box;
-
-	&:after {
-	    content: "";
-	    display: table;
-	    clear: both;
-	  }
-
-	@for $i from 1 through 12 {
-	    $width: $grid-width;
-
-	    @if($i > 1) {
-	      $num: $i - 1;
-	      $width: $grid-width * $i + ($num * 20); // Account for margins on additional columns
-	    }
-
-	    #{$grid-column}-#{$i} {
-	      width: $width;
-	      margin: $grid-margin;
-	      float: left;
-	    }
-  	}
 }
