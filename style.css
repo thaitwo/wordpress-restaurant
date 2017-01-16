@@ -1064,9 +1064,11 @@ object {
   height: 50px !important; }
 
 .ot-dtp-picker.wide .ot-powered-by {
-  background: url(../dojo/assets/open-table.png) center no-repeat !important;
+  background: url(../dojo/assets/powered-ot-grey.png) center no-repeat !important;
+  background-size: 200px !important;
   background-position: center !important;
-  margin-top: 40px !important; }
+  margin-top: 40px !important;
+  height: 40px !important; }
 
 .contact-container {
   margin-top: 80px; }
