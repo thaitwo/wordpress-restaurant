@@ -351,7 +351,7 @@ th {
   margin: 0 auto; }
 
 .entry-content {
-  margin: 0; }
+  margin: 60px; }
 
 .l-left {
   float: left; }
@@ -952,6 +952,54 @@ object {
   display: block; }
 
 /*  ----  MEDIA  ----  */
+.reservation-ot-title {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #DAB075;
+  margin: 0 auto 30px;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.reservation-ot-description {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 60px; }
+
+.ot-title {
+  display: none !important; }
+
+.ot-dtp-picker {
+  padding: 0 !important; }
+  .ot-dtp-picker.wide {
+    width: 50.5rem;
+    background: 0 0;
+    margin: auto; }
+
+.picker__box {
+  padding: 1rem;
+  box-sizing: content-box; }
+
+.ot-button {
+  background-color: #DAB075;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif !important;
+  text-transform: uppercase;
+  border-color: #DAB075 !important;
+  transition: all .5s !important; }
+
+.ot-dtp-picker .ot-dtp-picker-button {
+  box-shadow: 0 0 0 1px #DAB075 !important; }
+  .ot-dtp-picker .ot-dtp-picker-button:hover {
+    box-shadow: 0 0 0 1px #C79C5F !important; }
+
+.ot-dtp-picker.wide .ot-dtp-picker-form {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  height: 50px !important; }
+
+.ot-dtp-picker.wide .ot-powered-by {
+  background: url(../dojo/assets/open-table.png) center no-repeat !important;
+  background-position: center !important;
+  margin-top: 40px !important; }
+
 .contact-container {
   margin-top: 80px; }
 
