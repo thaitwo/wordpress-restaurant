@@ -19,14 +19,8 @@
                     the_content();
                 ?>
 
-                <div class="section-image is-rounded l-right" style="background: url( <?php echo the_field('contact_image'); ?>); background-size: cover;"></div>
+                <div class="contact-image is-rounded l-right" style="background: url( <?php echo the_field('contact_image'); ?>); background-size: cover;"></div>
 
-                <?php
-                    wp_link_pages( array(
-                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dojo' ),
-                        'after'  => '</div>',
-                    ) );
-                ?>
             </div><!-- .entry-content -->
 
             <?php if ( get_edit_post_link() ) : ?>
