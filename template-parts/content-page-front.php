@@ -67,7 +67,7 @@
 
         <div class="section-divider full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_field('section_1_divider_bg_img'); ?>) fixed; background-size: cover;">
             <div class="section-divider-text">
-                <div class="section-divider-subtitle">
+                <h2 class="section-divider-subtitle">
                     <?php $section_subtitle = get_field( 'section_1_divider_subtitle' );
                         if ($section_subtitle) {
                             echo $section_subtitle;
@@ -76,7 +76,7 @@
                             echo "Welcome";
                         }
                     ?>
-                </div>
+                </h2>
                 <div class="section-divider-title">
                     <?php $section_title = get_field( 'section_1_divider_title' );
                         if ($section_title) {

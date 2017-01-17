@@ -52,7 +52,7 @@
 		<?php
 		$header_subtitle = get_field( 'header_page_subtitle' );
 		if ($header_subtitle) : ?>
-			<div class="header-subtitle"><?php echo $header_subtitle ?></div>
+			<h2 class="header-subtitle"><?php echo $header_subtitle ?></h2>
 		<?php
 		endif; ?>
 

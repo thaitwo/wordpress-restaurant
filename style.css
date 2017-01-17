@@ -250,7 +250,7 @@ template {
   display: none; }
 
 a {
-  background-color: transparent; }
+  background-color: inherit; }
 
 a:active,
 a:hover {
@@ -441,8 +441,8 @@ th {
 .section-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
+  font-weight: lighter;
   margin: 0;
-  color: #DAB075;
   text-align: center; }
 
 .section-title {
@@ -498,7 +498,8 @@ th {
 .section-divider-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
-  color: #DAB075; }
+  font-weight: lighter;
+  margin: 0; }
 
 .section-divider-title {
   font-family: "Raleway", sans-serif;
@@ -522,7 +523,6 @@ th {
 
 .menu-category {
   margin: 0 0 30px;
-  color: #DAB075;
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   border-bottom: 1px #ECEFF1 solid;
@@ -765,7 +765,8 @@ textarea {
 .header-subtitle {
   font-family: "Great Vibes", cursive;
   font-size: 64px;
-  color: #DAB075;
+  font-weight: lighter;
+  margin: 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -788,8 +789,9 @@ textarea {
 .header-subtitle-front {
   font-family: "Great Vibes", cursive;
   font-size: 72px;
+  font-weight: lighter;
   line-height: 55px;
-  color: #DAB075;
+  margin: 0;
   margin-top: -60px; }
 
 .header-title-front {
@@ -899,8 +901,6 @@ textarea {
     padding: 0 20px;
     color: #ffffff;
     transition: 0.4s all; }
-    .main-navigation a:hover {
-      color: #DAB075; }
 
 /* Small menu. */
 .menu-toggle,
