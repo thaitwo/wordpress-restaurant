@@ -395,6 +395,9 @@ th {
 .entry-content {
   margin: 80px auto; }
 
+.column-container {
+  width: 46%; }
+
 .l-left {
   float: left; }
 
@@ -753,6 +756,10 @@ select {
 
 textarea {
   height: 254px; }
+
+.contact-image {
+  width: 550px;
+  height: 384px; }
 
 .header-area-front {
   color: #ffffff;
