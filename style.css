@@ -250,7 +250,7 @@ template {
   display: none; }
 
 a {
-  background-color: inherit; }
+  background-color: transparent; }
 
 a:active,
 a:hover {
