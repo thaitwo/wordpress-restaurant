@@ -1,6 +1,5 @@
 .menu-category {
     margin: 0 0 ($unit * 6);
-    font-family: $font_body;
     letter-spacing: 1px;
     border-bottom: 1px $color-bluegrey-50 solid;
     padding-bottom: $unit;
@@ -31,7 +30,6 @@
     font-size: $font-small;
     padding-right: $unit * 16;
     display: inline-block;
-    font-family: $font_body;
     font-weight: 600;
 }
 
@@ -42,7 +40,6 @@
     font-weight: 300;
     float: right;
     font-style: italic;
-    font-family: $font_body;
     position: absolute;
     top: 0;
     right: 0;
@@ -53,5 +50,4 @@
     margin: 0;
     font-size: $font-standard;
     padding-right: $unit * 16;
-    font-family: $font_body;
 }
