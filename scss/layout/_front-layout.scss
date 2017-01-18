@@ -40,6 +40,8 @@
 .section-image {
     width: 100%;
     height: 384px;
+    outline: 1px solid $color-white;
+    outline-offset: -20px;
 }
 
 .front-column-container {

@@ -38,6 +38,8 @@ textarea {
 }
 
 .contact-image {
-    width: 550px;
+    width: 552px;
     height: 384px;
+    outline: 1px solid $color-white;
+    outline-offset: -20px;
 }
