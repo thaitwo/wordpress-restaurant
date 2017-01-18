@@ -34,7 +34,7 @@
                             if ($section_image): ?>
                                 <div class="section-divider has-vert-margin full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url( <?php echo $section_image; ?>) fixed; background-size: cover;">
                                     <div class="section-divider-text">
-                                        <div class="section-divider-subtitle">
+                                        <h2 class="section-divider-subtitle">
                                             <?php
                                                 if ($section_image_subtitle) {
                                                     echo $section_image_subtitle;
@@ -43,7 +43,7 @@
                                                     echo " ";
                                                 }
                                             ?>
-                                        </div>
+                                        </h2>
                                         <div class="section-divider-title">
                                             <?php
                                                 if ($section_image_title) {

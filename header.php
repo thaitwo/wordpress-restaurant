@@ -52,11 +52,11 @@
         <?php
         $header_subtitle = get_field('header_subtitle');
         if ($header_subtitle) : ?>
-            <div class="header-subtitle"><?php echo $header_subtitle ?></div>
+            <h2 class="header-subtitle"><?php echo $header_subtitle ?></h2>
         <?php
         endif; ?>
 
-        <div class="header-title">
+        <h2 class="header-title">
             <?php
             $header_title = get_field('header_title');
             $page_title = get_the_title();
@@ -67,7 +67,7 @@
                 echo $page_title;
             }
             ?>
-        </div>
+        </h2>
 
         <?php
         $header_stars = get_field('header_stars');
