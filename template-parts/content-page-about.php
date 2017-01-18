@@ -21,6 +21,7 @@
             $testimonial_section_image = get_field('testimonial_section_image');
             $testimonial_section_subtitle = get_field('testimonial_section_subtitle');
             $testimonial_section_title = get_field('testimonial_section_title');
+            $testimonials_stars = get_field('testimonials_stars');
 
             // image divider
             if ($testimonial_section_image): ?>
@@ -46,7 +47,14 @@
                                 }
                             ?>
                         </div>
-                        <img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
+
+
+                        <?php
+                        if ($testimonials_stars === true) : ?>
+                        <img class="stars-front" src="../wp-content/themes/dojo/assets/stars.png">
+                        <?php
+                        endif; ?>
+
                     </div>
                 </div>
             <?php

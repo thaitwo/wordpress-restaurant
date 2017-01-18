@@ -18,12 +18,12 @@
 }
 
 .header-title {
-    font-family: "Raleway", sans-serif;
     font-size: 64px;
     font-weight: 800;
-    color: white;
+    color: $color-white;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin: 0;
     margin-top: 50px;
     text-align: center;
 }

@@ -26,7 +26,7 @@
                             $section_image = get_sub_field('section_image');
                             $section_image_subtitle = get_sub_field('section_image_subtitle');
                             $section_image_title = get_sub_field('section_image_title');
-                            $stars = get_sub_field('stars');
+                            $menu_divider_stars = get_sub_field('menu_divider_stars');
 
                             ?>
 
@@ -54,7 +54,13 @@
                                                 }
                                             ?>
                                         </div>
-                                        <img src="../wp-content/themes/dojo/assets/stars.png" class="stars-front">
+
+                                        <?php
+                                        if ($menu_divider_stars === true) : ?>
+                                        <img class="stars-front" src="../wp-content/themes/dojo/assets/stars.png">
+                                        <?php
+                                        endif; ?>
+
                                     </div>
                                 </div>
                             <?php
@@ -113,7 +119,7 @@
                                                                 </p>
 
                                                                 <p class="menu-list-item-price">
-                                                                    <?php echo $menu_item_price_l; ?>
+                                                                    <?php echo "$" . $menu_item_price_l; ?>
                                                                 </p>
 
                                                                 <p class="menu-list-item-des">
@@ -189,7 +195,7 @@
                                                                 </p>
 
                                                                 <p class="menu-list-item-price">
-                                                                    <?php echo $menu_item_price_r; ?>
+                                                                    <?php echo "$" . $menu_item_price_r; ?>
                                                                 </p>
 
                                                                 <p class="menu-list-item-des">
