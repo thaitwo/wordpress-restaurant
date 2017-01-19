@@ -2,6 +2,16 @@
 	margin-top: 40px;
 }
 
+.footer-title {
+	color: $color-white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $color-bluegrey-800;
+	margin: 20px 350px;
+}
+
 .edit-link {
 }
 
@@ -14,8 +24,20 @@
 	transition: all .4s;
 
 	&:hover {
-		color: $color-white;
 		background: $color_gold_darker;
-
+		color: $color-white;
 	}
+}
+
+.footer-area {
+    background: $color-bluegrey-900;
+}
+
+.site-info {
+	color: $color-bluegrey-700;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
 }
