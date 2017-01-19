@@ -17,15 +17,13 @@
 
     <div class="footer-area full">
         <div class="main-page">
-            <footer id="colophon" class="site-footer inner" role="contentinfo">
+            <footer id="colophon" class="site-footer inner l-center" role="contentinfo">
 
                 <h1 class="footer-title">
                     <?php echo bloginfo('name'); ?>
                 </h1>
 
-
-
-
+                <i class="material-icons md-36 md-light l-center">location_on</i>
 
                 <?php
                 /* The footer widget area is triggered if any of the areas
@@ -49,13 +47,6 @@
                 <?php
                 //end of all sidebar checks.
                 endif;?>
-
-
-                <img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
-
-
-
-
 
                 <div class="site-info">
                     <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'dojo' ), 'DOJO', '2017' ); ?>

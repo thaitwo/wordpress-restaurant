@@ -212,6 +212,38 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+/*
+** Sizing
+**
+*/
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+/*
+** Coloring
+**
+*/
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light {
+  color: white; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -398,12 +430,23 @@ th {
 .column-container {
   width: 46%; }
 
+/*
+** Positioning
+**
+*/
+.l-center {
+  text-align: center; }
+
 .l-left {
   float: left; }
 
 .l-right {
   float: right; }
 
+/*
+** Flebox
+**
+*/
 .l-flex {
   display: flex; }
   .l-flex.is-hori {
@@ -836,7 +879,6 @@ textarea {
 .footer-title {
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
   letter-spacing: 1px;
   padding-bottom: 30px;
   border-bottom: 1px solid #37474F;
@@ -850,18 +892,19 @@ textarea {
   border-radius: 2px;
   transition: all .4s; }
   .post-edit-link:hover {
-    color: #ffffff;
-    background: #C79C5F; }
+    background: #C79C5F;
+    color: #ffffff; }
 
 .footer-area {
   background: #263238; }
 
 .site-info {
+  color: #455A64;
   text-align: center;
   font-size: 12px;
   margin-top: 30px;
   margin-bottom: 20px;
-  color: white; }
+  letter-spacing: 2px; }
 
 .site-branding {
   float: left;
@@ -974,9 +1017,6 @@ textarea {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
-
-.fatfooter {
-  margin-top: 30px; }
 
 .widget-area {
   color: white;

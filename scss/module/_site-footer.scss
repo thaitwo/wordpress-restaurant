@@ -5,7 +5,6 @@
 .footer-title {
 	text-align: center;
 	text-transform: uppercase;
-	color: $color-white;
 	letter-spacing: 1px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid $color-bluegrey-800;
@@ -24,20 +23,20 @@
 	transition: all .4s;
 
 	&:hover {
-		color: $color-white;
 		background: $color_gold_darker;
-
+		color: $color-white;
 	}
 }
 
 .footer-area {
-    background: #263238;
+    background: $color-bluegrey-900;
 }
 
 .site-info {
+	color: $color-bluegrey-700;
 	text-align: center;
 	font-size: 12px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	color: white;
+	letter-spacing: 2px;
 }

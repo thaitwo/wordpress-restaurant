@@ -11,6 +11,16 @@
     width: 46%;
 }
 
+
+/*
+** Positioning
+**
+*/
+
+.l-center {
+    text-align: center;
+}
+
 .l-left {
     float: left;
 }
@@ -18,6 +28,12 @@
 .l-right {
     float: right;
 }
+
+
+/*
+** Flebox
+**
+*/
 
 .l-flex {
     display: flex;
