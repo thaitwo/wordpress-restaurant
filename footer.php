@@ -23,7 +23,7 @@
                     <?php echo bloginfo('name'); ?>
                 </h1>
 
-                <i class="material-icons md-36 md-light l-center">location_on</i>
+                <i class="material-icons md-36 md-gold">location_on</i>
 
                 <?php
                 /* The footer widget area is triggered if any of the areas

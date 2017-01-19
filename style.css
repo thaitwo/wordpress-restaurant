@@ -218,13 +218,10 @@ a {
 */
 .material-icons.md-18 {
   font-size: 18px; }
-
 .material-icons.md-24 {
   font-size: 24px; }
-
 .material-icons.md-36 {
   font-size: 36px; }
-
 .material-icons.md-48 {
   font-size: 48px; }
 
@@ -234,15 +231,14 @@ a {
 */
 .material-icons.md-dark {
   color: rgba(0, 0, 0, 0.54); }
-
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26); }
-
+  .material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26); }
 .material-icons.md-light {
   color: white; }
-
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3); }
+  .material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-gold {
+  color: #DAB075; }
 
 html {
   font-family: sans-serif;
@@ -877,12 +873,13 @@ textarea {
   margin-top: 40px; }
 
 .footer-title {
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 30px;
   border-bottom: 1px solid #37474F;
-  margin: 20px 250px; }
+  margin: 20px 350px; }
 
 .post-edit-link {
   background: #DAB075;
