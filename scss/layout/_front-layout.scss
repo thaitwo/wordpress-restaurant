@@ -99,10 +99,9 @@
     color: $color-white;
 }
 
-.stars-front {
-    display: block;
-    width: 112px;
-    margin: 0 auto;
+.stars {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .img-right {

@@ -57,7 +57,11 @@
 
                                         <?php
                                         if ($menu_divider_stars === true) : ?>
-                                        <img class="stars-front" src="../wp-content/themes/dojo/assets/stars.png">
+                                            <div class="l-center">
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                            </div>
                                         <?php
                                         endif; ?>
 
