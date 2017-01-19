@@ -218,6 +218,8 @@ a {
 */
 .material-icons.md-18 {
   font-size: 18px; }
+.material-icons.md-20 {
+  font-size: 20px; }
 .material-icons.md-24 {
   font-size: 24px; }
 .material-icons.md-36 {
@@ -550,10 +552,9 @@ th {
   margin-top: -45px;
   color: #ffffff; }
 
-.stars-front {
-  display: block;
-  width: 112px;
-  margin: 0 auto; }
+.stars {
+  display: inline-block;
+  margin: 0 10px; }
 
 .img-right {
   float: right;

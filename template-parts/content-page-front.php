@@ -67,7 +67,11 @@
 
                                     <?php
                                     if ($front_page_divider_stars === true) : ?>
-                                    <img class="stars-front" src="wp-content/themes/dojo/assets/stars.png">
+                                        <div>
+                                            <i class="stars material-icons md-20 md-gold">star</i>
+                                            <i class="stars material-icons md-20 md-gold">star</i>
+                                            <i class="stars material-icons md-20 md-gold">star</i>
+                                        </div>
                                     <?php
                                     endif; ?>
                                 </div>
@@ -99,7 +103,11 @@
 
                                         <?php
                                         if ($front_page_stars === true) : ?>
-                                        <img class="stars-front" src="wp-content/themes/dojo/assets/stars.png">
+                                            <div class="l-center">
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                            </div>
                                         <?php
                                         endif; ?>
 

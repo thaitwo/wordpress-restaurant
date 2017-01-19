@@ -68,7 +68,11 @@
             <?php
             $header_front_stars = get_field('header_front_stars');
             if ($header_front_stars === true) : ?>
-                <img src="wp-content/themes/dojo/assets/stars.png" class="stars-front">
+                <div class="l-center">
+                    <i class="stars material-icons md-20 md-gold">star</i>
+                    <i class="stars material-icons md-20 md-gold">star</i>
+                    <i class="stars material-icons md-20 md-gold">star</i>
+                </div>
             <?php
             endif; ?>
 
