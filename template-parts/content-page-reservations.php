@@ -15,7 +15,9 @@
 
 		<?php the_content(); ?>
 
-		<h1 class="reservation-ot-title"><?php echo the_field('ot_title') ?></h1>
+		<?php $primary_color = get_theme_mod('primary_color', '#DAB075'); ?>
+
+		<h1 class="reservation-ot-title" style="color: <?php echo $primary_color ?>;"><?php echo the_field('ot_title') ?></h1>
 
 		<p class="reservation-ot-description"><?php echo the_field('ot_description') ?></p>
 

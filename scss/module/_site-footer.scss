@@ -12,23 +12,6 @@
 	text-transform: uppercase;
 }
 
-.edit-link {
-}
-
-.post-edit-link {
-	background: $color__background-button;
-	border-radius: 2px;
-	color: $color-white;
-	padding: 5px 15px;
-	text-decoration: none;
-	transition: all .4s;
-
-	&:hover {
-		background: $color_gold_darker;
-		color: $color-white;
-	}
-}
-
 .footer-area {
     background: $color-bluegrey-900;
 }

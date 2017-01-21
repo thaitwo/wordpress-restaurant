@@ -22,12 +22,13 @@
             $testimonial_section_subtitle = get_field('testimonial_section_subtitle');
             $testimonial_section_title = get_field('testimonial_section_title');
             $testimonials_stars = get_field('testimonials_stars');
+            $primary_color = get_theme_mod('primary_color', '#DAB075');
 
             // image divider
             if ($testimonial_section_image): ?>
                 <div class="section-divider has-vert-margin full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url( <?php echo $testimonial_section_image; ?>) fixed; background-size: cover;">
                     <div class="section-divider-text">
-                        <h2 class="section-divider-subtitle">
+                        <h2 class="section-divider-subtitle" style="color: <?php echo $primary_color ?>;">
                             <?php
                                 if ($testimonial_section_subtitle) {
                                     echo $testimonial_section_subtitle;
@@ -52,9 +53,9 @@
                         <?php
                         if ($testimonials_stars === true) : ?>
                             <div class="l-center">
-                                <i class="stars material-icons md-20 md-gold">star</i>
-                                <i class="stars material-icons md-20 md-gold">star</i>
-                                <i class="stars material-icons md-20 md-gold">star</i>
+                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                             </div>
                         <?php
                         endif; ?>
@@ -82,7 +83,7 @@
                                         <?php echo $testimonial_left; ?>
                                     </p>
 
-                                    <h3 class="testimonial-name">
+                                    <h3 class="testimonial-name" style="color: <?php echo $primary_color ?>;">
                                         <?php echo $testimonial_name_left; ?>
                                     </h3>
                                 </div>
@@ -109,7 +110,7 @@
                                         <?php echo $testimonial_right; ?>
                                     </p>
 
-                                    <h3 class="testimonial-name">
+                                    <h3 class="testimonial-name" style="color: <?php echo $primary_color ?>;">
                                         <?php echo $testimonial_name_right; ?>
                                     </h3>
                                 </div>

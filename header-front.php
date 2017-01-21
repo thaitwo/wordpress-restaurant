@@ -43,35 +43,40 @@
         </div>
 
         <div class="front-header">
-            <h1 class="header-front-subtitle">
-                <?php $header_front_subtitle = get_field('header_front_subtitle');
-                    if ($header_front_subtitle) {
-                        echo $header_front_subtitle;
-                    }
-                    else {
-                        echo "Welcome";
-                    }
-                ?>
-            </h1>
+
+            <?php
+            $header_front_subtitle = get_field('header_front_subtitle');
+            $primary_color = get_theme_mod('primary_color', '#DAB075');
+            if ($header_front_subtitle) { ?>
+                <h1 class="header-front-subtitle" style="color: <?php echo $primary_color ?>;">
+                <?php
+                echo $header_front_subtitle;
+            }
+            else {
+                echo "Welcome";
+            } ?>
+                </h1>
 
             <div class="header-front-title">
-                <?php $header_front_title = get_field('header_front_title');
-                    if ($header_front_title) {
-                        echo $header_front_title;
-                    }
-                    else {
-                        echo bloginfo('name');
-                    }
+                <?php
+                $header_front_title = get_field('header_front_title');
+                if ($header_front_title) {
+                    echo $header_front_title;
+                }
+                else {
+                    echo bloginfo('name');
+                }
                 ?>
             </div>
 
             <?php
             $header_front_stars = get_field('header_front_stars');
+            $primary_color = get_theme_mod('primary_color', '#DAB075');
             if ($header_front_stars === true) : ?>
                 <div class="l-center">
-                    <i class="stars material-icons md-20 md-gold">star</i>
-                    <i class="stars material-icons md-20 md-gold">star</i>
-                    <i class="stars material-icons md-20 md-gold">star</i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                 </div>
             <?php
             endif; ?>

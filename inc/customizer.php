@@ -20,7 +20,7 @@ add_action( 'customize_register', 'dojo_customize_register' );
 
 
 /*
-** Theme Colors
+** THEME COLORS
 **
 */
 
@@ -29,6 +29,7 @@ function theme_colors( $wp_customize ) {
 	    'title'      => __('Theme Colors','dojo'),
 	    'priority'   => 30,
 	) );
+
 
    // primary color
 
@@ -43,6 +44,7 @@ function theme_colors( $wp_customize ) {
         'settings' => 'primary_color',
     ) ) );
 
+
    // secondary color
 
    $wp_customize->add_setting( 'secondary_color' , array(
@@ -55,6 +57,7 @@ function theme_colors( $wp_customize ) {
         'section'  => 'theme_colors',
         'settings' => 'secondary_color',
     ) ) );
+
 
    // tertiary color
 

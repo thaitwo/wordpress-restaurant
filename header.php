@@ -17,7 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 <?php wp_head(); ?>
 </head>
@@ -54,7 +53,7 @@
         <?php
         $header_subtitle = get_field('header_subtitle');
         if ($header_subtitle) : ?>
-            <h2 class="header-subtitle"><?php echo $header_subtitle ?></h2>
+            <h2 class="header-subtitle" style="color: <?php echo get_theme_mod('primary_color', '#DAB075'); ?>"><?php echo $header_subtitle ?></h2>
         <?php
         endif; ?>
 
@@ -73,15 +72,14 @@
 
         <?php
         $header_stars = get_field('header_stars');
+        $primary_color = get_theme_mod('primary_color', '#DAB075');
         if ($header_stars === true) : ?>
             <div class="l-center">
-                <i class="stars material-icons md-20 md-gold">star</i>
-                <i class="stars material-icons md-20 md-gold">star</i>
-                <i class="stars material-icons md-20 md-gold">star</i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
             </div>
         <?php
         endif; ?>
 
     </div>
-
-

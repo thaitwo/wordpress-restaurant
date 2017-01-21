@@ -10,7 +10,7 @@
 ?>
 
 <div class="main-content-area full">
-    <div class="hours-bar"></div>
+    <!-- <div class="hours-bar"></div> -->
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -35,6 +35,7 @@
                         $front_page_button_link = get_sub_field('front_page_button_link');
                         $front_page_image = get_sub_field('front_page_image');
                         $front_page_section_layout = get_sub_field('front_page_section_layout');
+                        $primary_color = get_theme_mod('primary_color', '#DAB075');
 
                         ?>
 
@@ -43,7 +44,7 @@
                         if ($front_page_divider_bg_image) : ?>
                             <div class="section-divider has-vert-margin-large full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url( <?php echo $front_page_divider_bg_image; ?>) fixed; background-size: cover;">
                                 <div class="section-divider-text">
-                                    <h2 class="section-divider-subtitle">
+                                    <h2 class="section-divider-subtitle" style="color: <?php echo $primary_color ?>;">
                                         <?php
                                         if ($front_page_divider_subtitle) {
                                             echo $front_page_divider_subtitle;
@@ -67,10 +68,10 @@
 
                                     <?php
                                     if ($front_page_divider_stars === true) : ?>
-                                        <div>
-                                            <i class="stars material-icons md-20 md-gold">star</i>
-                                            <i class="stars material-icons md-20 md-gold">star</i>
-                                            <i class="stars material-icons md-20 md-gold">star</i>
+                                        <div class="l-center">
+                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                                         </div>
                                     <?php
                                     endif; ?>
@@ -93,7 +94,7 @@
 
                                 <div class="front-column-container l-flex align-vert-center">
                                     <div class="front-content-container">
-                                        <h2 class="section-subtitle">
+                                        <h2 class="section-subtitle" style="color: <?php echo $primary_color ?>;">
                                             <?php echo $front_page_subtitle; ?>
                                         </h2>
 
@@ -104,9 +105,9 @@
                                         <?php
                                         if ($front_page_stars === true) : ?>
                                             <div class="l-center">
-                                                <i class="stars material-icons md-20 md-gold">star</i>
-                                                <i class="stars material-icons md-20 md-gold">star</i>
-                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                                             </div>
                                         <?php
                                         endif; ?>
@@ -117,7 +118,7 @@
 
                                         <?php
                                         if ($front_page_button) : ?>
-                                            <a class="button button-secondary" href="<?php echo $front_page_button_link; ?>">
+                                            <a class="button button-secondary" href="<?php echo $front_page_button_link; ?>" style="background-color: <?php echo $primary_color ?>;">
                                             <?php echo $front_page_button; ?>
                                             </a>
                                         <?php
