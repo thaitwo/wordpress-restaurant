@@ -23,7 +23,9 @@
                     <?php echo bloginfo('name'); ?>
                 </h1>
 
-                <i class="material-icons md-36 md-gold">location_on</i>
+                <?php $primary_color = get_theme_mod('primary_color', '#DAB075'); ?>
+
+                <i class="fa fa-map-marker fa-2x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
 
                 <?php
                 /* The footer widget area is triggered if any of the areas
@@ -48,7 +50,25 @@
                 //end of all sidebar checks.
                 endif;?>
 
-                <a href="<?php echo get_option('twitter_url') ?>"><i class="material-icons md-36 md-gold">location_on</i></a>
+                <a class="l-space" href="<?php echo get_option('facebook_url') ?>">
+                    <i class="fa fa-facebook fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+                <a class="l-space" href="<?php echo get_option('twitter_url') ?>">
+                    <i class="fa fa-twitter fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+                <a class="l-space" href="<?php echo get_option('instagram_url') ?>">
+                    <i class="fa fa-instagram fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+                <a class="l-space" href="<?php echo get_option('youtube_url') ?>">
+                    <i class="fa fa-youtube-play fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+                <a class="l-space" href="<?php echo get_option('linkedin_url') ?>">
+                    <i class="fa fa-linkedin fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+                <a class="l-space" href="<?php echo get_option('pinterest_url') ?>">
+                    <i class="fa fa-pinterest-p fa-1x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                </a>
+
 
                 <div class="site-info">
                     <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'dojo' ), 'DOJO', '2017' ); ?>
