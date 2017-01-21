@@ -218,12 +218,16 @@ a {
 */
 .material-icons.md-18 {
   font-size: 18px; }
+
 .material-icons.md-20 {
   font-size: 20px; }
+
 .material-icons.md-24 {
   font-size: 24px; }
+
 .material-icons.md-36 {
   font-size: 36px; }
+
 .material-icons.md-48 {
   font-size: 48px; }
 
@@ -235,10 +239,12 @@ a {
   color: rgba(0, 0, 0, 0.54); }
   .material-icons.md-dark.md-inactive {
     color: rgba(0, 0, 0, 0.26); }
+
 .material-icons.md-light {
   color: white; }
   .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3); }
+
 .material-icons.md-gold {
   color: #DAB075; }
 
@@ -874,20 +880,20 @@ textarea {
   margin-top: 40px; }
 
 .footer-title {
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 30px;
   border-bottom: 1px solid #37474F;
-  margin: 20px 350px; }
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 20px 350px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase; }
 
 .post-edit-link {
   background: #DAB075;
+  border-radius: 2px;
   color: #ffffff;
   padding: 5px 15px;
   text-decoration: none;
-  border-radius: 2px;
   transition: all .4s; }
   .post-edit-link:hover {
     background: #C79C5F;
@@ -898,11 +904,11 @@ textarea {
 
 .site-info {
   color: #455A64;
-  text-align: center;
   font-size: 12px;
+  letter-spacing: 2px;
   margin-top: 30px;
   margin-bottom: 20px;
-  letter-spacing: 2px; }
+  text-align: center; }
 
 .site-branding {
   float: left;
@@ -940,7 +946,8 @@ textarea {
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
@@ -971,19 +978,21 @@ textarea {
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none; }
-
   .main-navigation ul {
     display: block; } }
+
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
+
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1232,5 +1241,3 @@ div.wpcf7 input[type="file"] {
 
 div.wpcf7 input[type="file"]:disabled {
   cursor: default; }
-
-/*# sourceMappingURL=style.css.map */

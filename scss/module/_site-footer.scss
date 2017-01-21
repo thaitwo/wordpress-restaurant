@@ -3,13 +3,13 @@
 }
 
 .footer-title {
+	border-bottom: 1px solid $color-bluegrey-800;
 	color: $color-white;
+	letter-spacing: 1px;
+	margin: 20px 350px;
+	padding-bottom: 30px;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid $color-bluegrey-800;
-	margin: 20px 350px;
 }
 
 .edit-link {
@@ -17,10 +17,10 @@
 
 .post-edit-link {
 	background: $color__background-button;
+	border-radius: 2px;
 	color: $color-white;
 	padding: 5px 15px;
 	text-decoration: none;
-	border-radius: 2px;
 	transition: all .4s;
 
 	&:hover {
@@ -35,9 +35,9 @@
 
 .site-info {
 	color: $color-bluegrey-700;
-	text-align: center;
 	font-size: 12px;
+	letter-spacing: 2px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	letter-spacing: 2px;
+	text-align: center;
 }

@@ -48,6 +48,8 @@
                 //end of all sidebar checks.
                 endif;?>
 
+                <a href="<?php echo get_option('twitter_url') ?>"><i class="material-icons md-36 md-gold">location_on</i></a>
+
                 <div class="site-info">
                     <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'dojo' ), 'DOJO', '2017' ); ?>
                 </div><!-- .site-info -->

@@ -1,0 +1,24 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "description": "Wordpress Restaurant Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaitwo/wordpress-restaurant.git"
+  },
+  "author": "Thai Tu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaitwo/wordpress-restaurant/issues"
+  },
+  "homepage": "https://github.com/thaitwo/wordpress-restaurant#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
