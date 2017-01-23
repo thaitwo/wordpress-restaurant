@@ -19,13 +19,13 @@ $grid-margin: 0 10px 10px;
     $width: $grid-width;
 
     @if($i > 1) {
-      $num: $i - 1;
-      $width: $grid-width * $i + ($num * 20); // Account for margins on additional columns
+        $num: $i - 1;
+        $width: $grid-width * $i + ($num * 20); // Account for margins on additional columns
     }
 
     #{$grid-column}-#{$i} {
-      width: $width;
-      margin: $grid-margin;
-      float: left;
+        float: left;
+        margin: $grid-margin;
+        width: $width;
     }
 }

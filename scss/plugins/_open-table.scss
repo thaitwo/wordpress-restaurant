@@ -1,54 +1,50 @@
 .reservation-ot-title {
-	font-weight: 500;
-	margin: 0 auto 30px;
-	letter-spacing: 2px;
-	text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 auto 30px;
+    text-align: center;
 }
 
 .reservation-ot-description {
-	text-align: center;
-	margin-bottom: 60px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .ot-title {
-	display: none !important;
+    display: none !important;
 }
 
 .ot-dtp-picker {
-	padding: 0 !important;
+    padding: 0 !important;
 
-	&.wide {
-		width: 50.5rem;
-	    background: 0 0;
-	    margin: auto;
-	}
+    &.wide {
+        background: 0 0;
+        margin: auto;
+        width: 50.5rem;
+    }
 }
 
 .picker__box {
-    padding: 1rem;
     box-sizing: content-box;
+    padding: 1rem;
 }
 
 .ot-button {
-	background-color: $color-gold;
-	font-family: $font-body !important;
-	text-transform: uppercase;
-	transition: all .5s !important;
-
-	&:hover {
-		// background-color: $color-gold-darker !important;
-	}
+    background-color: $color-gold;
+    font-family: $font-body !important;
+    text-transform: uppercase;
+    transition: all .5s !important;
 }
 
 .ot-dtp-picker.wide .ot-dtp-picker-form {
-	font-family: $font-body;
+    font-family: $font-body;
     height: 50px !important;
 }
 
 .ot-dtp-picker.wide .ot-powered-by {
-	background: url(../dojo/assets/powered-ot-grey.png) center no-repeat !important;
-	background-size: 200px !important;
-	background-position: center !important;
-	margin-top: 40px !important;
-	height: 40px !important;
+    background: url(../dojo/assets/powered-ot-grey.png) center no-repeat !important;
+    background-position: center !important;
+    background-size: 200px !important;
+    height: 40px !important;
+    margin-top: 40px !important;
 }

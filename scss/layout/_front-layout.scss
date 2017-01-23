@@ -21,53 +21,53 @@
 }
 
 .section-title {
+    color: $color-bluegrey-900;
     font-size: $font-x-large;
     font-weight: 900;
     margin-top: -45px;
     margin-bottom: -5px;
-    color: $color-bluegrey-900;
     text-align: center;
 }
 
 .section-description {
-    text-align: center;
     padding: 0 40px;
+    text-align: center;
 }
 
 .section-image {
-    width: 100%;
     height: 384px;
     outline: 1px solid $color-white;
     outline-offset: -20px;
+    width: 100%;
 }
 
 .front-column-container {
-    width: 46%;
     text-align: center;
+    width: 46%;
 }
 
 .front-content-right {
-    width: 50%;
     float: right;
+    width: 50%;
 }
 
 .hours-bar {
     background: $color-gold;
-    height: 80px;
     display: block;
+    height: 80px;
 }
 
 .header-area {
     background: #FF5722;
     color: white;
-    text-decoration: none;
     height: 350px;
+    text-decoration: none;
 }
 
 .section-divider {
     height: 400px;
-    text-align: center;
     margin: auto;
+    text-align: center;
 
     &.has-vert-margin {
         margin: 60px 0;
@@ -90,10 +90,10 @@
 }
 
 .section-divider-title {
+    color: $color-white;
     font-size: $font-x-large;
     font-weight: 900;
     margin-top: -45px;
-    color: $color-white;
 }
 
 .stars {

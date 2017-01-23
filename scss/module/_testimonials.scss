@@ -1,31 +1,31 @@
 .testimonial-column-container {
-	width: 46%;
+    width: 46%;
 }
 
 .testimonial-container {
-	position: relative;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
 
-	&:before {
-		color: $color-bluegrey-50;
-		content: "\f10d";
-		font-family: FontAwesome;
-		font-size: 64px;
-		font-style: normal;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+    &:before {
+        color: $color-bluegrey-50;
+        content: "\f10d";
+        font-family: FontAwesome;
+        font-size: 64px;
+        font-style: normal;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
 }
 
 .testimonial-quotes {
-	margin-bottom: 10px;
-	padding: 30px 0 0 10px;
-	position: relative;
+    margin-bottom: 10px;
+    padding: 30px 0 0 10px;
+    position: relative;
 }
 
 .testimonial-name {
-	letter-spacing: 1px;
-	padding-left: 10px;
-	margin: 0;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 10px;
 }
