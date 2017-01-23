@@ -19,18 +19,18 @@ input[type="submit"] {
 }
 
 .button {
+    border-radius: 3px;
+    display: inline-block;
     font-size: 14px;
+    letter-spacing: 2px;
     margin: auto;
     padding: 12px 30px;
     text-decoration: none;
-    display: inline-block;
-    border-radius: 3px;
-    letter-spacing: 2px;
     transition: all .4s;
 
     &.button-primary {
-        color: $color-white;
         border: 1px solid $color-white;
+        color: $color-white;
         margin-top: 25px;
 
         &:hover {
@@ -45,8 +45,8 @@ input[type="submit"] {
 
         &:hover {
             background: $color-gold-darker;
-            transition: .4s all;
             color: $color-white;
+            transition: .4s all;
         }
     }
 }
