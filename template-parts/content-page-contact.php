@@ -13,10 +13,7 @@
 
 <style type="text/css">
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, input[type="button"], input[type="reset"], input[type="submit"] {
     background-color: <?php echo $primary_color ?>;
 }
 

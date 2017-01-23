@@ -2736,9 +2736,6 @@ th {
 .column-container {
   width: 46%; }
 
-.l-space {
-  margin: 0 10px; }
-
 /*
 ** Positioning
 **
@@ -3174,6 +3171,9 @@ textarea {
 .entry-footer {
   margin-top: 40px; }
 
+.footer-area {
+  background: #263238; }
+
 .footer-title {
   letter-spacing: 1px;
   text-align: center;
@@ -3184,9 +3184,6 @@ textarea {
   margin: 0 350px;
   margin-bottom: 30px; }
 
-.footer-area {
-  background: #263238; }
-
 .site-info {
   color: rgba(255, 255, 255, 0.1);
   font-size: 12px;
@@ -3195,14 +3192,16 @@ textarea {
   margin-bottom: 20px;
   text-align: center; }
 
-.l-space .fa-facebook:hover,
-.l-space .fa-twitter:hover,
-.l-space .fa-instagram:hover,
-.l-space .fa-youtube-play:hover,
-.l-space .fa-linkedin:hover,
-.l-space .fa-pinterest-p:hover {
-  color: white;
-  transition: all .3s; }
+.icon-margin {
+  margin: 0 10px; }
+  .icon-margin .fa-facebook:hover,
+  .icon-margin .fa-twitter:hover,
+  .icon-margin .fa-instagram:hover,
+  .icon-margin .fa-youtube-play:hover,
+  .icon-margin .fa-linkedin:hover,
+  .icon-margin .fa-pinterest-p:hover {
+    color: white;
+    transition: all .3s; }
 
 .site-branding {
   float: left;

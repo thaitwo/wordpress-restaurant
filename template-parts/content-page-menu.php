@@ -23,14 +23,13 @@
                         while( have_rows('menu_section') ) : the_row();
 
                             // vars
-                            $section_image = get_sub_field('section_image');
-                            $section_image_subtitle = get_sub_field('section_image_subtitle');
-                            $section_image_title = get_sub_field('section_image_title');
                             $menu_divider_stars = get_sub_field('menu_divider_stars');
                             $primary_color = get_theme_mod('primary_color', '#DAB075');
                             $secondary_color = get_theme_mod('secondary_color', '#263238');
+                            $section_image = get_sub_field('section_image');
+                            $section_image_subtitle = get_sub_field('section_image_subtitle');
+                            $section_image_title = get_sub_field('section_image_title');
                             $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
-
                             ?>
 
                             <?php

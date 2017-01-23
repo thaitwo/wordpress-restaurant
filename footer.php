@@ -16,9 +16,9 @@
     </div>
 
     <?php
-    $primary_color = get_theme_mod('primary_color', '#DAB075');
-    $footer_text_color = get_theme_mod('footer_text_color', '#FFFFFF');
     $footer_bg_color = get_theme_mod('footer_bg_color', '#263238');
+    $footer_text_color = get_theme_mod('footer_text_color', '#FFFFFF');
+    $primary_color = get_theme_mod('primary_color', '#DAB075');
     ?>
 
     <div class="footer-area full" style="background-color: <?php echo $footer_bg_color ?>;">
@@ -55,24 +55,27 @@
                 //end of all sidebar checks.
                 endif;?>
 
+
+                <!-- social media icons -->
+
                 <div class="footer-social-icons">
-                    <a class="l-space" href="<?php echo get_option('facebook_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <a class="icon-margin" href="<?php echo get_option('facebook_url') ?>" style="color: <?php echo $primary_color ?>;">
                     <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
                     </a>
-                    <a class="l-space" href="<?php echo get_option('twitter_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <a class="icon-margin" href="<?php echo get_option('twitter_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
                     </a>
-                    <a class="l-space" href="<?php echo get_option('instagram_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <a class="icon-margin" href="<?php echo get_option('instagram_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
                     </a>
-                    <a class="l-space" href="<?php echo get_option('youtube_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <a class="icon-margin" href="<?php echo get_option('pinterest_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-pinterest-p fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('youtube_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-youtube-play fa-1x" aria-hidden="true"></i>
                     </a>
-                    <a class="l-space" href="<?php echo get_option('linkedin_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <a class="icon-margin" href="<?php echo get_option('linkedin_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-linkedin fa-1x" aria-hidden="true"></i>
-                    </a>
-                    <a class="l-space" href="<?php echo get_option('pinterest_url') ?>" style="color: <?php echo $primary_color ?>;">
-                        <i class="fa fa-pinterest-p fa-1x" aria-hidden="true"></i>
                     </a>
                 </div>
 

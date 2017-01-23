@@ -40,15 +40,3 @@
 		} );
 	} );
 } )( jQuery );
-
-// Icon Hover
-
-var $links = $('#yoyo');
-
-function iconHover() {
-	$('#yoyo').hover(function() {
-		$(this).css('color', 'red');
-	});
-}
-
-iconHover();

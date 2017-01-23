@@ -12,11 +12,10 @@
 <?php $primary_color = get_theme_mod('primary_color', '#DAB075'); ?>
 
 <style type="text/css">
-.ot-button {
-	background-color: <?php echo $primary_color ?> !important; }
 
-.ot-dtp-picker .ot-dtp-picker-button {
-	box-shadow: 0 0 0 1px <?php echo $primary_color ?> !important; }
+.ot-button { background-color: <?php echo $primary_color ?> !important; }
+
+.ot-dtp-picker .ot-dtp-picker-button { box-shadow: 0 0 0 1px <?php echo $primary_color ?> !important; }
 
 </style>
 

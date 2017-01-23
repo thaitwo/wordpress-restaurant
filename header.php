@@ -23,9 +23,9 @@
 
 <?php
 $header_subtitle = get_field('header_subtitle');
+$header_stars = get_field('header_stars');
 $header_title = get_field('header_title');
 $page_title = get_the_title();
-$header_stars = get_field('header_stars');
 $primary_color = get_theme_mod('primary_color', '#DAB075');
 ?>
 
@@ -66,7 +66,7 @@ li:hover > a { color: <?php echo $primary_color ?>; }
 
         <?php
         if ($header_subtitle) : ?>
-            <h2 class="header-subtitle" style="color: <?php echo get_theme_mod('primary_color', '#DAB075'); ?>"><?php echo $header_subtitle ?></h2>
+            <h2 class="header-subtitle" style="color: <?php echo $primary_color ?>"><?php echo $header_subtitle ?></h2>
         <?php
         endif; ?>
 

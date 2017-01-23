@@ -2,6 +2,10 @@
 	margin-top: 40px;
 }
 
+.footer-area {
+    background: $color-bluegrey-900;
+}
+
 .footer-title {
 	letter-spacing: 1px;
 	text-align: center;
@@ -14,10 +18,6 @@
 	margin-bottom: 30px;
 }
 
-.footer-area {
-    background: $color-bluegrey-900;
-}
-
 .site-info {
 	color: rgba(255,255,255, .1);
 	font-size: 12px;
@@ -27,8 +27,8 @@
 	text-align: center;
 }
 
-
-.l-space {
+.icon-margin {
+	margin: 0 10px;
 
 	& .fa-facebook:hover,
 	& .fa-twitter:hover,

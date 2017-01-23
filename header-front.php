@@ -19,10 +19,10 @@
 </head>
 
 <?php
+$header_front_button = get_field('header_front_button');
+$header_front_stars = get_field('header_front_stars');
 $header_front_subtitle = get_field('header_front_subtitle');
 $header_front_title = get_field('header_front_title');
-$header_front_stars = get_field('header_front_stars');
-$header_front_button = get_field('header_front_button');
 $primary_color = get_theme_mod('primary_color', '#DAB075');
 ?>
 
