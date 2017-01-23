@@ -18,7 +18,21 @@
 <?php wp_head(); ?>
 </head>
 
+<?php
+$header_front_subtitle = get_field('header_front_subtitle');
+$header_front_title = get_field('header_front_title');
+$header_front_stars = get_field('header_front_stars');
+$header_front_button = get_field('header_front_button');
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+?>
+
+<style type="text/css">
+.site-title:hover > a { color: <?php echo $primary_color ?>; }
+li:hover > a { color: <?php echo $primary_color ?>; }
+</style>
+
 <body <?php body_class(); ?>>
+
     <div class="header-area-front full l-flex is-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
         <div class="main-page">
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
@@ -45,8 +59,6 @@
         <div class="front-header">
 
             <?php
-            $header_front_subtitle = get_field('header_front_subtitle');
-            $primary_color = get_theme_mod('primary_color', '#DAB075');
             if ($header_front_subtitle) { ?>
                 <h1 class="header-front-subtitle" style="color: <?php echo $primary_color ?>;">
                 <?php
@@ -59,7 +71,6 @@
 
             <div class="header-front-title">
                 <?php
-                $header_front_title = get_field('header_front_title');
                 if ($header_front_title) {
                     echo $header_front_title;
                 }
@@ -70,8 +81,6 @@
             </div>
 
             <?php
-            $header_front_stars = get_field('header_front_stars');
-            $primary_color = get_theme_mod('primary_color', '#DAB075');
             if ($header_front_stars === true) : ?>
                 <div class="l-center">
                     <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
@@ -81,7 +90,7 @@
             <?php
             endif; ?>
 
-            <?php $header_front_button = get_field('header_front_button');
+            <?php
             if ($header_front_button) : ?>
                 <a class="button button-primary" href="<?php echo the_field('header_front_button_link') ?>">
                 <?php echo $header_front_button; ?>

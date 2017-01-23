@@ -28,6 +28,8 @@
                             $section_image_title = get_sub_field('section_image_title');
                             $menu_divider_stars = get_sub_field('menu_divider_stars');
                             $primary_color = get_theme_mod('primary_color', '#DAB075');
+                            $secondary_color = get_theme_mod('secondary_color', '#263238');
+                            $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
 
                             ?>
 
@@ -119,7 +121,7 @@
                                                             ?>
 
                                                             <div class="menu-list-container">
-                                                                <p class="menu-list-item">
+                                                                <p class="menu-list-item" style="color: <?php echo $secondary_color ?>;">
                                                                     <?php echo $menu_item_l; ?>
                                                                 </p>
 
@@ -195,7 +197,7 @@
 
 
                                                             <div class="menu-list-container">
-                                                                <p class="menu-list-item">
+                                                                <p class="menu-list-item" style="color: <?php echo $secondary_color ?>;">
                                                                     <?php echo $menu_item_r; ?>
                                                                 </p>
 

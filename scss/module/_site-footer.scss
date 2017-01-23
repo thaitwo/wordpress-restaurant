@@ -3,13 +3,15 @@
 }
 
 .footer-title {
-	border-bottom: 1px solid $color-bluegrey-800;
-	color: $color-white;
 	letter-spacing: 1px;
-	margin: 20px 350px;
-	padding-bottom: 30px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.footer-title-line {
+	border-bottom: 1px solid rgba(255,255,255, .1);
+	margin: 0 350px;
+	margin-bottom: 30px;
 }
 
 .footer-area {
@@ -17,10 +19,24 @@
 }
 
 .site-info {
-	color: $color-bluegrey-700;
+	color: rgba(255,255,255, .1);
 	font-size: 12px;
 	letter-spacing: 2px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 	text-align: center;
+}
+
+
+.l-space {
+
+	& .fa-facebook:hover,
+	& .fa-twitter:hover,
+	& .fa-instagram:hover,
+	& .fa-youtube-play:hover,
+	& .fa-linkedin:hover,
+	& .fa-pinterest-p:hover {
+		color: rgba(255,255,255, 1);
+		transition: all .3s;
+	}
 }

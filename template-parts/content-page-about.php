@@ -23,6 +23,7 @@
             $testimonial_section_title = get_field('testimonial_section_title');
             $testimonials_stars = get_field('testimonials_stars');
             $primary_color = get_theme_mod('primary_color', '#DAB075');
+            $secondary_color = get_theme_mod('secondary_color', '#263238');
 
             // image divider
             if ($testimonial_section_image): ?>
@@ -79,7 +80,7 @@
                                 ?>
 
                                 <div class="testimonial-container">
-                                    <p class="testimonial-quotes has-image">
+                                    <p class="testimonial-quotes" style="color: <?php echo $secondary_color ?>;">
                                         <?php echo $testimonial_left; ?>
                                     </p>
 
@@ -106,7 +107,7 @@
                                 ?>
 
                                 <div class="testimonial-container">
-                                    <p class="testimonial-quotes has-image">
+                                    <p class="testimonial-quotes" style="color: <?php echo $secondary_color ?>;">
                                         <?php echo $testimonial_right; ?>
                                     </p>
 

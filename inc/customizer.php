@@ -72,6 +72,34 @@ function theme_colors( $wp_customize ) {
         'settings' => 'tertiary_color',
     ) ) );
 
+
+   // footer text color
+
+   $wp_customize->add_setting( 'footer_text_color' , array(
+        'default'   => '#FFFFFF',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
+        'label'    => __( 'Footer Text Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'footer_text_color',
+    ) ) );
+
+
+   // footer background color
+
+   $wp_customize->add_setting( 'footer_bg_color' , array(
+        'default'   => '#263238',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg_color', array(
+        'label'    => __( 'Footer Background Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'footer_bg_color',
+    ) ) );
+
 }
 add_action( 'customize_register', 'theme_colors' );
 

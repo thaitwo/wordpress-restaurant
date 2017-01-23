@@ -36,6 +36,8 @@
                         $front_page_image = get_sub_field('front_page_image');
                         $front_page_section_layout = get_sub_field('front_page_section_layout');
                         $primary_color = get_theme_mod('primary_color', '#DAB075');
+                        $secondary_color = get_theme_mod('secondary_color', '#263238');
+                        $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
 
                         ?>
 
@@ -98,7 +100,7 @@
                                             <?php echo $front_page_subtitle; ?>
                                         </h2>
 
-                                        <h1 class="section-title">
+                                        <h1 class="section-title" style="color: <?php echo $secondary_color ?>;">
                                             <?php echo $front_page_title; ?>
                                         </h1>
 
@@ -112,7 +114,7 @@
                                         <?php
                                         endif; ?>
 
-                                        <p class="section-description">
+                                        <p class="section-description" style="color: <?php echo $secondary_color ?>;">
                                             <?php echo $front_page_text; ?>
                                         </p>
 
