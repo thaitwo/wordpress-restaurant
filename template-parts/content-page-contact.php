@@ -8,6 +8,20 @@
  */
 
 ?>
+
+<?php $primary_color = get_theme_mod('primary_color', '#DAB075'); ?>
+
+<style type="text/css">
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: <?php echo $primary_color ?>;
+}
+
+</style>
+
 <div class="main-content-area full">
     <div class="main-page">
 

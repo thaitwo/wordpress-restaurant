@@ -25,7 +25,6 @@
 
 // don't rename to .menu-item as it will conflict with navigation menu
 .menu-list-item {
-    color: $color-bluegrey-900;
     margin: 0;
     font-size: $font-small;
     padding-right: $unit * 16;
@@ -34,7 +33,6 @@
 }
 
 .menu-list-item-price {
-    color: $color-bluegrey-200;
     font-size: $font-small;
     margin: 0;
     font-weight: 300;
@@ -46,7 +44,6 @@
 }
 
 .menu-list-item-des {
-    color: $color-bluegrey-200;
     margin: 0;
     font-size: $font-standard;
     padding-right: $unit * 16;

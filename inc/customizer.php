@@ -62,7 +62,7 @@ function theme_colors( $wp_customize ) {
    // tertiary color
 
    $wp_customize->add_setting( 'tertiary_color' , array(
-        'default'   => '#FFFFFF',
+        'default'   => '#B0BEC5',
         'transport' => 'refresh',
     ) );
 

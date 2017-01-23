@@ -28,6 +28,7 @@ $primary_color = get_theme_mod('primary_color', '#DAB075');
 
 <style type="text/css">
 .site-title:hover > a { color: <?php echo $primary_color ?>; }
+
 li:hover > a { color: <?php echo $primary_color ?>; }
 </style>
 

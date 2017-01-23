@@ -2892,7 +2892,6 @@ th {
   margin-bottom: 50px; }
 
 .menu-list-item {
-  color: #263238;
   margin: 0;
   font-size: 18px;
   padding-right: 80px;
@@ -2900,7 +2899,6 @@ th {
   font-weight: 600; }
 
 .menu-list-item-price {
-  color: #B0BEC5;
   font-size: 18px;
   margin: 0;
   font-weight: 300;
@@ -2911,7 +2909,6 @@ th {
   right: 0; }
 
 .menu-list-item-des {
-  color: #B0BEC5;
   margin: 0;
   font-size: 16px;
   padding-right: 80px; }
@@ -2973,7 +2970,6 @@ input[type="reset"],
 input[type="submit"] {
   border: 0px;
   border-radius: 3px;
-  background: #DAB075;
   color: #ffffff;
   font-size: 12px;
   font-size: 0.75rem;
@@ -2981,12 +2977,6 @@ input[type="submit"] {
   padding: 12px 30px;
   font-size: 16px;
   transition: all .4s; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    background: #C79C5F;
-    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -3146,6 +3136,7 @@ textarea {
   margin-top: -60px; }
 
 .header-front-title {
+  color: #ffffff;
   font-size: 100px;
   font-weight: 800;
   margin-bottom: -15px;
@@ -3434,15 +3425,7 @@ object {
   background-color: #DAB075;
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif !important;
   text-transform: uppercase;
-  border-color: #DAB075 !important;
   transition: all .5s !important; }
-  .ot-button:focus {
-    background-color: #C79C5F !important; }
-
-.ot-dtp-picker .ot-dtp-picker-button {
-  box-shadow: 0 0 0 1px #DAB075 !important; }
-  .ot-dtp-picker .ot-dtp-picker-button:hover {
-    box-shadow: 0 0 0 1px #C79C5F !important; }
 
 .ot-dtp-picker.wide .ot-dtp-picker-form {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;

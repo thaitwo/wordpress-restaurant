@@ -29,7 +29,7 @@
                             $menu_divider_stars = get_sub_field('menu_divider_stars');
                             $primary_color = get_theme_mod('primary_color', '#DAB075');
                             $secondary_color = get_theme_mod('secondary_color', '#263238');
-                            $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
+                            $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
 
                             ?>
 
@@ -125,11 +125,11 @@
                                                                     <?php echo $menu_item_l; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-price">
+                                                                <p class="menu-list-item-price" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo "$" . $menu_item_price_l; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-des">
+                                                                <p class="menu-list-item-des" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo $menu_item_des_l; ?>
                                                                 </p>
                                                             </div>
@@ -201,11 +201,11 @@
                                                                     <?php echo $menu_item_r; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-price">
+                                                                <p class="menu-list-item-price" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo "$" . $menu_item_price_r; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-des">
+                                                                <p class="menu-list-item-des" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo $menu_item_des_r; ?>
                                                                 </p>
                                                             </div>

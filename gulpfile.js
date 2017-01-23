@@ -13,7 +13,8 @@ gulp.task('sass', function () {
 
 // watches sass
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss',['sass']);
+    livereload.listen();
+    gulp.watch('scss/**/*.scss', ['sass']);
 });
 
 
