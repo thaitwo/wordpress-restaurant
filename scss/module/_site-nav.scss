@@ -78,14 +78,13 @@
 	}
 
 	li {
-		font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
-		font-weight: 500;
 		float: left;
-		position: relative;
-		text-transform: uppercase;
 		font-size: 14px;
+		font-weight: 500;
 		letter-spacing: 1px;
 		line-height: 50px;
+		position: relative;
+		text-transform: uppercase;
 
 		&:hover > a,
 		&.focus > a {

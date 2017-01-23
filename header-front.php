@@ -18,7 +18,22 @@
 <?php wp_head(); ?>
 </head>
 
+<?php
+$header_front_button = get_field('header_front_button');
+$header_front_stars = get_field('header_front_stars');
+$header_front_subtitle = get_field('header_front_subtitle');
+$header_front_title = get_field('header_front_title');
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+?>
+
+<style type="text/css">
+.site-title:hover > a { color: <?php echo $primary_color ?>; }
+
+li:hover > a { color: <?php echo $primary_color ?>; }
+</style>
+
 <body <?php body_class(); ?>>
+
     <div class="header-area-front full l-flex is-vert" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
         <div class="main-page">
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
@@ -43,40 +58,40 @@
         </div>
 
         <div class="front-header">
-            <h1 class="header-front-subtitle">
-                <?php $header_front_subtitle = get_field('header_front_subtitle');
-                    if ($header_front_subtitle) {
-                        echo $header_front_subtitle;
-                    }
-                    else {
-                        echo "Welcome";
-                    }
-                ?>
-            </h1>
+
+            <?php
+            if ($header_front_subtitle) { ?>
+                <h1 class="header-front-subtitle" style="color: <?php echo $primary_color ?>;">
+                <?php
+                echo $header_front_subtitle;
+            }
+            else {
+                echo "Welcome";
+            } ?>
+                </h1>
 
             <div class="header-front-title">
-                <?php $header_front_title = get_field('header_front_title');
-                    if ($header_front_title) {
-                        echo $header_front_title;
-                    }
-                    else {
-                        echo bloginfo('name');
-                    }
+                <?php
+                if ($header_front_title) {
+                    echo $header_front_title;
+                }
+                else {
+                    echo bloginfo('name');
+                }
                 ?>
             </div>
 
             <?php
-            $header_front_stars = get_field('header_front_stars');
             if ($header_front_stars === true) : ?>
                 <div class="l-center">
-                    <i class="stars material-icons md-20 md-gold">star</i>
-                    <i class="stars material-icons md-20 md-gold">star</i>
-                    <i class="stars material-icons md-20 md-gold">star</i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                 </div>
             <?php
             endif; ?>
 
-            <?php $header_front_button = get_field('header_front_button');
+            <?php
             if ($header_front_button) : ?>
                 <a class="button button-primary" href="<?php echo the_field('header_front_button_link') ?>">
                 <?php echo $header_front_button; ?>

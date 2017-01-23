@@ -21,6 +21,20 @@
 <?php wp_head(); ?>
 </head>
 
+<?php
+$header_subtitle = get_field('header_subtitle');
+$header_stars = get_field('header_stars');
+$header_title = get_field('header_title');
+$page_title = get_the_title();
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+?>
+
+<style type="text/css">
+.site-title:hover > a { color: <?php echo $primary_color ?>; }
+
+li:hover > a { color: <?php echo $primary_color ?>; }
+</style>
+
 <body <?php body_class(); ?>>
     <div class="header-area full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
         <div class="main-page">
@@ -51,16 +65,13 @@
         </div>
 
         <?php
-        $header_subtitle = get_field('header_subtitle');
         if ($header_subtitle) : ?>
-            <h2 class="header-subtitle"><?php echo $header_subtitle ?></h2>
+            <h2 class="header-subtitle" style="color: <?php echo $primary_color ?>"><?php echo $header_subtitle ?></h2>
         <?php
         endif; ?>
 
         <h2 class="header-title">
             <?php
-            $header_title = get_field('header_title');
-            $page_title = get_the_title();
             if ($header_title) {
                 echo $header_title;
             }
@@ -71,16 +82,13 @@
         </h2>
 
         <?php
-        $header_stars = get_field('header_stars');
         if ($header_stars === true) : ?>
             <div class="l-center">
-                <i class="stars material-icons md-20 md-gold">star</i>
-                <i class="stars material-icons md-20 md-gold">star</i>
-                <i class="stars material-icons md-20 md-gold">star</i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
             </div>
         <?php
         endif; ?>
 
     </div>
-
-

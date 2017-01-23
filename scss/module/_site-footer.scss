@@ -2,42 +2,41 @@
 	margin-top: 40px;
 }
 
-.footer-title {
-	color: $color-white;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid $color-bluegrey-800;
-	margin: 20px 350px;
-}
-
-.edit-link {
-}
-
-.post-edit-link {
-	background: $color__background-button;
-	color: $color-white;
-	padding: 5px 15px;
-	text-decoration: none;
-	border-radius: 2px;
-	transition: all .4s;
-
-	&:hover {
-		background: $color_gold_darker;
-		color: $color-white;
-	}
-}
-
 .footer-area {
     background: $color-bluegrey-900;
 }
 
-.site-info {
-	color: $color-bluegrey-700;
+.footer-title {
+	letter-spacing: 1px;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.footer-title-line {
+	border-bottom: 1px solid rgba(255,255,255, .1);
+	margin: 0 350px;
+	margin-bottom: 30px;
+}
+
+.site-info {
+	color: rgba(255,255,255, .1);
 	font-size: 12px;
+	letter-spacing: 2px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	letter-spacing: 2px;
+	text-align: center;
+}
+
+.icon-margin {
+	margin: 0 10px;
+
+	& .fa-facebook:hover,
+	& .fa-twitter:hover,
+	& .fa-instagram:hover,
+	& .fa-youtube-play:hover,
+	& .fa-linkedin:hover,
+	& .fa-pinterest-p:hover {
+		color: rgba(255,255,255, 1);
+		transition: all .3s;
+	}
 }

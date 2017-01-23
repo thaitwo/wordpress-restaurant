@@ -23,27 +23,29 @@
                         while( have_rows('menu_section') ) : the_row();
 
                             // vars
+                            $menu_divider_stars = get_sub_field('menu_divider_stars');
+                            $primary_color = get_theme_mod('primary_color', '#DAB075');
+                            $secondary_color = get_theme_mod('secondary_color', '#263238');
                             $section_image = get_sub_field('section_image');
                             $section_image_subtitle = get_sub_field('section_image_subtitle');
                             $section_image_title = get_sub_field('section_image_title');
-                            $menu_divider_stars = get_sub_field('menu_divider_stars');
-
+                            $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
                             ?>
 
                             <?php
                             if ($section_image): ?>
-                                <div class="section-divider has-vert-margin full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url( <?php echo $section_image; ?>) fixed; background-size: cover;">
+                                <div class="section-divider has-vert-margin full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( <?php echo $section_image; ?>) fixed; background-size: cover;">
                                     <div class="section-divider-text">
-                                        <h2 class="section-divider-subtitle">
-                                            <?php
-                                                if ($section_image_subtitle) {
-                                                    echo $section_image_subtitle;
-                                                }
-                                                else {
-                                                    echo " ";
-                                                }
-                                            ?>
-                                        </h2>
+                                        <?php
+                                            if ($section_image_subtitle) { ?>
+                                                <h2 class="section-divider-subtitle" style="color: <?php echo $primary_color ?>;">
+                                                <?php
+                                                echo $section_image_subtitle;
+                                            }
+                                            else {
+                                                echo " ";
+                                            } ?>
+                                                </h2>
                                         <div class="section-divider-title">
                                             <?php
                                                 if ($section_image_title) {
@@ -58,9 +60,9 @@
                                         <?php
                                         if ($menu_divider_stars === true) : ?>
                                             <div class="l-center">
-                                                <i class="stars material-icons md-20 md-gold">star</i>
-                                                <i class="stars material-icons md-20 md-gold">star</i>
-                                                <i class="stars material-icons md-20 md-gold">star</i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
                                             </div>
                                         <?php
                                         endif; ?>
@@ -89,7 +91,7 @@
 
                                                 <div class="menu-category-container">
 
-                                                    <h1 class="menu-category">
+                                                    <h1 class="menu-category" style="color: <?php echo $primary_color ?>;">
                                                         <?php
                                                             if ($menu_category_l) {
                                                                 echo $menu_category_l;
@@ -118,15 +120,15 @@
                                                             ?>
 
                                                             <div class="menu-list-container">
-                                                                <p class="menu-list-item">
+                                                                <p class="menu-list-item" style="color: <?php echo $secondary_color ?>;">
                                                                     <?php echo $menu_item_l; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-price">
+                                                                <p class="menu-list-item-price" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo "$" . $menu_item_price_l; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-des">
+                                                                <p class="menu-list-item-des" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo $menu_item_des_l; ?>
                                                                 </p>
                                                             </div>
@@ -164,7 +166,7 @@
 
                                                 <div class="menu-category-container">
 
-                                                    <h1 class="menu-category">
+                                                    <h1 class="menu-category" style="color: <?php echo $primary_color ?>;">
                                                         <?php
                                                             if ($menu_category_r) {
                                                                 echo $menu_category_r;
@@ -194,15 +196,15 @@
 
 
                                                             <div class="menu-list-container">
-                                                                <p class="menu-list-item">
+                                                                <p class="menu-list-item" style="color: <?php echo $secondary_color ?>;">
                                                                     <?php echo $menu_item_r; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-price">
+                                                                <p class="menu-list-item-price" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo "$" . $menu_item_price_r; ?>
                                                                 </p>
 
-                                                                <p class="menu-list-item-des">
+                                                                <p class="menu-list-item-des" style="color: <?php echo $tertiary_color ?>;">
                                                                     <?php echo $menu_item_des_r; ?>
                                                                 </p>
                                                             </div>

@@ -17,6 +17,97 @@ function dojo_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'dojo_customize_register' );
 
+
+
+/*
+** THEME COLORS
+**
+*/
+
+function theme_colors( $wp_customize ) {
+   $wp_customize->add_section( 'theme_colors' , array(
+	    'title'      => __('Theme Colors','dojo'),
+	    'priority'   => 30,
+	) );
+
+
+   // primary color
+
+   $wp_customize->add_setting( 'primary_color' , array(
+        'default'   => '#DAB075',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
+        'label'    => __( 'Primary Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'primary_color',
+    ) ) );
+
+
+   // secondary color
+
+   $wp_customize->add_setting( 'secondary_color' , array(
+        'default'   => '#263238',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
+        'label'    => __( 'Secondary Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'secondary_color',
+    ) ) );
+
+
+   // tertiary color
+
+   $wp_customize->add_setting( 'tertiary_color' , array(
+        'default'   => '#B0BEC5',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tertiary_color', array(
+        'label'    => __( 'Tertiary Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'tertiary_color',
+    ) ) );
+
+
+   // footer text color
+
+   $wp_customize->add_setting( 'footer_text_color' , array(
+        'default'   => '#FFFFFF',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
+        'label'    => __( 'Footer Text Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'footer_text_color',
+    ) ) );
+
+
+   // footer background color
+
+   $wp_customize->add_setting( 'footer_bg_color' , array(
+        'default'   => '#263238',
+        'transport' => 'refresh',
+    ) );
+
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg_color', array(
+        'label'    => __( 'Footer Background Color', 'dojo' ),
+        'section'  => 'theme_colors',
+        'settings' => 'footer_bg_color',
+    ) ) );
+
+}
+add_action( 'customize_register', 'theme_colors' );
+
+
+
+
+
+
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */

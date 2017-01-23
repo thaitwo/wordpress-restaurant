@@ -15,15 +15,22 @@
         </div>
     </div>
 
-    <div class="footer-area full">
+    <?php
+    $footer_bg_color = get_theme_mod('footer_bg_color', '#263238');
+    $footer_text_color = get_theme_mod('footer_text_color', '#FFFFFF');
+    $primary_color = get_theme_mod('primary_color', '#DAB075');
+    ?>
+
+    <div class="footer-area full" style="background-color: <?php echo $footer_bg_color ?>;">
         <div class="main-page">
             <footer id="colophon" class="site-footer inner l-center" role="contentinfo">
 
-                <h1 class="footer-title">
+                <h1 class="footer-title" style="color: <?php echo $footer_text_color ?>;">
                     <?php echo bloginfo('name'); ?>
                 </h1>
+                <div class="footer-title-line"></div>
 
-                <i class="material-icons md-36 md-gold">location_on</i>
+                <i class="fa fa-map-marker fa-2x" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
 
                 <?php
                 /* The footer widget area is triggered if any of the areas
@@ -39,7 +46,7 @@
                 ) : ?>
 
                 <aside class="fatfooter l-flex align-hori-center" role="complementary">
-                    <div class="widget-area">
+                    <div class="widget-area" style="color: <?php echo $footer_text_color ?>;">
                         <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
                     </div><!-- .first .widget-area -->
                 </aside><!-- #fatfooter -->
@@ -47,6 +54,31 @@
                 <?php
                 //end of all sidebar checks.
                 endif;?>
+
+
+                <!-- social media icons -->
+
+                <div class="footer-social-icons">
+                    <a class="icon-margin" href="<?php echo get_option('facebook_url') ?>" style="color: <?php echo $primary_color ?>;">
+                    <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('twitter_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('instagram_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('pinterest_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-pinterest-p fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('youtube_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-youtube-play fa-1x" aria-hidden="true"></i>
+                    </a>
+                    <a class="icon-margin" href="<?php echo get_option('linkedin_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-linkedin fa-1x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
 
                 <div class="site-info">
                     <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'dojo' ), 'DOJO', '2017' ); ?>

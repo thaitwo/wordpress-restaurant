@@ -106,28 +106,6 @@ function dojo_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
-
-	// Second footer widget area, located in the footer. Empty by default.
- //    register_sidebar( array(
- //        'name' => __( 'Second Footer Widget Area', 'dojo' ),
- //        'id' => 'second-footer-widget-area',
- //        'description' => __( 'The second footer widget area', 'dojo' ),
- //        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
- //        'after_widget' => '</div>',
- //        'before_title' => '<h3 class="widget-title">',
- //        'after_title' => '</h3>',
- //    ) );
-
-	// // Third footer widget area, located in the footer. Empty by default.
- //    register_sidebar( array(
- //        'name' => __( 'Third Footer Widget Area', 'dojo' ),
- //        'id' => 'third-footer-widget-area',
- //        'description' => __( 'The third footer widget area', 'dojo' ),
- //        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
- //        'after_widget' => '</div>',
- //        'before_title' => '<h3 class="widget-title">',
- //        'after_title' => '</h3>',
- //    ) );
 }
 add_action( 'widgets_init', 'dojo_widgets_init' );
 
