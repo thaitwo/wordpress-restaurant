@@ -20,6 +20,13 @@ textarea {
     font-size: $font-standard;
     padding: 12px;
     transition: all .4s;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+textarea {
 
     &:hover,
     &:focus {

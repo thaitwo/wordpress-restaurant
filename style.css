@@ -3058,40 +3058,19 @@ textarea {
   font-size: 16px;
   padding: 12px;
   transition: all .4s; }
-  input[type="text"]:hover, input[type="text"]:focus,
-  input[type="email"]:hover,
-  input[type="email"]:focus,
-  input[type="url"]:hover,
-  input[type="url"]:focus,
-  input[type="password"]:hover,
-  input[type="password"]:focus,
-  input[type="search"]:hover,
-  input[type="search"]:focus,
-  input[type="number"]:hover,
-  input[type="number"]:focus,
-  input[type="tel"]:hover,
-  input[type="tel"]:focus,
-  input[type="range"]:hover,
-  input[type="range"]:focus,
-  input[type="date"]:hover,
-  input[type="date"]:focus,
-  input[type="month"]:hover,
-  input[type="month"]:focus,
-  input[type="week"]:hover,
-  input[type="week"]:focus,
-  input[type="time"]:hover,
-  input[type="time"]:focus,
-  input[type="datetime"]:hover,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:hover,
-  input[type="datetime-local"]:focus,
-  input[type="color"]:hover,
-  input[type="color"]:focus,
-  textarea:hover,
-  textarea:focus {
-    box-shadow: 0px 0px 10px 1px rgba(38, 50, 56, 0.2);
-    color: #263238;
-    outline: none; }
+
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="number"]:hover,
+input[type="number"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+textarea:hover,
+textarea:focus {
+  box-shadow: 0px 0px 10px 1px rgba(38, 50, 56, 0.2);
+  color: #263238;
+  outline: none; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
