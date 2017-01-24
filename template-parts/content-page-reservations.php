@@ -16,6 +16,7 @@
 .ot-button { background-color: <?php echo $primary_color ?> !important; }
 
 .ot-dtp-picker .ot-dtp-picker-button { box-shadow: 0 0 0 1px <?php echo $primary_color ?> !important; }
+.ot-dtp-picker .ot-dtp-picker-button:hover { color: rgba(0,0,0,.6); }
 
 </style>
 

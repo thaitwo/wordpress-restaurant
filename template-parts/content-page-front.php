@@ -9,6 +9,11 @@
 
 ?>
 
+<style type="text/css">
+.button.button-secondary:hover {
+    color: rgba(0,0,0,.6); }
+</style>
+
 <div class="main-content-area full">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

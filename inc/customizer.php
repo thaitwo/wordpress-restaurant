@@ -11,7 +11,7 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function dojo_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+    $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
@@ -25,7 +25,7 @@ add_action( 'customize_register', 'dojo_customize_register' );
 */
 
 function theme_colors( $wp_customize ) {
-   $wp_customize->add_section( 'theme_colors' , array(
+    $wp_customize->add_section( 'theme_colors' , array(
 	    'title'      => __('Theme Colors','dojo'),
 	    'priority'   => 30,
 	) );
@@ -33,12 +33,12 @@ function theme_colors( $wp_customize ) {
 
    // primary color
 
-   $wp_customize->add_setting( 'primary_color' , array(
+    $wp_customize->add_setting( 'primary_color' , array(
         'default'   => '#DAB075',
         'transport' => 'refresh',
     ) );
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
         'label'    => __( 'Primary Color', 'dojo' ),
         'section'  => 'theme_colors',
         'settings' => 'primary_color',
@@ -47,12 +47,12 @@ function theme_colors( $wp_customize ) {
 
    // secondary color
 
-   $wp_customize->add_setting( 'secondary_color' , array(
+    $wp_customize->add_setting( 'secondary_color' , array(
         'default'   => '#263238',
         'transport' => 'refresh',
     ) );
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
         'label'    => __( 'Secondary Color', 'dojo' ),
         'section'  => 'theme_colors',
         'settings' => 'secondary_color',
@@ -61,12 +61,12 @@ function theme_colors( $wp_customize ) {
 
    // tertiary color
 
-   $wp_customize->add_setting( 'tertiary_color' , array(
+    $wp_customize->add_setting( 'tertiary_color' , array(
         'default'   => '#B0BEC5',
         'transport' => 'refresh',
     ) );
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tertiary_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tertiary_color', array(
         'label'    => __( 'Tertiary Color', 'dojo' ),
         'section'  => 'theme_colors',
         'settings' => 'tertiary_color',
@@ -75,12 +75,12 @@ function theme_colors( $wp_customize ) {
 
    // footer text color
 
-   $wp_customize->add_setting( 'footer_text_color' , array(
+    $wp_customize->add_setting( 'footer_text_color' , array(
         'default'   => '#FFFFFF',
         'transport' => 'refresh',
     ) );
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
         'label'    => __( 'Footer Text Color', 'dojo' ),
         'section'  => 'theme_colors',
         'settings' => 'footer_text_color',
@@ -89,20 +89,75 @@ function theme_colors( $wp_customize ) {
 
    // footer background color
 
-   $wp_customize->add_setting( 'footer_bg_color' , array(
+    $wp_customize->add_setting( 'footer_bg_color' , array(
         'default'   => '#263238',
         'transport' => 'refresh',
     ) );
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg_color', array(
         'label'    => __( 'Footer Background Color', 'dojo' ),
         'section'  => 'theme_colors',
         'settings' => 'footer_bg_color',
     ) ) );
-
 }
 add_action( 'customize_register', 'theme_colors' );
 
+
+
+/*
+** THEME SOCIAL ICONS
+**
+*/
+
+function theme_social_icons( $wp_customize ) {
+    $wp_customize->add_section( 'theme_social_icons' , array(
+        'title'      => __('Theme Social Icons','dojo'),
+        'priority'   => 30,
+    ) );
+
+
+    // facebook
+
+    $wp_customize->add_setting( 'facebook_url' , array(
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'facebook_url', array(
+        'label'          => __( 'Facebook URL', 'dojo' ),
+        'section'        => 'theme_social_icons',
+        'settings'       => 'facebook_url',
+        'type'           => 'url',
+    ) ) );
+
+
+    // twitter
+
+    $wp_customize->add_setting( 'twitter_url' , array(
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'twitter_url', array(
+        'label'          => __( 'Twitter URL', 'dojo' ),
+        'section'        => 'theme_social_icons',
+        'settings'       => 'twitter_url',
+        'type'           => 'url',
+    ) ) );
+
+
+    // instagram
+
+    $wp_customize->add_setting( 'instagram_url' , array(
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'instagram_url', array(
+        'label'          => __( 'Facebook URL', 'dojo' ),
+        'section'        => 'theme_social_icons',
+        'settings'       => 'instagram_url',
+        'type'           => 'url',
+    ) ) );
+}
+add_action( 'customize_register', 'theme_social_icons' );
 
 
 
