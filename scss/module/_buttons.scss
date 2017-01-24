@@ -5,10 +5,9 @@ input[type="submit"] {
     border: 0px;
     border-radius: 3px;
     color: $color-white;
-    @include font-size(0.75);
-    line-height: 1;
-    padding: 12px 30px;
-    font-size: $font-standard;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 14.5px 30px;
     transition: all .4s;
 
     &:active,

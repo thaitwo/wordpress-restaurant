@@ -13,9 +13,8 @@
 
 <style type="text/css">
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-    background-color: <?php echo $primary_color ?>;
-}
+input[type="submit"] { background-color: <?php echo $primary_color ?>; }
+input[type="submit"]:hover { color: rgba(0,0,0,.6); }
 
 </style>
 

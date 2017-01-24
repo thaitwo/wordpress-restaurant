@@ -9,6 +9,15 @@ div.wpcf7 {
     padding: 0;
 }
 
+form.wpcf7-form {
+    width: 550px;
+}
+
+input.wpcf7-text,
+textarea.wpcf7-textarea {
+    width: 100%;
+}
+
 div.wpcf7-response-output {
     padding: 8px 15px !important;
 }

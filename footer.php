@@ -68,6 +68,9 @@
                     <a class="icon-margin" href="<?php echo get_option('instagram_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
                     </a>
+                    <a class="icon-margin" href="<?php echo get_option('googleplus_url') ?>" style="color: <?php echo $primary_color ?>;">
+                        <i class="fa fa-google-plus fa-1x" aria-hidden="true"></i>
+                    </a>
                     <a class="icon-margin" href="<?php echo get_option('pinterest_url') ?>" style="color: <?php echo $primary_color ?>;">
                         <i class="fa fa-pinterest-p fa-1x" aria-hidden="true"></i>
                     </a>

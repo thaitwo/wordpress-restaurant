@@ -2968,11 +2968,9 @@ input[type="submit"] {
   border: 0px;
   border-radius: 3px;
   color: #ffffff;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 12px 30px;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 14.5px 30px;
   transition: all .4s; }
   button:active, button:focus,
   input[type="button"]:active,
@@ -3058,28 +3056,37 @@ textarea {
   border-radius: 3px;
   color: #263238;
   font-size: 16px;
-  padding: 10px;
-  transition: all .4s;
-  width: 550px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  input[type="number"]:focus,
-  input[type="tel"]:focus,
-  input[type="range"]:focus,
-  input[type="date"]:focus,
-  input[type="month"]:focus,
-  input[type="week"]:focus,
-  input[type="time"]:focus,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:focus,
-  input[type="color"]:focus,
-  textarea:focus {
-    box-shadow: inset 0px 0px 8px 1px rgba(38, 50, 56, 0.2);
-    color: #111;
-    outline: none; }
+  padding: 12px;
+  transition: all .4s; }
+
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="number"]:hover,
+input[type="number"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+textarea:hover,
+textarea:focus {
+  box-shadow: 0px 0px 10px 1px rgba(38, 50, 56, 0.2);
+  color: #263238;
+  outline: none; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.2); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.1); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.1); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.1); }
 
 select {
   border: 1px solid #ccc; }
@@ -3194,6 +3201,7 @@ textarea {
   .icon-margin .fa-facebook:hover,
   .icon-margin .fa-twitter:hover,
   .icon-margin .fa-instagram:hover,
+  .icon-margin .fa-google-plus:hover,
   .icon-margin .fa-youtube-play:hover,
   .icon-margin .fa-linkedin:hover,
   .icon-margin .fa-pinterest-p:hover {
@@ -3442,6 +3450,13 @@ div.wpcf7 {
   margin: 0 !important;
   margin-top: -16px !important;
   padding: 0; }
+
+form.wpcf7-form {
+  width: 550px; }
+
+input.wpcf7-text,
+textarea.wpcf7-textarea {
+  width: 100%; }
 
 div.wpcf7-response-output {
   padding: 8px 15px !important; }
