@@ -13,6 +13,7 @@
 
 .site-title a {
     color: $color-white;
+    font-family: $font-primary;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -74,9 +75,10 @@
     }
 
     li {
+        font-family: $font-primary;
         float: left;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: $font-standard;
+        font-weight: 400;
         letter-spacing: 1px;
         line-height: 50px;
         position: relative;

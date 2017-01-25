@@ -1,19 +1,16 @@
-.full {
-    width: 100%;
-}
-
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.inner {
-    padding: 20px 0;
+.front-column-container {
+    text-align: center;
+    width: 46%;
 }
 
 .section-subtitle {
-    font-family: "Great Vibes", cursive;
+    font-family: $font-secondary;
     font-size: $font-x-large;
     font-weight: lighter;
     margin: 0;
@@ -22,6 +19,7 @@
 
 .section-title {
     color: $color-bluegrey-900;
+    font-family: $font-primary;
     font-size: $font-x-large;
     font-weight: 900;
     margin-top: -45px;
@@ -30,6 +28,7 @@
 }
 
 .section-description {
+    font-family: $font-primary;
     padding: 0 40px;
     text-align: center;
 }
@@ -41,67 +40,7 @@
     width: 100%;
 }
 
-.front-column-container {
-    text-align: center;
-    width: 46%;
-}
-
-.front-content-right {
-    float: right;
-    width: 50%;
-}
-
-.hours-bar {
-    background: $color-gold;
-    display: block;
-    height: 80px;
-}
-
-.header-area {
-    background: #FF5722;
-    color: white;
-    height: 350px;
-    text-decoration: none;
-}
-
-.section-divider {
-    height: 400px;
-    margin: auto;
-    text-align: center;
-
-    &.has-vert-margin {
-        margin: 60px 0;
-    }
-
-    &.has-vert-margin-large {
-        margin: 80px 0;
-    }
-}
-
-.section-divider-text {
-    margin: auto;
-}
-
-.section-divider-subtitle {
-    font-family: "Great Vibes", cursive;
-    font-size: $font-x-large;
-    font-weight: lighter;
-    margin: 0;
-}
-
-.section-divider-title {
-    color: $color-white;
-    font-size: $font-x-large;
-    font-weight: 900;
-    margin-top: -45px;
-}
-
 .stars {
     display: inline-block;
     margin: 0 15px;
-}
-
-.img-right {
-    float: right;
-    margin-top: 50px;
 }

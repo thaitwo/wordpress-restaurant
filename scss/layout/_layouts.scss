@@ -1,9 +1,23 @@
+/*
+** Layouts
+**
+*/
+
+.full {
+    width: 100%;
+}
+
 .main-page {
     margin: 0 auto;
     width: 1200px;
 }
 
+.inner {
+    padding: 20px 0;
+}
+
 .entry-content {
+    font-family: $font-primary;
     margin: 80px auto;
 }
 

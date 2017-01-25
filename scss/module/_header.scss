@@ -1,14 +1,55 @@
+/*
+** Front Header
+**
+*/
+
 .header-area-front {
-    color: #ffffff;
+    color: $color-white;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
 
+.header-front {
+    margin: auto;
+    text-align: center;
+}
+
+.header-front-subtitle {
+    font-family: $font-secondary;
+    font-size: 72px;
+    font-weight: lighter;
+    line-height: 55px;
+    margin: 0;
+    margin-top: -60px;
+}
+
+.header-front-title {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: -15px;
+    margin-top: -35px;
+    text-transform: uppercase;
+}
+
+
+/*
+** Header
+**
+*/
+
+.header-area {
+    color: white;
+    height: 350px;
+    text-decoration: none;
+}
+
 .header-subtitle {
-    font-family: "Great Vibes", cursive;
-    font-size: 64px;
+    font-family: $font-secondary;
+    font-size: $font-x-large;
     font-weight: lighter;
     left: 0;
     margin: 0;
@@ -19,6 +60,7 @@
 
 .header-title {
     color: $color-white;
+    font-family: $font-primary;
     font-size: 64px;
     font-weight: 800;
     text-transform: uppercase;
@@ -26,27 +68,4 @@
     margin: 0;
     margin-top: 50px;
     text-align: center;
-}
-
-.front-header {
-    margin: auto;
-    text-align: center;
-}
-
-.header-front-subtitle {
-    font-family: "Great Vibes", cursive;
-    font-size: 72px;
-    font-weight: lighter;
-    line-height: 55px;
-    margin: 0;
-    margin-top: -60px;
-}
-
-.header-front-title {
-    color: $color-white;
-    font-size: 100px;
-    font-weight: 800;
-    margin-bottom: -15px;
-    margin-top: -35px;
-    text-transform: uppercase;
 }

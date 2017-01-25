@@ -20,6 +20,7 @@ input[type="submit"] {
 .button {
     border-radius: 3px;
     display: inline-block;
+    font-family: $font-primary;
     font-size: 14px;
     letter-spacing: 2px;
     margin: auto;
@@ -43,8 +44,6 @@ input[type="submit"] {
         color: $color-white;
 
         &:hover {
-            background: $color-gold-darker;
-            color: $color-white;
             transition: .4s all;
         }
     }

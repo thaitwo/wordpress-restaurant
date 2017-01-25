@@ -1,10 +1,3 @@
-.menu-category {
-    border-bottom: 1px $color-bluegrey-50 solid;
-    letter-spacing: 1px;
-    margin: 0 0 ($unit * 6);
-    padding-bottom: $unit;
-}
-
 .menu-section {
     margin: 0;
 }
@@ -23,9 +16,18 @@
     width: 100%;
 }
 
-// don't rename to .menu-item as it will conflict with navigation menu
+.menu-category {
+    border-bottom: 1px $color-bluegrey-50 solid;
+    font-family: $font-primary;
+    letter-spacing: 1px;
+    margin: 0 0 ($unit * 6);
+    padding-bottom: $unit;
+}
+
+// don't rename to .menu-item as it will conflict with default navigation menu class
 .menu-list-item {
     display: inline-block;
+    font-family: $font-primary;
     font-size: $font-small;
     font-weight: 600;
     margin: 0;
@@ -33,6 +35,7 @@
 }
 
 .menu-list-item-price {
+    font-family: $font-primary;
     float: right;
     font-size: $font-small;
     font-weight: 300;
@@ -44,7 +47,9 @@
 }
 
 .menu-list-item-des {
+    font-family: $font-primary;
     font-size: $font-standard;
+    font-weight: 300;
     margin: 0;
     padding-right: $unit * 16;
 }
