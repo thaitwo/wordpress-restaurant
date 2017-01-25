@@ -19,12 +19,16 @@
 }
 
 .testimonial-quotes {
+    font-family: $font-primary;
+    font-weight: 400;
     margin-bottom: 10px;
     padding: 30px 0 0 10px;
     position: relative;
 }
 
 .testimonial-name {
+    font-family: $font-primary;
+    font-weight: 800;
     letter-spacing: 1px;
     margin: 0;
     padding-left: 10px;

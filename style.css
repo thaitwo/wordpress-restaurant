@@ -2731,6 +2731,7 @@ th {
   width: 1200px; }
 
 .entry-content {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin: 80px auto; }
 
 .column-container {
@@ -2801,6 +2802,7 @@ th {
 
 .section-title {
   color: #263238;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 900;
   margin-top: -45px;
@@ -2808,6 +2810,7 @@ th {
   text-align: center; }
 
 .section-description {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   padding: 0 40px;
   text-align: center; }
 
@@ -2856,8 +2859,10 @@ th {
 
 .section-divider-title {
   color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 900;
+  letter-spacing: 2px;
   margin-top: -45px; }
 
 .stars {
@@ -2867,12 +2872,6 @@ th {
 .img-right {
   float: right;
   margin-top: 50px; }
-
-.menu-category {
-  border-bottom: 1px #ECEFF1 solid;
-  letter-spacing: 1px;
-  margin: 0 0 30px;
-  padding-bottom: 5px; }
 
 .menu-section {
   margin: 0; }
@@ -2888,14 +2887,23 @@ th {
   margin-bottom: 50px;
   width: 100%; }
 
+.menu-category {
+  border-bottom: 1px #ECEFF1 solid;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+  padding-bottom: 5px; }
+
 .menu-list-item {
   display: inline-block;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
   margin: 0;
   padding-right: 80px; }
 
 .menu-list-item-price {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   float: right;
   font-size: 18px;
   font-weight: 300;
@@ -2906,6 +2914,7 @@ th {
   top: 0; }
 
 .menu-list-item-des {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
   margin: 0;
@@ -2986,6 +2995,7 @@ input[type="submit"] {
 .button {
   border-radius: 3px;
   display: inline-block;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
   margin: auto;
@@ -3120,6 +3130,7 @@ textarea {
 
 .header-title {
   color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 800;
   text-transform: uppercase;
@@ -3142,6 +3153,7 @@ textarea {
 
 .header-front-title {
   color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 100px;
   font-weight: 800;
   margin-bottom: -15px;
@@ -3180,6 +3192,7 @@ textarea {
   margin-top: 40px; }
 
 .footer-title {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase; }
@@ -3191,6 +3204,7 @@ textarea {
 
 .site-info {
   color: rgba(255, 255, 255, 0.1);
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   margin-top: 30px;
@@ -3226,6 +3240,7 @@ textarea {
 
 .site-title a {
   color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -3261,9 +3276,10 @@ textarea {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
+    font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
     float: left;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 50px;
     position: relative;
@@ -3322,11 +3338,15 @@ textarea {
     top: 0; }
 
 .testimonial-quotes {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   margin-bottom: 10px;
   padding: 30px 0 0 10px;
   position: relative; }
 
 .testimonial-name {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 800;
   letter-spacing: 1px;
   margin: 0;
   padding-left: 10px; }
@@ -3338,6 +3358,7 @@ textarea {
     max-width: 100%; }
 
 .widget-area {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   text-align: center;
   width: 550px; }
 
@@ -3410,12 +3431,14 @@ object {
 **
 **/
 .reservation-ot-title {
-  font-weight: 400;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
   margin: 0 auto 30px;
   text-align: center; }
 
 .reservation-ot-description {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin-bottom: 60px;
   text-align: center; }
 

@@ -19,6 +19,7 @@
 
 .header-title {
     color: $color-white;
+    font-family: $font-primary;
     font-size: 64px;
     font-weight: 800;
     text-transform: uppercase;
@@ -44,6 +45,7 @@
 
 .header-front-title {
     color: $color-white;
+    font-family: $font-primary;
     font-size: 100px;
     font-weight: 800;
     margin-bottom: -15px;

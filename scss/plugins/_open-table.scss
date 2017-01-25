@@ -1,11 +1,13 @@
 .reservation-ot-title {
-    font-weight: 500;
+    font-family: $font-primary;
+    font-weight: 600;
     letter-spacing: 2px;
     margin: 0 auto 30px;
     text-align: center;
 }
 
 .reservation-ot-description {
+    font-family: $font-primary;
     margin-bottom: 60px;
     text-align: center;
 }
@@ -31,13 +33,13 @@
 
 .ot-button {
     background-color: $color-gold;
-    font-family: $font-body !important;
+    font-family: $font-primary !important;
     text-transform: uppercase;
     transition: all .5s !important;
 }
 
 .ot-dtp-picker.wide .ot-dtp-picker-form {
-    font-family: $font-body;
+    font-family: $font-primary;
     height: 50px !important;
 }
 

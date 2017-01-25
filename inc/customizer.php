@@ -116,7 +116,7 @@ function theme_options( $wp_customize ) {
 
     $wp_customize->add_section( 'theme_social_icons' , array(
         'title'         => __('Theme Social Icons','dojo'),
-        'description'   => 'Leave field empty to hide icon on website',
+        'description'   => 'Insert URL to display social media icons. Leave field empty to hide icon.',
         'priority'      => 30,
         'panel'         => 'theme_options',
     ) );

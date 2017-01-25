@@ -22,6 +22,7 @@
 
 .section-title {
     color: $color-bluegrey-900;
+    font-family: $font-primary;
     font-size: $font-x-large;
     font-weight: 900;
     margin-top: -45px;
@@ -30,6 +31,7 @@
 }
 
 .section-description {
+    font-family: $font-primary;
     padding: 0 40px;
     text-align: center;
 }
@@ -91,8 +93,10 @@
 
 .section-divider-title {
     color: $color-white;
+    font-family: $font-primary;
     font-size: $font-x-large;
     font-weight: 900;
+    letter-spacing: 2px;
     margin-top: -45px;
 }
 
