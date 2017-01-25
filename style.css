@@ -2907,6 +2907,7 @@ th {
 
 .menu-list-item-des {
   font-size: 16px;
+  font-weight: 300;
   margin: 0;
   padding-right: 80px; }
 
@@ -3198,15 +3199,22 @@ textarea {
 
 .icon-margin {
   margin: 0 10px; }
-  .icon-margin .fa-facebook:hover,
-  .icon-margin .fa-twitter:hover,
-  .icon-margin .fa-instagram:hover,
-  .icon-margin .fa-google-plus:hover,
-  .icon-margin .fa-youtube-play:hover,
-  .icon-margin .fa-linkedin:hover,
-  .icon-margin .fa-pinterest-p:hover {
-    color: white;
+  .icon-margin .fa-facebook,
+  .icon-margin .fa-twitter,
+  .icon-margin .fa-instagram,
+  .icon-margin .fa-google-plus,
+  .icon-margin .fa-youtube-play,
+  .icon-margin .fa-linkedin,
+  .icon-margin .fa-pinterest-p {
     transition: all .3s; }
+    .icon-margin .fa-facebook:hover,
+    .icon-margin .fa-twitter:hover,
+    .icon-margin .fa-instagram:hover,
+    .icon-margin .fa-google-plus:hover,
+    .icon-margin .fa-youtube-play:hover,
+    .icon-margin .fa-linkedin:hover,
+    .icon-margin .fa-pinterest-p:hover {
+      color: white; }
 
 .site-branding {
   display: inline-block;
@@ -3402,7 +3410,7 @@ object {
 **
 **/
 .reservation-ot-title {
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   margin: 0 auto 30px;
   text-align: center; }

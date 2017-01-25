@@ -26,14 +26,17 @@
 .icon-margin {
 	margin: 0 10px;
 
-	& .fa-facebook:hover,
-	& .fa-twitter:hover,
-	& .fa-instagram:hover,
-	& .fa-google-plus:hover,
-	& .fa-youtube-play:hover,
-	& .fa-linkedin:hover,
-	& .fa-pinterest-p:hover {
-		color: rgba(255,255,255, 1);
+	& .fa-facebook,
+	& .fa-twitter,
+	& .fa-instagram,
+	& .fa-google-plus,
+	& .fa-youtube-play,
+	& .fa-linkedin,
+	& .fa-pinterest-p {
 		transition: all .3s;
+
+		&:hover {
+			color: rgba(255,255,255, 1);
+		}
 	}
 }
