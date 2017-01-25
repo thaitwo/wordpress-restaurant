@@ -44,8 +44,6 @@ input[type="submit"] {
         color: $color-white;
 
         &:hover {
-            background: $color-gold-darker;
-            color: $color-white;
             transition: .4s all;
         }
     }

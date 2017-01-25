@@ -58,7 +58,7 @@ li:hover > a { color: <?php echo $primary_color ?>; }
             </header><!-- #masthead -->
         </div>
 
-        <div class="front-header">
+        <div class="header-front">
 
             <?php
             if ($header_front_subtitle) { ?>

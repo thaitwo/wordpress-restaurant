@@ -2726,9 +2726,19 @@ th {
 ** LAYOUT
 **
 */
+/*
+** Layouts
+**
+*/
+.full {
+  width: 100%; }
+
 .main-page {
   margin: 0 auto;
   width: 1200px; }
+
+.inner {
+  padding: 20px 0; }
 
 .entry-content {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
@@ -2782,16 +2792,14 @@ th {
 .is-rounded {
   border-radius: 3px; }
 
-.full {
-  width: 100%; }
-
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-.inner {
-  padding: 20px 0; }
+.front-column-container {
+  text-align: center;
+  width: 46%; }
 
 .section-subtitle {
   font-family: "Great Vibes", cursive;
@@ -2820,58 +2828,9 @@ th {
   outline-offset: -20px;
   width: 100%; }
 
-.front-column-container {
-  text-align: center;
-  width: 46%; }
-
-.front-content-right {
-  float: right;
-  width: 50%; }
-
-.hours-bar {
-  background: #DAB075;
-  display: block;
-  height: 80px; }
-
-.header-area {
-  background: #FF5722;
-  color: white;
-  height: 350px;
-  text-decoration: none; }
-
-.section-divider {
-  height: 400px;
-  margin: auto;
-  text-align: center; }
-  .section-divider.has-vert-margin {
-    margin: 60px 0; }
-  .section-divider.has-vert-margin-large {
-    margin: 80px 0; }
-
-.section-divider-text {
-  margin: auto; }
-
-.section-divider-subtitle {
-  font-family: "Great Vibes", cursive;
-  font-size: 64px;
-  font-weight: lighter;
-  margin: 0; }
-
-.section-divider-title {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 64px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  margin-top: -45px; }
-
 .stars {
   display: inline-block;
   margin: 0 15px; }
-
-.img-right {
-  float: right;
-  margin-top: 50px; }
 
 .menu-section {
   margin: 0; }
@@ -3013,8 +2972,6 @@ input[type="submit"] {
   .button.button-secondary {
     color: #ffffff; }
     .button.button-secondary:hover {
-      background: #C79C5F;
-      color: #ffffff;
       transition: .4s all; }
 
 .clear:before,
@@ -3046,6 +3003,32 @@ input[type="submit"] {
 
 .bypostauthor {
   display: block; }
+
+.section-divider {
+  height: 400px;
+  margin: auto;
+  text-align: center; }
+  .section-divider.has-vert-margin {
+    margin: 60px 0; }
+  .section-divider.has-vert-margin-large {
+    margin: 80px 0; }
+
+.section-divider-text {
+  margin: auto; }
+
+.section-divider-subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  font-weight: lighter;
+  margin: 0; }
+
+.section-divider-title {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: -45px; }
 
 input[type="text"],
 input[type="email"],
@@ -3103,7 +3086,7 @@ select {
   border: 1px solid #ccc; }
 
 textarea {
-  height: 254px; }
+  height: 246px; }
 
 .contact-image {
   height: 384px;
@@ -3111,12 +3094,46 @@ textarea {
   outline-offset: -20px;
   width: 552px; }
 
+/*
+** Front Header
+**
+*/
 .header-area-front {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%; }
+
+.header-front {
+  margin: auto;
+  text-align: center; }
+
+.header-front-subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 72px;
+  font-weight: lighter;
+  line-height: 55px;
+  margin: 0;
+  margin-top: -60px; }
+
+.header-front-title {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  margin-bottom: -15px;
+  margin-top: -35px;
+  text-transform: uppercase; }
+
+/*
+** Header
+**
+*/
+.header-area {
+  color: white;
+  height: 350px;
+  text-decoration: none; }
 
 .header-subtitle {
   font-family: "Great Vibes", cursive;
@@ -3138,27 +3155,6 @@ textarea {
   margin: 0;
   margin-top: 50px;
   text-align: center; }
-
-.front-header {
-  margin: auto;
-  text-align: center; }
-
-.header-front-subtitle {
-  font-family: "Great Vibes", cursive;
-  font-size: 72px;
-  font-weight: lighter;
-  line-height: 55px;
-  margin: 0;
-  margin-top: -60px; }
-
-.header-front-title {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  font-weight: 800;
-  margin-bottom: -15px;
-  margin-top: -35px;
-  text-transform: uppercase; }
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
