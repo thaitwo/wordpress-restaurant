@@ -9,6 +9,20 @@
 
 ?>
 
+<?php
+// vars
+$testimonial_section_image = get_field('testimonial_section_image');
+$testimonial_section_subtitle = get_field('testimonial_section_subtitle');
+$testimonial_section_title = get_field('testimonial_section_title');
+$testimonials_stars = get_field('testimonials_stars');
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+$secondary_color = get_theme_mod('secondary_color', '#263238');
+?>
+
+<style type="text/css">
+.entry-content p { color: <?php echo $secondary_color ?>; }
+</style>
+
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <div class="entry-content">
@@ -17,13 +31,6 @@
             </div>
 
             <?php
-            // vars
-            $testimonial_section_image = get_field('testimonial_section_image');
-            $testimonial_section_subtitle = get_field('testimonial_section_subtitle');
-            $testimonial_section_title = get_field('testimonial_section_title');
-            $testimonials_stars = get_field('testimonials_stars');
-            $primary_color = get_theme_mod('primary_color', '#DAB075');
-            $secondary_color = get_theme_mod('secondary_color', '#263238');
 
             // image divider
             if ($testimonial_section_image): ?>
