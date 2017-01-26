@@ -2972,7 +2972,7 @@ input[type="submit"] {
   .button.button-secondary {
     color: #ffffff; }
     .button.button-secondary:hover {
-      transition: .4s all; }
+      background-color: black; }
 
 .clear:before,
 .clear:after,
@@ -3062,6 +3062,7 @@ input[type="url"]:hover,
 input[type="url"]:focus,
 textarea:hover,
 textarea:focus {
+  border: 1px;
   box-shadow: 0px 0px 10px 1px rgba(38, 50, 56, 0.2);
   color: #263238;
   outline: none; }

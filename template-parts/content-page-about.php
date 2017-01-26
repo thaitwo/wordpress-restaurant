@@ -17,10 +17,23 @@ $testimonial_section_title = get_field('testimonial_section_title');
 $testimonials_stars = get_field('testimonials_stars');
 $primary_color = get_theme_mod('primary_color', '#DAB075');
 $secondary_color = get_theme_mod('secondary_color', '#263238');
+$button_label_1 = get_field('button_label_1');
+$button_link_1 = get_field('button_link_1');
+$button_label_2 = get_field('button_label_2');
+$button_link_2 = get_field('button_link_2');
 ?>
 
 <style type="text/css">
 .entry-content p { color: <?php echo $secondary_color ?>; }
+.button.button-secondary { background-color: <?php echo $primary_color ?>; }
+.button.button-secondary:hover { background-color: <?php echo $secondary_color ?>; }
+.button.button-tertiary {
+    box-shadow: inset 0 0 0 1px <?php echo $primary_color ?>;
+    color: <?php echo $primary_color ?>; }
+.button.button-tertiary:hover {
+    box-shadow: inset 0 0 0 1px <?php echo $secondary_color ?>;
+    color: <?php echo $secondary_color ?>; }
+.stars { color: <?php echo $primary_color ?>; }
 </style>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,6 +41,17 @@ $secondary_color = get_theme_mod('secondary_color', '#263238');
         <div class="entry-content">
             <div class="main-page">
                 <?php the_content(); ?>
+
+                <?php
+                if ($button_label_1 && $button_link_1 && !$button_label_2 && !$button_link_2) : ?>
+                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>"><?php echo $button_label_1 ?></a>
+                <?php
+                elseif ($button_label_1 && $button_link_1 && $button_label_2 && $button_link_2) : ?>
+                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>" style="margin-right: 30px;"><?php echo $button_label_1 ?></a>
+                    <a class="button button-tertiary" href="<?php echo $button_link_2 ?>"><?php echo $button_label_2 ?></a>
+                <?php
+                endif;
+                ?>
             </div>
 
             <?php
@@ -61,9 +85,9 @@ $secondary_color = get_theme_mod('secondary_color', '#263238');
                         <?php
                         if ($testimonials_stars === true) : ?>
                             <div class="l-center">
-                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                <i class="stars fa fa-star" aria-hidden="true"></i>
                             </div>
                         <?php
                         endif; ?>

@@ -6,12 +6,15 @@
  *
  * @package Dojo
  */
-
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+$secondary_color = get_theme_mod('secondary_color', '#263238');
+$tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
 ?>
 
 <style type="text/css">
-.button.button-secondary:hover {
-    color: rgba(0,0,0,.6); }
+.button.button-secondary { background-color: <?php echo $primary_color ?>; }
+.button.button-secondary:hover { background-color: <?php echo $secondary_color ?>; }
+.stars { color: <?php echo $primary_color ?>; }
 </style>
 
 <div class="main-content-area full">
@@ -39,10 +42,6 @@
                         $front_page_stars = get_sub_field('front_page_stars');
                         $front_page_text = get_sub_field('front_page_text');
                         $front_page_title = get_sub_field('front_page_title');
-                        $primary_color = get_theme_mod('primary_color', '#DAB075');
-                        $secondary_color = get_theme_mod('secondary_color', '#263238');
-                        $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
-
                         ?>
 
                         <?php
@@ -75,9 +74,9 @@
                                     <?php
                                     if ($front_page_divider_stars === true) : ?>
                                         <div class="l-center">
-                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                            <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star" aria-hidden="true"></i>
                                         </div>
                                     <?php
                                     endif; ?>
@@ -111,9 +110,9 @@
                                         <?php
                                         if ($front_page_stars === true) : ?>
                                             <div class="l-center">
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
                                             </div>
                                         <?php
                                         endif; ?>
@@ -124,7 +123,7 @@
 
                                         <?php
                                         if ($front_page_button) : ?>
-                                            <a class="button button-secondary" href="<?php echo $front_page_button_link; ?>" style="background-color: <?php echo $primary_color ?>;">
+                                            <a class="button button-secondary" href="<?php echo $front_page_button_link; ?>">
                                             <?php echo $front_page_button; ?>
                                             </a>
                                         <?php

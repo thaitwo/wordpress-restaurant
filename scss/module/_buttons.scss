@@ -44,7 +44,10 @@ input[type="submit"] {
         color: $color-white;
 
         &:hover {
-            transition: .4s all;
+            background-color: rgba(0,0,0,1);
         }
+    }
+
+    &.button-tertiary {
     }
 }

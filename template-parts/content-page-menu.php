@@ -9,6 +9,16 @@
 
 ?>
 
+<?php
+$primary_color = get_theme_mod('primary_color', '#DAB075');
+$secondary_color = get_theme_mod('secondary_color', '#263238');
+$tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
+?>
+
+<style type="text/css">
+.stars { color: <?php echo $primary_color ?>; }
+</style>
+
 <div class="main-content-area full">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,14 +32,12 @@
 
                         while( have_rows('menu_section') ) : the_row();
 
-                            // vars
+                            //vars
                             $menu_divider_stars = get_sub_field('menu_divider_stars');
-                            $primary_color = get_theme_mod('primary_color', '#DAB075');
-                            $secondary_color = get_theme_mod('secondary_color', '#263238');
                             $section_image = get_sub_field('section_image');
                             $section_image_subtitle = get_sub_field('section_image_subtitle');
                             $section_image_title = get_sub_field('section_image_title');
-                            $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
+
                             ?>
 
                             <?php
@@ -60,9 +68,9 @@
                                         <?php
                                         if ($menu_divider_stars === true) : ?>
                                             <div class="l-center">
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                                                <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star" aria-hidden="true"></i>
                                             </div>
                                         <?php
                                         endif; ?>
