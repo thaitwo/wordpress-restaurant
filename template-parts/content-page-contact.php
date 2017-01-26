@@ -17,7 +17,7 @@ $secondary_color = get_theme_mod('secondary_color', '#263238');
 <style type="text/css">
 .entry-content p { color: <?php echo $secondary_color ?>; }
 input[type="submit"] { background-color: <?php echo $primary_color ?>; }
-input[type="submit"]:hover { color: rgba(0,0,0,.6); }
+input[type="submit"]:hover { background-color: <?php echo $secondary_color ?>; }
 </style>
 
 <div class="main-content-area full">

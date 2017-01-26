@@ -30,8 +30,8 @@ $primary_color = get_theme_mod('primary_color', '#DAB075');
 
 <style type="text/css">
 .site-title:hover > a { color: <?php echo $primary_color ?>; }
-
 li:hover > a { color: <?php echo $primary_color ?>; }
+.stars { color: <?php echo $primary_color ?>; }
 </style>
 
 <body <?php body_class(); ?>>
@@ -86,9 +86,9 @@ li:hover > a { color: <?php echo $primary_color ?>; }
             <?php
             if ($header_front_stars === true) : ?>
                 <div class="l-center">
-                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
-                    <i class="stars fa fa-star" style="color: <?php echo $primary_color ?>;" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
                 </div>
             <?php
             endif; ?>
