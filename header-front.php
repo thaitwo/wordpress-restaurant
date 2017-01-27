@@ -84,14 +84,21 @@ li:hover > a { color: <?php echo $primary_color ?>; }
             </div>
 
             <?php
-            if ($header_front_stars === true) : ?>
+            if ($header_front_stars === true && wp_is_mobile() ) { ?>
+                <div class="l-center">
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                </div>
+            <?php
+            } else { ?>
                 <div class="l-center">
                     <i class="stars fa fa-star" aria-hidden="true"></i>
                     <i class="stars fa fa-star" aria-hidden="true"></i>
                     <i class="stars fa fa-star" aria-hidden="true"></i>
                 </div>
             <?php
-            endif; ?>
+            } ?>
 
             <?php
             if ($header_front_button) : ?>

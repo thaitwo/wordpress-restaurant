@@ -11,6 +11,13 @@ div.wpcf7 {
 
 form.wpcf7-form {
     width: 550px;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        width: 100%;
+    }
 }
 
 input.wpcf7-text,

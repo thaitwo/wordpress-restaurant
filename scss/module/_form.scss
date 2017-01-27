@@ -66,4 +66,11 @@ textarea {
     outline: 1px solid $color-white;
     outline-offset: -20px;
     width: 552px;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        display: none;
+    }
 }

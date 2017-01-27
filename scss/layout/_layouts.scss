@@ -10,6 +10,13 @@
 .main-page {
     margin: 0 auto;
     width: 1200px;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
 }
 
 .inner {
@@ -19,6 +26,14 @@
 .entry-content {
     font-family: $font-primary;
     margin: 80px auto;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 14px;
+        padding: 0 20px;
+    }
 }
 
 .column-container {
@@ -95,6 +110,13 @@
 
     &.flex-wrap {
         flex-wrap: wrap;
+    }
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        display: block;
     }
 }
 

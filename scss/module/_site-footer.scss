@@ -13,6 +13,21 @@
 	border-bottom: 1px solid rgba(255,255,255, .1);
 	margin: 0 350px;
 	margin-bottom: 30px;
+
+	@media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        margin: 0 200px;
+        margin-bottom: 30px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 14px;
+    }
 }
 
 .site-info {

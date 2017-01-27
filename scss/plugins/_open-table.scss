@@ -4,12 +4,41 @@
     letter-spacing: 2px;
     margin: 0 auto 30px;
     text-align: center;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 50px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+      screen and (max-device-width: $breakpoint-small),
+      screen and (max-width: $breakpoint-small) {
+
+        line-height: 35px;
+        padding: 0 30px;
+    }
 }
 
 .reservation-ot-description {
     font-family: $font-primary;
     margin-bottom: 60px;
     text-align: center;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 50px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+      screen and (max-device-width: $breakpoint-small),
+      screen and (max-width: $breakpoint-small) {
+
+        padding: 0 30px;
+    }
 }
 
 .ot-title {
@@ -23,6 +52,13 @@
         background: 0 0;
         margin: auto;
         width: 50.5rem;
+    }
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        margin: auto;
     }
 }
 
