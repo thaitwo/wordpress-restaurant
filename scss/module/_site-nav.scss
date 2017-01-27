@@ -14,14 +14,14 @@
       screen and (max-device-width: $breakpoint-medium),
       screen and (max-width: $breakpoint-medium) {
 
-        padding-left: 50px;
+        padding-left: 0;
     }
 
     @media handheld and (max-width: $breakpoint-small),
     screen and (max-device-width: $breakpoint-small),
     screen and (max-width: $breakpoint-small) {
 
-        padding-left: 30px;
+        padding-left: 0px;
     }
 }
 

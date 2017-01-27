@@ -14,14 +14,14 @@
       screen and (max-device-width: $breakpoint-medium),
       screen and (max-width: $breakpoint-medium) {
 
-
+        height: 100%;
     }
 
     @media handheld and (max-width: $breakpoint-small),
       screen and (max-device-width: $breakpoint-small),
       screen and (max-width: $breakpoint-small) {
 
-        height: 450px;
+        height: 100%;
     }
 }
 
@@ -98,7 +98,7 @@
       screen and (max-device-width: $breakpoint-small),
       screen and (max-width: $breakpoint-small) {
 
-        height: 300px;
+        height: 280px;
     }
 }
 
@@ -117,7 +117,7 @@
       screen and (max-width: $breakpoint-medium) {
 
         font-size: 56px;
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     @media handheld and (max-width: $breakpoint-small),
@@ -145,7 +145,7 @@
 
         font-size: 56px;
         margin-top: 45px;
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     @media handheld and (max-width: $breakpoint-small),

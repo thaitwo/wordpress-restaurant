@@ -47,7 +47,7 @@ $button_link_2 = get_field('button_link_2');
                     <a class="button button-secondary" href="<?php echo $button_link_1 ?>"><?php echo $button_label_1 ?></a>
                 <?php
                 elseif ($button_label_1 && $button_link_1 && $button_label_2 && $button_link_2) : ?>
-                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>" style="margin-right: 30px;"><?php echo $button_label_1 ?></a>
+                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>" style="margin-right: 10px;"><?php echo $button_label_1 ?></a>
                     <a class="button button-tertiary" href="<?php echo $button_link_2 ?>"><?php echo $button_label_2 ?></a>
                 <?php
                 endif;

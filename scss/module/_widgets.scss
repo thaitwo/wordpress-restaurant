@@ -16,7 +16,7 @@
     screen and (max-device-width: $breakpoint-medium),
     screen and (max-width: $breakpoint-medium) {
 
-      	padding: 0 130px;
+      	padding: 0 80px;
         width: 100%;
     }
 
@@ -25,7 +25,7 @@
     screen and (max-width: $breakpoint-small) {
 
         font-size: 14px;
-        padding: 0 20px;
+        padding: 0;
     }
 }
 

@@ -1,6 +1,13 @@
 .testimonial-column-container {
     width: 46%;
 
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
+
     @media handheld and (max-width: $breakpoint-small),
     screen and (max-device-width: $breakpoint-small),
     screen and (max-width: $breakpoint-small) {
@@ -28,7 +35,9 @@
     screen and (max-device-width: $breakpoint-medium),
     screen and (max-width: $breakpoint-medium) {
 
-
+        &:before {
+            font-size: 64px;
+        }
     }
 
     @media handheld and (max-width: $breakpoint-small),
@@ -51,6 +60,13 @@
     margin-bottom: 10px;
     padding: 30px 0 0 10px;
     position: relative;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        padding: 45px 0 0 10px;
+    }
 
     @media handheld and (max-width: $breakpoint-small),
     screen and (max-device-width: $breakpoint-small),

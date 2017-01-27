@@ -220,7 +220,11 @@ a {
 
 @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
   .edit-link {
-    padding: 0 80px; } }
+    padding: 0; } }
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  .edit-link {
+    padding: 0; } }
 
 html {
   font-family: sans-serif;
@@ -2749,18 +2753,31 @@ th {
   width: 1200px; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .main-page {
+      padding: 0 40px;
       width: 100%; } }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .main-page {
+      padding: 0 20px; } }
 
 .inner {
   padding: 20px 0; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .inner {
+      padding: 5px 0; } }
 
 .entry-content {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin: 80px auto; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .entry-content {
+      margin: 40px 0; }
+      .entry-content .layoutArea .column img {
+        height: 100%;
+        width: 50%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .entry-content {
       font-size: 14px;
-      padding: 0 20px; } }
+      margin: 30px auto; } }
 
 .column-container {
   width: 46%; }
@@ -2823,11 +2840,11 @@ th {
   width: 46%; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .front-column-container {
-      padding: 0 80px;
+      padding: 0 0 10px 0;
       width: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .front-column-container {
-      padding: 0 30px; } }
+      padding: 0px; } }
 
 .section-subtitle {
   font-family: "Great Vibes", cursive;
@@ -2835,9 +2852,12 @@ th {
   font-weight: lighter;
   margin: 0;
   text-align: center; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .section-subtitle {
+      font-size: 56px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-subtitle {
-      font-size: 40px; } }
+      font-size: 35px; } }
 
 .section-title {
   color: #263238;
@@ -2847,15 +2867,22 @@ th {
   margin-top: -45px;
   margin-bottom: -5px;
   text-align: center; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .section-title {
+      font-size: 56px;
+      margin-top: -45px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-title {
-      font-size: 40px;
-      margin-top: -30px; } }
+      font-size: 30px;
+      margin-top: -25px; } }
 
 .section-description {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   padding: 0 50px;
   text-align: center; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .section-description {
+      padding: 0 80px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-description {
       font-size: 14px;
@@ -2888,11 +2915,11 @@ th {
   width: 46%; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .menu-column-container {
-      padding: 0 80px;
+      padding: 0;
       width: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .menu-column-container {
-      padding: 0 20px; } }
+      padding: 0; } }
 
 .menu-category-container {
   margin-bottom: 50px;
@@ -3038,6 +3065,10 @@ input[type="submit"] {
     color: #ffffff; }
     .button.button-secondary:hover {
       background-color: black; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .button {
+      font-size: 12px;
+      letter-spacing: 1px; } }
 
 .clear:before,
 .clear:after,
@@ -3077,18 +3108,29 @@ input[type="submit"] {
     margin: 60px 0; }
   .section-divider.has-vert-margin-large {
     margin: 80px 0; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .section-divider {
+      height: 350px; }
+      .section-divider.has-vert-margin {
+        margin: 40px 0; }
+      .section-divider.has-vert-margin-large {
+        margin: 40px 0; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-divider {
-      height: 300px; } }
+      height: 280px; }
+      .section-divider.has-vert-margin {
+        margin: 40px 0; }
+      .section-divider.has-vert-margin-large {
+        margin: 40px 0; } }
 
 .section-divider-text {
   margin: auto; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .section-divider-text {
-      padding: 110px 0; } }
+      padding: 90px 0; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-divider-text {
-      padding: 80px 30px; } }
+      padding: 80px 20px; } }
 
 .section-divider-subtitle {
   font-family: "Great Vibes", cursive;
@@ -3100,7 +3142,7 @@ input[type="submit"] {
       font-size: 56px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .section-divider-subtitle {
-      font-size: 40px; } }
+      font-size: 35px; } }
 
 .section-divider-title {
   color: #ffffff;
@@ -3144,6 +3186,29 @@ textarea {
   font-size: 16px;
   padding: 12px;
   transition: all .4s; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+      font-size: 14px; } }
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  input[type="submit"] {
+    font-size: 12px;
+    letter-spacing: 1px; } }
 
 input[type="text"]:hover, input[type="text"]:focus,
 input[type="email"]:hover,
@@ -3186,6 +3251,9 @@ textarea {
   outline: 1px solid #ffffff;
   outline-offset: -20px;
   width: 552px; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .contact-image {
+      display: none; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .contact-image {
       display: none; } }
@@ -3200,9 +3268,12 @@ textarea {
   flex-direction: column;
   height: 100%;
   width: 100%; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .header-area-front {
+      height: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .header-area-front {
-      height: 450px; } }
+      height: 100%; } }
 
 .header-front {
   margin: auto;
@@ -3253,7 +3324,7 @@ textarea {
   text-decoration: none; }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .header-area {
-      height: 300px; } }
+      height: 280px; } }
 
 .header-subtitle {
   font-family: "Great Vibes", cursive;
@@ -3267,7 +3338,7 @@ textarea {
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .header-subtitle {
       font-size: 56px;
-      padding: 0 50px; } }
+      padding: 0 40px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .header-subtitle {
       font-size: 36px; } }
@@ -3286,7 +3357,7 @@ textarea {
     .header-title {
       font-size: 56px;
       margin-top: 45px;
-      padding: 0 50px; } }
+      padding: 0 40px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .header-title {
       font-size: 32px;
@@ -3329,6 +3400,9 @@ textarea {
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .footer-title {
+      font-size: 24px; } }
 
 .footer-title-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -3340,7 +3414,9 @@ textarea {
       margin-bottom: 30px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .footer-title-line {
-      font-size: 14px; } }
+      font-size: 14px;
+      margin: 0 60px;
+      margin-bottom: 30px; } }
 
 .site-info {
   color: rgba(255, 255, 255, 0.1);
@@ -3350,6 +3426,9 @@ textarea {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .site-info {
+      letter-spacing: 1px; } }
 
 .icon-margin {
   margin: 0 10px; }
@@ -3369,6 +3448,9 @@ textarea {
     .icon-margin .fa-linkedin:hover,
     .icon-margin .fa-pinterest-p:hover {
       color: white; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .icon-margin {
+      margin: 0 5px; } }
 
 .site-branding {
   display: inline-block;
@@ -3379,10 +3461,10 @@ textarea {
     display: none; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .site-branding {
-      padding-left: 50px; } }
+      padding-left: 0; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .site-branding {
-      padding-left: 30px; } }
+      padding-left: 0px; } }
 
 .site-title a {
   color: #ffffff;
@@ -3475,6 +3557,9 @@ textarea {
 
 .testimonial-column-container {
   width: 46%; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .testimonial-column-container {
+      width: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .testimonial-column-container {
       width: 100%; } }
@@ -3491,6 +3576,9 @@ textarea {
     left: 0;
     position: absolute;
     top: 0; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .testimonial-container:before {
+      font-size: 64px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .testimonial-container {
       font-size: 14px;
@@ -3505,6 +3593,9 @@ textarea {
   margin-bottom: 10px;
   padding: 30px 0 0 10px;
   position: relative; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .testimonial-quotes {
+      padding: 45px 0 0 10px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .testimonial-quotes {
       padding: 25px 0 0 0; } }
@@ -3534,12 +3625,12 @@ textarea {
   width: 550px; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .widget-area {
-      padding: 0 130px;
+      padding: 0 80px;
       width: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .widget-area {
       font-size: 14px;
-      padding: 0 20px; } }
+      padding: 0; } }
 
 .widget-container {
   margin-bottom: 50px; }
@@ -3617,11 +3708,13 @@ object {
   text-align: center; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .reservation-ot-title {
-      padding: 0 50px; } }
+      padding: 0 40px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .reservation-ot-title {
-      line-height: 35px;
-      padding: 0 30px; } }
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 30px;
+      padding: 0 20px; } }
 
 .reservation-ot-description {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
@@ -3629,10 +3722,10 @@ object {
   text-align: center; }
   @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .reservation-ot-description {
-      padding: 0 50px; } }
+      padding: 0 40px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .reservation-ot-description {
-      padding: 0 30px; } }
+      padding: 0 20px; } }
 
 .ot-title {
   display: none !important; }
@@ -3668,6 +3761,9 @@ object {
   height: 40px !important;
   margin-top: 40px !important; }
 
+.ot-powered-by {
+  margin-top: 40px !important; }
+
 .contact-container {
   margin-top: 80px; }
 
@@ -3676,9 +3772,15 @@ div.wpcf7 {
   margin: 0 !important;
   margin-top: -16px !important;
   padding: 0; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    div.wpcf7 {
+      width: 100%; } }
 
 form.wpcf7-form {
   width: 550px; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    form.wpcf7-form {
+      width: 100%; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     form.wpcf7-form {
       width: 100%; } }

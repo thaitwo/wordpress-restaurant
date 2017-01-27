@@ -9,15 +9,17 @@
       screen and (max-device-width: $breakpoint-medium),
       screen and (max-width: $breakpoint-medium) {
 
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     @media handheld and (max-width: $breakpoint-small),
       screen and (max-device-width: $breakpoint-small),
       screen and (max-width: $breakpoint-small) {
 
-        line-height: 35px;
-        padding: 0 30px;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 30px;
+        padding: 0 20px;
     }
 }
 
@@ -30,14 +32,14 @@
       screen and (max-device-width: $breakpoint-medium),
       screen and (max-width: $breakpoint-medium) {
 
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     @media handheld and (max-width: $breakpoint-small),
       screen and (max-device-width: $breakpoint-small),
       screen and (max-width: $breakpoint-small) {
 
-        padding: 0 30px;
+        padding: 0 20px;
     }
 }
 
@@ -84,5 +86,10 @@
     background-position: center !important;
     background-size: 200px !important;
     height: 40px !important;
+    margin-top: 40px !important;
+}
+
+.ot-powered-by {
+
     margin-top: 40px !important;
 }

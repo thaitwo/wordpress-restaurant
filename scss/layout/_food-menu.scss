@@ -14,7 +14,7 @@
     screen and (max-device-width: $breakpoint-medium),
     screen and (max-width: $breakpoint-medium) {
 
-        padding: 0 80px;
+        padding: 0;
         width: 100%;
     }
 
@@ -22,7 +22,7 @@
     screen and (max-device-width: $breakpoint-small),
     screen and (max-width: $breakpoint-small) {
 
-        padding: 0 20px;
+        padding: 0;
     }
 }
 

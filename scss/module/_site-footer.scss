@@ -1,20 +1,27 @@
 .entry-footer {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .footer-title {
-	font-family: $font-primary;
-	letter-spacing: 1px;
-	text-align: center;
-	text-transform: uppercase;
+    font-family: $font-primary;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 24px;
+    }
 }
 
 .footer-title-line {
-	border-bottom: 1px solid rgba(255,255,255, .1);
-	margin: 0 350px;
-	margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255, .1);
+    margin: 0 350px;
+    margin-bottom: 30px;
 
-	@media handheld and (max-width: $breakpoint-medium),
+    @media handheld and (max-width: $breakpoint-medium),
     screen and (max-device-width: $breakpoint-medium),
     screen and (max-width: $breakpoint-medium) {
 
@@ -27,33 +34,49 @@
     screen and (max-width: $breakpoint-small) {
 
         font-size: 14px;
+        margin: 0 60px;
+        margin-bottom: 30px;
     }
 }
 
 .site-info {
-	color: rgba(255,255,255, .1);
-	font-family: $font-primary;
-	font-size: 12px;
-	letter-spacing: 2px;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	text-align: center;
+    color: rgba(255,255,255, .1);
+    font-family: $font-primary;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        letter-spacing: 1px;
+    }
 }
 
 .icon-margin {
-	margin: 0 10px;
+    margin: 0 10px;
 
-	& .fa-facebook,
-	& .fa-twitter,
-	& .fa-instagram,
-	& .fa-google-plus,
-	& .fa-youtube-play,
-	& .fa-linkedin,
-	& .fa-pinterest-p {
-		transition: all .3s;
+    & .fa-facebook,
+    & .fa-twitter,
+    & .fa-instagram,
+    & .fa-google-plus,
+    & .fa-youtube-play,
+    & .fa-linkedin,
+    & .fa-pinterest-p {
+        transition: all .3s;
 
-		&:hover {
-			color: rgba(255,255,255, 1);
-		}
-	}
+        &:hover {
+            color: rgba(255,255,255, 1);
+        }
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        margin: 0 5px;
+    }
 }

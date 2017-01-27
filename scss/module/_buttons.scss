@@ -50,4 +50,16 @@ input[type="submit"] {
 
     &.button-tertiary {
     }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 12px;
+        letter-spacing: 1px;
+
+        &.button-secondary {
+
+        }
+    }
 }
