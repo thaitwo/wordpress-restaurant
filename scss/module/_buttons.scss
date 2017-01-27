@@ -17,6 +17,15 @@ input[type="submit"] {
     }
 }
 
+button.menu-toggle {
+
+    @media screen and (max-width: $breakpoint-medium) {
+
+        margin-top: 10px;
+        padding: 0;
+    }
+}
+
 .button {
     border-radius: 3px;
     display: inline-block;

@@ -81,16 +81,22 @@ $button_link_2 = get_field('button_link_2');
                             ?>
                         </div>
 
-
                         <?php
-                        if ($testimonials_stars === true) : ?>
+                        if ($testimonials_stars === true && wp_is_mobile() ) { ?>
+                            <div class="l-center">
+                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                            </div>
+                        <?php
+                        } else { ?>
                             <div class="l-center">
                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                             </div>
                         <?php
-                        endif; ?>
+                        } ?>
 
                     </div>
                 </div>

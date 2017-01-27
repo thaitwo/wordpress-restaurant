@@ -66,14 +66,21 @@ $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
                                         </div>
 
                                         <?php
-                                        if ($menu_divider_stars === true) : ?>
+                                        if ($menu_divider_stars === true && wp_is_mobile() ) { ?>
+                                            <div class="l-center">
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                            </div>
+                                        <?php
+                                        } else { ?>
                                             <div class="l-center">
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                             </div>
                                         <?php
-                                        endif; ?>
+                                        } ?>
 
                                     </div>
                                 </div>
