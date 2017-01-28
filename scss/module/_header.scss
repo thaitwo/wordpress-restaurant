@@ -94,11 +94,18 @@
     height: 350px;
     text-decoration: none;
 
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        height: 300px;
+    }
+
     @media handheld and (max-width: $breakpoint-small),
       screen and (max-device-width: $breakpoint-small),
       screen and (max-width: $breakpoint-small) {
 
-        height: 280px;
+        height: 230px;
     }
 }
 

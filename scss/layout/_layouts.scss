@@ -48,7 +48,7 @@
 
         margin: 40px 0;
 
-        & .layoutArea .column img {
+        .layoutArea .column img {
             height: 100%;
             width: 50%;
         }
@@ -60,6 +60,10 @@
 
         font-size: 14px;
         margin: 30px auto;
+
+        .layoutArea .column img {
+            width: 100%;
+        }
     }
 }
 

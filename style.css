@@ -2777,7 +2777,9 @@ th {
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .entry-content {
       font-size: 14px;
-      margin: 30px auto; } }
+      margin: 30px auto; }
+      .entry-content .layoutArea .column img {
+        width: 100%; } }
 
 .column-container {
   width: 46%; }
@@ -3327,9 +3329,12 @@ textarea {
   color: white;
   height: 350px;
   text-decoration: none; }
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+    .header-area {
+      height: 300px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .header-area {
-      height: 280px; } }
+      height: 230px; } }
 
 .header-subtitle {
   font-family: "Great Vibes", cursive;
@@ -3526,9 +3531,38 @@ textarea {
     padding: 0 20px;
     text-decoration: none;
     transition: 0.4s all; }
-  @media screen and (max-width: 780px) {
+  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
     .main-navigation {
-      padding: 0 0 0px 0; } }
+      padding: 0 0 0px 0; }
+      .main-navigation ul {
+        border: 10px solid #B0BEC5;
+        left: 40px;
+        right: 40px;
+        top: 120px;
+        position: absolute;
+        z-index: 1; }
+      .main-navigation li {
+        float: none; }
+      .main-navigation a {
+        background-color: white;
+        border-bottom: 1px solid #B0BEC5;
+        color: rgba(0, 0, 0, 0.8);
+        padding: 5px 20px; } }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .main-navigation ul {
+      border: 10px solid #B0BEC5;
+      left: 20px;
+      right: 20px;
+      top: 100px;
+      position: absolute;
+      z-index: 1; }
+    .main-navigation li {
+      float: none; }
+    .main-navigation a {
+      background-color: white;
+      color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid #B0BEC5;
+      padding: 3px 20px; } }
 
 /*
 ** Responsive Menu
