@@ -25,7 +25,7 @@ textarea {
     screen and (max-device-width: $breakpoint-small),
     screen and (max-width: $breakpoint-small) {
 
-        font-size: 14px;
+        font-size: $font-mobile;
     }
 }
 
