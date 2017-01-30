@@ -15,3 +15,20 @@ a {
         outline: 0;
     }
 }
+
+.edit-link {
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 0;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding: 0;
+    }
+}

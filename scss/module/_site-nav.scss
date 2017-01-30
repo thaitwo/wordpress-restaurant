@@ -1,3 +1,8 @@
+.site-header {
+
+
+}
+
 .site-branding {
     display: inline-block;
     float: left;
@@ -8,6 +13,20 @@
 
     & .site-description {
         display: none;
+    }
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding-left: 0;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding-left: 0px;
     }
 }
 
@@ -25,6 +44,13 @@
     &:hover {
         color: $color__link-hover;
         transition: .5s all;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 24px;
     }
 }
 
@@ -95,10 +121,6 @@
         padding: 0 20px;
         text-decoration: none;
         transition: 0.4s all;
-
-        &:hover {
-
-        }
     }
 
     .current_page_item > a,
@@ -106,18 +128,80 @@
     .current_page_ancestor > a,
     .current-menu-ancestor > a {
     }
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 0 0px 0;
+
+        ul {
+            border: 5px solid black;
+            border-radius: 3px;
+            left: 40px;
+            right: 40px;
+            top: 80px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        li {
+            float: none;
+        }
+
+
+        a {
+            background-color: rgba(0,0,0,1);
+            color: rgba(255,255,255,1);
+            padding: 5px 20px;
+        }
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        ul {
+            border: 5px solid black;
+            border-radius: 3px;
+            left: 20px;
+            right: 20px;
+            top: 60px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        li {
+            float: none;
+        }
+
+
+        a {
+            background-color: rgba(0,0,0,1);
+            color: rgba(255,255,255,1);
+            font-size: $font-mobile;
+            padding: 3px 20px;
+        }
+    }
 }
 
-/* Small menu. */
+/*
+** Responsive Menu
+**
+*/
+
 .menu-toggle,
 .main-navigation.toggled ul {
+    background: none;
     display: block;
+    float: right;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 780px) {
     .menu-toggle {
         display: none;
     }
+
     .main-navigation ul {
         display: block;
     }

@@ -1,5 +1,19 @@
 .testimonial-column-container {
     width: 46%;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        width: 100%;
+    }
 }
 
 .testimonial-container {
@@ -16,6 +30,28 @@
         position: absolute;
         top: 0;
     }
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        &:before {
+            font-size: 64px;
+        }
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+
+        &:before  {
+            font-size: 40px;
+        }
+    }
 }
 
 .testimonial-quotes {
@@ -24,6 +60,20 @@
     margin-bottom: 10px;
     padding: 30px 0 0 10px;
     position: relative;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        padding: 45px 0 0 10px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding: 25px 0 0 0;
+    }
 }
 
 .testimonial-name {
@@ -32,4 +82,13 @@
     letter-spacing: 1px;
     margin: 0;
     padding-left: 10px;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding-left: 0;
+    }
 }
+
+.sup { background-color: red;}

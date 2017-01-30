@@ -10,10 +10,54 @@
     &.has-vert-margin-large {
         margin: 80px 0;
     }
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        height: 350px;
+
+        &.has-vert-margin {
+            margin: 40px 0;
+        }
+
+        &.has-vert-margin-large {
+            margin: 40px 0;
+        }
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        height: 280px;
+
+        &.has-vert-margin {
+            margin: 40px 0;
+        }
+
+        &.has-vert-margin-large {
+            margin: 40px 0;
+        }
+    }
 }
 
 .section-divider-text {
     margin: auto;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 90px 0;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding: 80px 20px;
+    }
 }
 
 .section-divider-subtitle {
@@ -21,6 +65,20 @@
     font-size: $font-x-large;
     font-weight: lighter;
     margin: 0;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        font-size: $font-large;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 35px;
+    }
 }
 
 .section-divider-title {
@@ -30,4 +88,24 @@
     font-weight: 900;
     letter-spacing: 2px;
     margin-top: -45px;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        font-size: $font-large;
+        letter-spacing: 0;
+        line-height: 50px;
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 30px;
+        margin-top: -25px;
+        margin-bottom: 0;
+    }
 }

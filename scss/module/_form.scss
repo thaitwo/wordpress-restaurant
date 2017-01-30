@@ -20,6 +20,24 @@ textarea {
     font-size: $font-standard;
     padding: 12px;
     transition: all .4s;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+    }
+}
+
+input[type="submit"] {
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
 }
 
 input[type="text"],
@@ -66,4 +84,18 @@ textarea {
     outline: 1px solid $color-white;
     outline-offset: -20px;
     width: 552px;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        display: none;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        display: none;
+    }
 }

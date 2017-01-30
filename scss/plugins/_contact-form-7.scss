@@ -7,10 +7,31 @@ div.wpcf7 {
     margin: 0 !important;
     margin-top: -16px !important;
     padding: 0;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
 }
 
 form.wpcf7-form {
     width: 550px;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        width: 100%;
+    }
 }
 
 input.wpcf7-text,

@@ -7,6 +7,21 @@
 .front-column-container {
     text-align: center;
     width: 46%;
+
+    @media handheld and (max-width: $breakpoint-medium),
+      screen and (max-device-width: $breakpoint-medium),
+      screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 0 10px 0;
+        width: 100%;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        padding: 0px;
+    }
 }
 
 .section-subtitle {
@@ -15,6 +30,20 @@
     font-weight: lighter;
     margin: 0;
     text-align: center;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 35px;
+    }
 }
 
 .section-title {
@@ -25,12 +54,43 @@
     margin-top: -45px;
     margin-bottom: -5px;
     text-align: center;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+        margin-top: -45px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: 30px;
+        margin-top: -25px;
+    }
 }
 
 .section-description {
     font-family: $font-primary;
-    padding: 0 40px;
+    padding: 0 50px;
     text-align: center;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 80px;
+    }
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+        padding: 0;
+    }
 }
 
 .section-image {
@@ -38,9 +98,23 @@
     outline: 1px solid $color-white;
     outline-offset: -20px;
     width: 100%;
+
+    @media handheld and (max-width: $breakpoint-medium),
+    screen and (max-device-width: $breakpoint-medium),
+    screen and (max-width: $breakpoint-medium) {
+
+        display: none;
+    }
 }
 
 .stars {
     display: inline-block;
     margin: 0 15px;
+
+    @media handheld and (max-width: $breakpoint-small),
+    screen and (max-device-width: $breakpoint-small),
+    screen and (max-width: $breakpoint-small) {
+
+        margin: 0 8px;
+    }
 }

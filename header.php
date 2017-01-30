@@ -49,7 +49,7 @@ li:hover > a { color: <?php echo $primary_color ?>; }
                     if ( is_front_page() && is_home() ) : ?>
                         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                     <?php else : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></p>
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                     <?php
                     endif;
 
@@ -61,9 +61,12 @@ li:hover > a { color: <?php echo $primary_color ?>; }
                 </div><!-- .site-branding -->
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dojo' ); ?></button>
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '___return_false' ) ); ?>
                 </nav><!-- #site-navigation -->
+
             </header><!-- #masthead -->
         </div>
 
@@ -85,13 +88,20 @@ li:hover > a { color: <?php echo $primary_color ?>; }
         </h2>
 
         <?php
-        if ($header_stars === true) : ?>
+        if ($header_stars === true && wp_is_mobile() ) { ?>
+            <div class="l-center">
+                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+            </div>
+        <?php
+        } else { ?>
             <div class="l-center">
                 <i class="stars fa fa-star" aria-hidden="true"></i>
                 <i class="stars fa fa-star" aria-hidden="true"></i>
                 <i class="stars fa fa-star" aria-hidden="true"></i>
             </div>
         <?php
-        endif; ?>
+        } ?>
 
     </div>

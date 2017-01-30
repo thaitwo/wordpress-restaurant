@@ -72,14 +72,21 @@ $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
                                     </div>
 
                                     <?php
-                                    if ($front_page_divider_stars === true) : ?>
+                                    if ($front_page_divider_stars === true && wp_is_mobile() ) { ?>
+                                        <div class="l-center">
+                                            <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                            <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                        </div>
+                                    <?php
+                                    } else { ?>
                                         <div class="l-center">
                                             <i class="stars fa fa-star" aria-hidden="true"></i>
                                             <i class="stars fa fa-star" aria-hidden="true"></i>
                                             <i class="stars fa fa-star" aria-hidden="true"></i>
                                         </div>
                                     <?php
-                                    endif; ?>
+                                    } ?>
                                 </div>
                             </div>
                         <?php
@@ -108,14 +115,21 @@ $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
                                         </h1>
 
                                         <?php
-                                        if ($front_page_stars === true) : ?>
+                                        if ($front_page_divider_stars === true && wp_is_mobile() ) { ?>
+                                            <div class="l-center">
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                                            </div>
+                                        <?php
+                                        } else { ?>
                                             <div class="l-center">
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                                 <i class="stars fa fa-star" aria-hidden="true"></i>
                                             </div>
                                         <?php
-                                        endif; ?>
+                                        } ?>
 
                                         <p class="section-description" style="color: <?php echo $secondary_color ?>;">
                                             <?php echo $front_page_text; ?>
