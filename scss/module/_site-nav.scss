@@ -136,10 +136,11 @@
         padding: 0 0 0px 0;
 
         ul {
-            border: 10px solid $color-bluegrey-200;
+            border: 5px solid black;
+            border-radius: 3px;
             left: 40px;
             right: 40px;
-            top: 120px;
+            top: 80px;
             position: absolute;
             z-index: 1;
         }
@@ -150,9 +151,8 @@
 
 
         a {
-            background-color: rgba(255,255,255,1);
-            border-bottom: 1px solid $color-bluegrey-200;
-            color: rgba(0,0,0,.8);
+            background-color: rgba(0,0,0,1);
+            color: rgba(255,255,255,1);
             padding: 5px 20px;
         }
     }
@@ -162,10 +162,11 @@
     screen and (max-width: $breakpoint-small) {
 
         ul {
-            border: 10px solid $color-bluegrey-200;
+            border: 5px solid black;
+            border-radius: 3px;
             left: 20px;
             right: 20px;
-            top: 100px;
+            top: 60px;
             position: absolute;
             z-index: 1;
         }
@@ -176,9 +177,9 @@
 
 
         a {
-            background-color: rgba(255,255,255,1);
-            color: rgba(0,0,0,.8);
-            border-bottom: 1px solid $color-bluegrey-200;
+            background-color: rgba(0,0,0,1);
+            color: rgba(255,255,255,1);
+            font-size: 14px;
             padding: 3px 20px;
         }
     }

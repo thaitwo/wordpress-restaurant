@@ -3535,33 +3535,34 @@ textarea {
     .main-navigation {
       padding: 0 0 0px 0; }
       .main-navigation ul {
-        border: 10px solid #B0BEC5;
+        border: 5px solid black;
+        border-radius: 3px;
         left: 40px;
         right: 40px;
-        top: 120px;
+        top: 80px;
         position: absolute;
         z-index: 1; }
       .main-navigation li {
         float: none; }
       .main-navigation a {
-        background-color: white;
-        border-bottom: 1px solid #B0BEC5;
-        color: rgba(0, 0, 0, 0.8);
+        background-color: black;
+        color: white;
         padding: 5px 20px; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .main-navigation ul {
-      border: 10px solid #B0BEC5;
+      border: 5px solid black;
+      border-radius: 3px;
       left: 20px;
       right: 20px;
-      top: 100px;
+      top: 60px;
       position: absolute;
       z-index: 1; }
     .main-navigation li {
       float: none; }
     .main-navigation a {
-      background-color: white;
-      color: rgba(0, 0, 0, 0.8);
-      border-bottom: 1px solid #B0BEC5;
+      background-color: black;
+      color: white;
+      font-size: 14px;
       padding: 3px 20px; } }
 
 /*
