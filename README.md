@@ -1,24 +1,26 @@
 # Install WordPress Locally
-#### STEP 1. DOWNLOAD WORDPRESS
+### STEP 1. DOWNLOAD WORDPRESS
 
 Download latest version of WordPress as zip file
 
 Create new folder in directory and place zip file in it
 
 
-#### STEP 2. INSTALL & LAUNCH MAMP ON COMPUTER
+### STEP 2. INSTALL & LAUNCH MAMP ON COMPUTER
 
 Download free version of MAMP (must run Mac OS X 10.6.6 or later)
 
 Install and launch MAMP (go to Applications folder)
 
-#### STEP 3. SET THE PORTS
+### STEP 3. SET THE PORTS
 
 A window should appear. Click on "Preferences".
 
-Select the "Ports" tab. Default should have Apache as 8888 and MySQL as 8889. Go ahead a leave as is.
+Select the "Ports" tab. Default should have Apache as 8888 and MySQL as 8889. Go ahead click ok and leave as is.
 
-#### STEP 4. CONFIGURE WEB SERVE & DOCUMENT ROOT
+![MAMP Ports](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-2.png)
+
+### STEP 4. CONFIGURE WEB SERVE & DOCUMENT ROOT
 
 Select "Web Server" tab.
 
@@ -26,15 +28,19 @@ Make sure the web server is "Apache".
 
 Change document root to the folder that you created earlier with the WordPress zip file in it. (You're specifying where MAMP will be looking for all your files)
 
-#### STEP 5. START SERVERS
+### STEP 5. START SERVERS
 
 Click "Start Servers"
 
 A window should open with info indicating your setup and other MAMP info.
 
-#### STEP 6. CREATE A MYSQL DATABASE
+![MAMP Welcome](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-3.png)
+
+### STEP 6. CREATE A MYSQL DATABASE
 
 You need to go to phpMyAdmin by either clicking on the phpMyAdmin link on the MAMP start page or visiting http://localhost:888/phpMyAdmin
+
+![MySQL Page](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-4.png)
 
 You should see these databases on the side panel:
 
@@ -46,9 +52,11 @@ Click on the "databases" tab in the top navigation.
 
 Name your database (ie. "website_db").
 
+![MySQL Database](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-5.png)
+
 Click the "create" button.
 
-#### STEP 7. UNZIP WORDPRESS INSTALL
+### STEP 7. UNZIP WORDPRESS INSTALL
 
 Head back over to foot folder you set up in step one.
 
@@ -58,7 +66,7 @@ Rename new folder to something relevant to site.
 
 Open the folder.
 
-#### STEP 8. CONFIGURE WP-CONFIG.PHP FILE
+### STEP 8. CONFIGURE WP-CONFIG.PHP FILE
 
 Find and open the "wp-config-sample.php" file with text editor.
 
@@ -70,7 +78,7 @@ Save file and exit out of it.
 
 IMPORTANT: Rename the file from wp-config-sample.php to wp-config.php (remove the word sample)
 
-#### STEP 9. INSTALL WORDPRESS
+### STEP 9. INSTALL WORDPRESS
 
 Open browser and type in the url pointing to your site folder.
 
@@ -82,13 +90,17 @@ If done correctly, you should see this screen.
 
 Select English and click continue. You will be prompted to fill out a few field along with your username and password. You will need your username and password to log into the Wordpress dashboard later.
 
+![WP Info](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-6.png)
+
 The "Privacy" checkbox can be left unchecked but it doesn't really matter as the site is running locally, not online.
 
 After all the information has been filled out, click the "Install Wordpress" button.
 
 You should immediately see a success screen.
 
-#### STEP. 10 LOG INTO THE WORDPRESS DASHBOARD
+![WP Success](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-7.png)
+
+### STEP. 10 LOG INTO THE WORDPRESS DASHBOARD
 
 Log into the local site by visting:
 
@@ -100,7 +112,7 @@ Once inputted, the WordPress dashboard should appear.
 
 WordPress has been set up locally! Yeeee!!!
 
-#### STEP 11. USING MAMP IN THE FUTURE
+### STEP 11. USING MAMP IN THE FUTURE
 
 What happens when you want to take a break or restart your computer? It's quite simple.
 
