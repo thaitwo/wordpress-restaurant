@@ -22,6 +22,8 @@ Select the "Ports" tab. Default should have Apache as 8888 and MySQL as 8889. Go
 
 Select "Web Server" tab.
 
+Make sure the web server is "Apache".
+
 Change document root to the folder that you created earlier with the WordPress zip file in it. (You're specifying where MAMP will be looking for all your files)
 
 #### STEP 5. START SERVERS
@@ -75,6 +77,8 @@ Open browser and type in the url pointing to your site folder.
 **localhost:8888/name-of-root-folder**
 
 If done correctly, you should see this screen.
+
+![WP Install Screen](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-1.png)
 
 Select English and click continue. You will be prompted to fill out a few field along with your username and password. You will need your username and password to log into the Wordpress dashboard later.
 
