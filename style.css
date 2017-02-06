@@ -3478,9 +3478,11 @@ textarea {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 50px;
+  position: fixed;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .4s; }
+  transition: all .4s;
+  z-index: 102; }
   .site-title a:hover {
     color: royalblue;
     transition: .5s all; }
@@ -3530,17 +3532,21 @@ textarea {
     .main-navigation {
       padding: 0 0 0px 0; }
       .main-navigation ul {
+        background-color: #000000;
         border-radius: 3px;
-        left: 40px;
-        right: 40px;
-        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 80px 40px 0;
         position: absolute;
         z-index: 1; }
       .main-navigation li {
+        border-bottom: 1px solid #37474F;
         float: none; }
       .main-navigation a {
         color: white;
-        padding: 5px 20px; } }
+        padding: 5px 0; } }
   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .main-navigation {
       float: none; }
@@ -3550,7 +3556,8 @@ textarea {
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 60px 48px 0;
+        padding: 60px 40px 0;
+        position: absolute;
         top: 0;
         z-index: 101; }
       .main-navigation li {
@@ -3559,13 +3566,22 @@ textarea {
       .main-navigation a {
         color: white;
         font-size: 14px;
-        padding: 0; } }
+        padding: 5px 0; } }
 
 /*
 ** Responsive Menu
 **
 */
 @media screen and (max-width: 780px) {
+  button.menu-toggle {
+    background: none;
+    margin-top: 10px;
+    padding: 0;
+    position: absolute;
+    right: 40px;
+    z-index: 102; } }
+
+@media screen and (max-width: 480px) {
   button.menu-toggle {
     background: none;
     margin-top: 10px;
