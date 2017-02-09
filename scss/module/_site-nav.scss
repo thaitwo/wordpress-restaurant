@@ -37,9 +37,11 @@
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 50px;
+    position: fixed;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .4s;
+    z-index: 102;
 
     &:hover {
         color: $color__link-hover;
@@ -136,24 +138,26 @@
         padding: 0 0 0px 0;
 
         ul {
-            border: 5px solid black;
+            background-color: $color-black;
             border-radius: 3px;
-            left: 40px;
-            right: 40px;
-            top: 80px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 80px 40px 0;
             position: absolute;
             z-index: 1;
         }
 
         li {
+            border-bottom: 1px solid $color-bluegrey-800;
             float: none;
         }
 
 
         a {
-            background-color: rgba(0,0,0,1);
             color: rgba(255,255,255,1);
-            padding: 5px 20px;
+            padding: 5px 0;
         }
     }
 
@@ -161,26 +165,30 @@
     screen and (max-device-width: $breakpoint-small),
     screen and (max-width: $breakpoint-small) {
 
+        float: none;
+
         ul {
-            border: 5px solid black;
+            background-color: $color-black;
             border-radius: 3px;
-            left: 20px;
-            right: 20px;
-            top: 60px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px 40px 0;
             position: absolute;
-            z-index: 1;
+            top: 0;
+            z-index: 101;
         }
 
         li {
+            border-bottom: 1px solid $color-bluegrey-800;
             float: none;
         }
 
 
         a {
-            background-color: rgba(0,0,0,1);
             color: rgba(255,255,255,1);
             font-size: $font-mobile;
-            padding: 3px 20px;
+            padding: 5px 0;
         }
     }
 }
@@ -190,9 +198,29 @@
 **
 */
 
+button.menu-toggle {
+
+    @media screen and (max-width: $breakpoint-medium) {
+        background: none;
+        margin-top: 10px;
+        padding: 0;
+        position: absolute;
+        right: 40px;
+        z-index: 102;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        background: none;
+        margin-top: 10px;
+        padding: 0;
+        position: absolute;
+        right: 20px;
+        z-index: 102;
+    }
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
-    background: none;
     display: block;
     float: right;
 }
@@ -226,4 +254,8 @@
         text-align: right;
         width: 50%;
     }
+}
+
+.nav-menu {
+    // background-color: red;
 }
