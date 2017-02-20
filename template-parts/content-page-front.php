@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Dojo
+ * @package Pappo
  */
 $primary_color = get_theme_mod('primary_color', '#DAB075');
 $secondary_color = get_theme_mod('secondary_color', '#263238');
@@ -171,7 +171,7 @@ $tertiary_color = get_theme_mod('tertiary_color', '#FFFFFF');
                         edit_post_link(
                             sprintf(
                                 /* translators: %s: Name of current post */
-                                esc_html__( 'Edit %s', 'dojo' ),
+                                esc_html__( 'Edit %s', 'pappo' ),
                                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
                             ),
                             '<span class="edit-link">',

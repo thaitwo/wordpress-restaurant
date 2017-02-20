@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Dojo
+ * @package Pappo
  */
 
 ?><!DOCTYPE html>
@@ -41,7 +41,7 @@ li:hover > a { color: <?php echo $primary_color ?>; }
 <body <?php body_class(); ?>>
     <div class="header-area full" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( <?php echo the_post_thumbnail_url(); ?>); background-size: cover">
         <div class="main-page">
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dojo' ); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pappo' ); ?></a>
 
             <header id="masthead" class="site-header inner" role="banner">
                 <div class="site-branding">

@@ -1,13 +1,13 @@
 <?php
 /**
- * Dojo functions and definitions.
+ * Pappo functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Dojo
+ * @package Pappo
  */
 
-if ( ! function_exists( 'dojo_setup' ) ) :
+if ( ! function_exists( 'pappo_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'dojo_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function dojo_setup() {
+function pappo_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Dojo, use a find and replace
-	 * to change 'dojo' to the name of your theme in all the template files.
+	 * If you're building a theme based on Pappo, use a find and replace
+	 * to change 'pappo' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'dojo', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'pappo', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function dojo_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'dojo' ),
+		'primary' => esc_html__( 'Primary Menu', 'pappo' ),
 	) );
 
 	/*
@@ -60,13 +60,13 @@ function dojo_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'dojo_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'pappo_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'dojo_setup' );
+add_action( 'after_setup_theme', 'pappo_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -75,21 +75,21 @@ add_action( 'after_setup_theme', 'dojo_setup' );
  *
  * @global int $content_width
  */
-function dojo_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'dojo_content_width', 640 );
+function pappo_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'pappo_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'dojo_content_width', 0 );
+add_action( 'after_setup_theme', 'pappo_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function dojo_widgets_init() {
+function pappo_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dojo' ),
+		'name'          => esc_html__( 'Sidebar', 'pappo' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'dojo' ),
+		'description'   => esc_html__( 'Add widgets here.', 'pappo' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -98,32 +98,32 @@ function dojo_widgets_init() {
 
 	// First footer widget area, located in the footer. Empty by default.
     register_sidebar( array(
-        'name' => __( 'First Footer Widget Area', 'dojo' ),
+        'name' => __( 'First Footer Widget Area', 'pappo' ),
         'id' => 'first-footer-widget-area',
-        'description' => __( 'The first footer widget area', 'dojo' ),
+        'description' => __( 'The first footer widget area', 'pappo' ),
         'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
 }
-add_action( 'widgets_init', 'dojo_widgets_init' );
+add_action( 'widgets_init', 'pappo_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function dojo_scripts() {
-	wp_enqueue_style( 'dojo-style', get_stylesheet_uri() );
+function pappo_scripts() {
+	wp_enqueue_style( 'pappo-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'dojo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'pappo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'dojo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'pappo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'dojo_scripts' );
+add_action( 'wp_enqueue_scripts', 'pappo_scripts' );
 
 /**
  * Implement the Custom Header feature.

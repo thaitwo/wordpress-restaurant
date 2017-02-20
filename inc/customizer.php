@@ -1,8 +1,8 @@
 <?php
 /**
- * Dojo Theme Customizer.
+ * Pappo Theme Customizer.
  *
- * @package Dojo
+ * @package Pappo
  */
 
 /**
@@ -10,12 +10,12 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function dojo_customize_register( $wp_customize ) {
+function pappo_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
-add_action( 'customize_register', 'dojo_customize_register' );
+add_action( 'customize_register', 'pappo_customize_register' );
 
 
 
@@ -26,7 +26,7 @@ add_action( 'customize_register', 'dojo_customize_register' );
 
 function theme_options( $wp_customize ) {
     $wp_customize->add_panel( 'theme_options', array(
-        'title'     => __('Theme Options', 'dojo'),
+        'title'     => __('Theme Options', 'pappo'),
         'priority'  => 160,
     ) );
 
@@ -37,7 +37,7 @@ function theme_options( $wp_customize ) {
     */
 
     $wp_customize->add_section( 'theme_colors' , array(
-        'title'      => __('Theme Colors','dojo'),
+        'title'      => __('Theme Colors','pappo'),
         'priority'   => 30,
         'panel'      => 'theme_options',
     ) );
@@ -50,7 +50,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
-        'label'    => __( 'Primary Color', 'dojo' ),
+        'label'    => __( 'Primary Color', 'pappo' ),
         'section'  => 'theme_colors',
         'settings' => 'primary_color',
     ) ) );
@@ -63,7 +63,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_color', array(
-        'label'    => __( 'Secondary Color', 'dojo' ),
+        'label'    => __( 'Secondary Color', 'pappo' ),
         'section'  => 'theme_colors',
         'settings' => 'secondary_color',
     ) ) );
@@ -76,7 +76,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tertiary_color', array(
-        'label'    => __( 'Tertiary Color', 'dojo' ),
+        'label'    => __( 'Tertiary Color', 'pappo' ),
         'section'  => 'theme_colors',
         'settings' => 'tertiary_color',
     ) ) );
@@ -89,7 +89,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
-        'label'    => __( 'Footer Text Color', 'dojo' ),
+        'label'    => __( 'Footer Text Color', 'pappo' ),
         'section'  => 'theme_colors',
         'settings' => 'footer_text_color',
     ) ) );
@@ -102,7 +102,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg_color', array(
-        'label'    => __( 'Footer Background Color', 'dojo' ),
+        'label'    => __( 'Footer Background Color', 'pappo' ),
         'section'  => 'theme_colors',
         'settings' => 'footer_bg_color',
     ) ) );
@@ -115,7 +115,7 @@ function theme_options( $wp_customize ) {
     */
 
     $wp_customize->add_section( 'theme_social_icons' , array(
-        'title'         => __('Theme Social Icons','dojo'),
+        'title'         => __('Theme Social Icons','pappo'),
         'description'   => 'Insert URL to display social media icons. Leave field empty to hide icon.',
         'priority'      => 30,
         'panel'         => 'theme_options',
@@ -128,7 +128,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'facebook_url', array(
-        'label'          => __( 'Facebook URL', 'dojo' ),
+        'label'          => __( 'Facebook URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'facebook_url',
         'type'           => 'url',
@@ -141,7 +141,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'twitter_url', array(
-        'label'          => __( 'Twitter URL', 'dojo' ),
+        'label'          => __( 'Twitter URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'twitter_url',
         'type'           => 'url',
@@ -154,7 +154,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'instagram_url', array(
-        'label'          => __( 'Instagram URL', 'dojo' ),
+        'label'          => __( 'Instagram URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'instagram_url',
         'type'           => 'url',
@@ -167,7 +167,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'google_url', array(
-        'label'          => __( 'Google+ URL', 'dojo' ),
+        'label'          => __( 'Google+ URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'google_url',
         'type'           => 'url',
@@ -180,7 +180,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'pinterest_url', array(
-        'label'          => __( 'Pinterest URL', 'dojo' ),
+        'label'          => __( 'Pinterest URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'pinterest_url',
         'type'           => 'url',
@@ -193,7 +193,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'youtube_url', array(
-        'label'          => __( 'YouTube URL', 'dojo' ),
+        'label'          => __( 'YouTube URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'youtube_url',
         'type'           => 'url',
@@ -206,7 +206,7 @@ function theme_options( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'linkedin_url', array(
-        'label'          => __( 'LinkedIn URL', 'dojo' ),
+        'label'          => __( 'LinkedIn URL', 'pappo' ),
         'section'        => 'theme_social_icons',
         'settings'       => 'linkedin_url',
         'type'           => 'url',
@@ -225,7 +225,7 @@ add_action( 'customize_register', 'theme_options' );
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function dojo_customize_preview_js() {
-	wp_enqueue_script( 'dojo_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function pappo_customize_preview_js() {
+	wp_enqueue_script( 'pappo_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'dojo_customize_preview_js' );
+add_action( 'customize_preview_init', 'pappo_customize_preview_js' );
