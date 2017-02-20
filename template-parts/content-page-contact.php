@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Dojo
+ * @package Pappo
  */
 
 ?>
@@ -41,7 +41,7 @@ input[type="submit"]:hover { background-color: <?php echo $secondary_color ?>; }
                         edit_post_link(
                             sprintf(
                                 /* translators: %s: Name of current post */
-                                esc_html__( 'Edit %s', 'dojo' ),
+                                esc_html__( 'Edit %s', 'pappo' ),
                                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
                             ),
                             '<span class="edit-link">',

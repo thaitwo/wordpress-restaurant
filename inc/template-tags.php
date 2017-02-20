@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Dojo
+ * @package Pappo
  */
 
-if ( ! function_exists( 'dojo_posted_on' ) ) :
+if ( ! function_exists( 'pappo_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function dojo_posted_on() {
+function pappo_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -25,12 +25,12 @@ function dojo_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'dojo' ),
+		esc_html_x( 'Posted on %s', 'post date', 'pappo' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'dojo' ),
+		esc_html_x( 'by %s', 'post author', 'pappo' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -39,37 +39,37 @@ function dojo_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'dojo_entry_footer' ) ) :
+if ( ! function_exists( 'pappo_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function dojo_entry_footer() {
+function pappo_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'dojo' ) );
-		if ( $categories_list && dojo_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'dojo' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		$categories_list = get_the_category_list( esc_html__( ', ', 'pappo' ) );
+		if ( $categories_list && pappo_categorized_blog() ) {
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'pappo' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'dojo' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'pappo' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'dojo' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'pappo' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
 		/* translators: %s: post title */
-		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'dojo' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'pappo' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
 		echo '</span>';
 	}
 
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'dojo' ),
+			esc_html__( 'Edit %s', 'pappo' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
@@ -83,8 +83,8 @@ endif;
  *
  * @return bool
  */
-function dojo_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'dojo_categories' ) ) ) {
+function pappo_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'pappo_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -96,27 +96,27 @@ function dojo_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'dojo_categories', $all_the_cool_cats );
+		set_transient( 'pappo_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so dojo_categorized_blog should return true.
+		// This blog has more than 1 category so pappo_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so dojo_categorized_blog should return false.
+		// This blog has only 1 category so pappo_categorized_blog should return false.
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in dojo_categorized_blog.
+ * Flush out the transients used in pappo_categorized_blog.
  */
-function dojo_category_transient_flusher() {
+function pappo_category_transient_flusher() {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 	// Like, beat it. Dig?
-	delete_transient( 'dojo_categories' );
+	delete_transient( 'pappo_categories' );
 }
-add_action( 'edit_category', 'dojo_category_transient_flusher' );
-add_action( 'save_post',     'dojo_category_transient_flusher' );
+add_action( 'edit_category', 'pappo_category_transient_flusher' );
+add_action( 'save_post',     'pappo_category_transient_flusher' );

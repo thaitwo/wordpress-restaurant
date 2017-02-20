@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Dojo
+ * @package Pappo
  */
 
 ?>
@@ -128,7 +128,7 @@
 
 
                 <div class="site-info">
-                    <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'dojo' ), 'DOJO', '2017' ); ?>
+                    <?php printf( esc_html__( 'COPYRIGHT © %1$s %2$s', 'pappo' ), 'PAPPO', '2017' ); ?>
                 </div><!-- .site-info -->
             </footer><!-- #colophon -->
         </div>

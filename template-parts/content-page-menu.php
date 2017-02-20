@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Dojo
+ * @package Pappo
  */
 
 ?>
@@ -255,7 +255,7 @@ $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
 
                 <?php
                     wp_link_pages( array(
-                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dojo' ),
+                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pappo' ),
                         'after'  => '</div>',
                     ) );
                 ?>
@@ -268,7 +268,7 @@ $tertiary_color = get_theme_mod('tertiary_color', '#B0BEC5');
                         edit_post_link(
                             sprintf(
                                 /* translators: %s: Name of current post */
-                                esc_html__( 'Edit %s', 'dojo' ),
+                                esc_html__( 'Edit %s', 'pappo' ),
                                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
                             ),
                             '<span class="edit-link">',

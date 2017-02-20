@@ -12,33 +12,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Dojo
+ * @package Pappo
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses dojo_header_style()
+ * @uses pappo_header_style()
  */
-function dojo_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'dojo_custom_header_args', array(
+function pappo_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'pappo_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'dojo_header_style',
+		'wp-head-callback'       => 'pappo_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'dojo_custom_header_setup' );
+add_action( 'after_setup_theme', 'pappo_custom_header_setup' );
 
-if ( ! function_exists( 'dojo_header_style' ) ) :
+if ( ! function_exists( 'pappo_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see dojo_custom_header_setup().
+ * @see pappo_custom_header_setup().
  */
-function dojo_header_style() {
+function pappo_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*
