@@ -2,6 +2,8 @@
 
 A responsive WordPress restaurant theme that features an elegant full-width layout with color customization, custom fields, and offers online reservations.
 
+[![wp-restaurant](https://github.com/thaitwo/wordpress-restaurant/blob/master/assets/screenshot-wp.png?raw=true)](http://www.wprestaurant.us/)
+
 # Install WordPress Locally
 ### STEP 1. DOWNLOAD WORDPRESS
 
