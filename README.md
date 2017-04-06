@@ -1,3 +1,7 @@
+# Wordpress Restaurant Theme
+
+A responsive WordPress restaurant theme that features an elegant full-width layout with color customization, custom fields, and offers online reservations.
+
 # Install WordPress Locally
 ### STEP 1. DOWNLOAD WORDPRESS
 
