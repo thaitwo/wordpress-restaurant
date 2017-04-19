@@ -21,9 +21,7 @@ textarea {
     padding: 12px;
     transition: all .4s;
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: $font-mobile;
     }
@@ -31,9 +29,7 @@ textarea {
 
 input[type="submit"] {
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 12px;
         letter-spacing: 1px;
@@ -48,7 +44,7 @@ textarea {
 
     &:hover,
     &:focus {
-        border: 1px;
+        border: 1px solid #CFD8DC;
         box-shadow: 0px 0px 10px 1px rgba(38,50,56 ,.2);
         color: $color_bluegrey-900;
         outline: none;
@@ -85,16 +81,12 @@ textarea {
     outline-offset: -20px;
     width: 552px;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         display: none;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         display: none;
     }

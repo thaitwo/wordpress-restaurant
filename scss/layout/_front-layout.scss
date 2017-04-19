@@ -4,21 +4,27 @@
     clear: both;
 }
 
+.front-section-content {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+}
+
 .front-column-container {
     text-align: center;
     width: 46%;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 0 10px 0;
         width: 100%;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         padding: 0px;
     }
@@ -31,16 +37,12 @@
     margin: 0;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 56px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 35px;
     }
@@ -55,17 +57,13 @@
     margin-bottom: -5px;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 56px;
         margin-top: -45px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 30px;
         margin-top: -25px;
@@ -77,16 +75,12 @@
     padding: 0 50px;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 80px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: $font-mobile;
         padding: 0;
@@ -99,9 +93,7 @@
     outline-offset: -20px;
     width: 100%;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         display: none;
     }
@@ -111,9 +103,7 @@
     display: inline-block;
     margin: 0 15px;
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         margin: 0 8px;
     }

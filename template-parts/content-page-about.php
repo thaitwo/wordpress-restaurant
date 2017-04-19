@@ -11,10 +11,6 @@
 
 <?php
 // vars
-$testimonial_section_image = get_field('testimonial_section_image');
-$testimonial_section_subtitle = get_field('testimonial_section_subtitle');
-$testimonial_section_title = get_field('testimonial_section_title');
-$testimonials_stars = get_field('testimonials_stars');
 $primary_color = get_theme_mod('primary_color', '#DAB075');
 $secondary_color = get_theme_mod('secondary_color', '#263238');
 $button_label_1 = get_field('button_label_1');
@@ -42,123 +38,17 @@ $button_link_2 = get_field('button_link_2');
             <div class="main-page">
                 <?php the_content(); ?>
 
-                <?php
-                if ($button_label_1 && $button_link_1 && !$button_label_2 && !$button_link_2) : ?>
-                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>"><?php echo $button_label_1 ?></a>
-                <?php
-                elseif ($button_label_1 && $button_link_1 && $button_label_2 && $button_link_2) : ?>
-                    <a class="button button-secondary" href="<?php echo $button_link_1 ?>" style="margin-right: 10px;"><?php echo $button_label_1 ?></a>
-                    <a class="button button-tertiary" href="<?php echo $button_link_2 ?>"><?php echo $button_label_2 ?></a>
-                <?php
-                endif;
-                ?>
-            </div>
-
-            <?php
-
-            // image divider
-            if ($testimonial_section_image): ?>
-                <div class="section-divider has-vert-margin full l-flex is-hori align-vert-center" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( <?php echo $testimonial_section_image; ?>) fixed; background-size: cover;">
-                    <div class="section-divider-text">
-                        <h2 class="section-divider-subtitle" style="color: <?php echo $primary_color ?>;">
-                            <?php
-                                if ($testimonial_section_subtitle) {
-                                    echo $testimonial_section_subtitle;
-                                }
-                                else {
-                                    echo " ";
-                                }
-                            ?>
-                        </h2>
-                        <div class="section-divider-title">
-                            <?php
-                                if ($testimonial_section_title) {
-                                    echo $testimonial_section_title;
-                                }
-                                else {
-                                    echo " ";
-                                }
-                            ?>
-                        </div>
-
-                        <?php
-                        if ($testimonials_stars === true && wp_is_mobile() ) { ?>
-                            <div class="l-center">
-                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-                                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-                            </div>
-                        <?php
-                        } else { ?>
-                            <div class="l-center">
-                                <i class="stars fa fa-star" aria-hidden="true"></i>
-                                <i class="stars fa fa-star" aria-hidden="true"></i>
-                                <i class="stars fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        <?php
-                        } ?>
-
-                    </div>
-                </div>
-            <?php
-            endif;
-            ?>
-
-            <div class="main-page">
-                <div class="testimonial-section l-flex is-hori align-hori-space-between">
-                    <div class="testimonial-column-container l-flex is-vert align-vert-flex-start">
-                        <?php
-                        if( have_rows('testimonial_container_l') ):
-
-                            while( have_rows('testimonial_container_l') ) : the_row();
-
-                                $testimonial_left = get_sub_field('testimonial_l');
-                                $testimonial_name_left = get_sub_field('testimonial_name_l');
-                                ?>
-
-                                <div class="testimonial-container">
-                                    <p class="testimonial-quotes" style="color: <?php echo $secondary_color ?>;">
-                                        <?php echo $testimonial_left; ?>
-                                    </p>
-
-                                    <h3 class="testimonial-name" style="color: <?php echo $primary_color ?>;">
-                                        <?php echo $testimonial_name_left; ?>
-                                    </h3>
-                                </div>
-
-                            <?php
-                            endwhile;
-
-                        endif;
-                        ?>
-                    </div>
-
-                    <div class="testimonial-column-container l-flex is-vert align-vert-flex-start">
-                        <?php
-                        if( have_rows('testimonial_container_r') ):
-
-                            while( have_rows('testimonial_container_r') ) : the_row();
-
-                                $testimonial_right = get_sub_field('testimonial_r');
-                                $testimonial_name_right = get_sub_field('testimonial_name_r');
-                                ?>
-
-                                <div class="testimonial-container">
-                                    <p class="testimonial-quotes" style="color: <?php echo $secondary_color ?>;">
-                                        <?php echo $testimonial_right; ?>
-                                    </p>
-
-                                    <h3 class="testimonial-name" style="color: <?php echo $primary_color ?>;">
-                                        <?php echo $testimonial_name_right; ?>
-                                    </h3>
-                                </div>
-
-                            <?php
-                            endwhile;
-
-                        endif;
-                        ?>
-                    </div>
+                <div class="about-page-buttons">
+                    <?php
+                    if ($button_label_1 && $button_link_1 && !$button_label_2 && !$button_link_2) : ?>
+                        <a class="button button-secondary" href="<?php echo $button_link_1 ?>"><?php echo $button_label_1 ?></a>
+                    <?php
+                    elseif ($button_label_1 && $button_link_1 && $button_label_2 && $button_link_2) : ?>
+                        <a class="button button-secondary" href="<?php echo $button_link_1 ?>" style="margin-right: 10px;"><?php echo $button_label_1 ?></a>
+                        <a class="button button-tertiary" href="<?php echo $button_link_2 ?>"><?php echo $button_label_2 ?></a>
+                    <?php
+                    endif;
+                    ?>
                 </div>
             </div>
 

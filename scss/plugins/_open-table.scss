@@ -1,3 +1,12 @@
+.reservation-section-content {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 40px auto 40px;
+    }
+}
+
 .reservation-ot-title {
     font-family: $font-primary;
     font-weight: 600;
@@ -5,16 +14,12 @@
     margin: 0 auto 30px;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 40px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 24px;
         letter-spacing: 0;
@@ -28,16 +33,12 @@
     margin-bottom: 60px;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 40px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         padding: 0 20px;
     }
@@ -56,9 +57,7 @@
         width: 50.5rem;
     }
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         margin: auto;
     }
@@ -81,15 +80,21 @@
     height: 50px !important;
 }
 
+.ot-powered {
+    color: #CFD8DC;
+    font-family: $font-primary;
+    font-size: 12px;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .ot-dtp-picker.wide .ot-powered-by {
-    background: url(../pappo/assets/powered-ot-grey.png) center no-repeat !important;
-    background-position: center !important;
-    background-size: 200px !important;
-    height: 40px !important;
-    margin-top: 40px !important;
+    display: none;
 }
 
 .ot-powered-by {
-
+    display: none;
     margin-top: 40px !important;
 }
