@@ -17,6 +17,10 @@ input[type="submit"] {
     }
 }
 
+.about-page-buttons {
+    margin: 40px 0;
+}
+
 .button {
     border-radius: 3px;
     display: inline-block;
@@ -51,9 +55,7 @@ input[type="submit"] {
     &.button-tertiary {
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 12px;
         letter-spacing: 1px;

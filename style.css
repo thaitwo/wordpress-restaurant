@@ -4,12 +4,12 @@ Theme Name: Pappo
 Theme URI: http://underscores.me/
 Author: Thai Tu
 Author URI: http://underscores.me/
-Description: A clean and simple restaurant theme
+Description: A Clean Restaurant Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pappo
-Tags: one-column, custom-colors, full-width-template, food-and-drink
+Tags:
 */
 /*
 ** BASE
@@ -2751,30 +2751,30 @@ th {
 .main-page {
   margin: 0 auto;
   width: 1200px; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .main-page {
       padding: 0 40px;
       width: 100%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .main-page {
       padding: 0 20px; } }
 
 .inner {
   padding: 20px 0; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .inner {
       padding: 5px 0; } }
 
 .entry-content {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin: 80px auto; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .entry-content {
       margin: 40px 0; }
       .entry-content .layoutArea .column img {
         height: 100%;
         width: 50%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .entry-content {
       font-size: 14px;
       margin: 30px auto; }
@@ -2825,7 +2825,7 @@ th {
     justify-content: space-around; }
   .l-flex.flex-wrap {
     flex-wrap: wrap; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .l-flex {
       display: block; } }
 
@@ -2837,14 +2837,21 @@ th {
   display: table;
   clear: both; }
 
+.front-section-content {
+  margin: 80px auto; }
+  @media only screen and (max-width: 480px) {
+    .front-section-content {
+      margin: 40px auto;
+      padding: 0 10px; } }
+
 .front-column-container {
   text-align: center;
   width: 46%; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .front-column-container {
       padding: 0 0 10px 0;
       width: 100%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .front-column-container {
       padding: 0px; } }
 
@@ -2854,10 +2861,10 @@ th {
   font-weight: lighter;
   margin: 0;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-subtitle {
       font-size: 56px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-subtitle {
       font-size: 35px; } }
 
@@ -2869,11 +2876,11 @@ th {
   margin-top: -45px;
   margin-bottom: -5px;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-title {
       font-size: 56px;
       margin-top: -45px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-title {
       font-size: 30px;
       margin-top: -25px; } }
@@ -2882,10 +2889,10 @@ th {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   padding: 0 50px;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-description {
       padding: 0 80px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-description {
       font-size: 14px;
       padding: 0; } }
@@ -2895,19 +2902,22 @@ th {
   outline: 1px solid #ffffff;
   outline-offset: -20px;
   width: 100%; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-image {
       display: none; } }
 
 .stars {
   display: inline-block;
   margin: 0 15px; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .stars {
       margin: 0 8px; } }
 
-.menu-section {
-  margin: 0; }
+.menu-section-content {
+  margin: 80px auto 60px; }
+  @media only screen and (max-width: 480px) {
+    .menu-section-content {
+      margin: 40px auto 40px; } }
 
 .menu-list-container {
   margin-top: 25px;
@@ -2915,11 +2925,11 @@ th {
 
 .menu-column-container {
   width: 46%; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .menu-column-container {
       padding: 0;
       width: 100%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .menu-column-container {
       padding: 0; } }
 
@@ -2933,7 +2943,7 @@ th {
   letter-spacing: 1px;
   margin: 0 0 30px;
   padding-bottom: 5px; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .menu-category {
       font-size: 24px;
       letter-spacing: 0; } }
@@ -2945,7 +2955,7 @@ th {
   font-weight: 600;
   margin: 0;
   padding-right: 80px; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .menu-list-item {
       font-size: 14px; } }
 
@@ -2959,7 +2969,7 @@ th {
   position: absolute;
   right: 0;
   top: 0; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .menu-list-item-price {
       font-size: 14px; } }
 
@@ -2969,7 +2979,7 @@ th {
   font-weight: 300;
   margin: 0;
   padding-right: 80px; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .menu-list-item-des {
       font-size: 14px; } }
 
@@ -3045,6 +3055,9 @@ input[type="submit"] {
     border-color: #aaa #bbb #bbb;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
+.about-page-buttons {
+  margin: 40px 0; }
+
 .button {
   border-radius: 3px;
   display: inline-block;
@@ -3067,7 +3080,7 @@ input[type="submit"] {
     color: #ffffff; }
     .button.button-secondary:hover {
       background-color: black; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .button {
       font-size: 12px;
       letter-spacing: 1px; } }
@@ -3110,14 +3123,14 @@ input[type="submit"] {
     margin: 60px 0; }
   .section-divider.has-vert-margin-large {
     margin: 80px 0; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-divider {
       height: 350px; }
       .section-divider.has-vert-margin {
         margin: 40px 0; }
       .section-divider.has-vert-margin-large {
         margin: 40px 0; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-divider {
       height: 280px; }
       .section-divider.has-vert-margin {
@@ -3127,10 +3140,10 @@ input[type="submit"] {
 
 .section-divider-text {
   margin: auto; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-divider-text {
       padding: 90px 0; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-divider-text {
       padding: 80px 20px; } }
 
@@ -3139,10 +3152,10 @@ input[type="submit"] {
   font-size: 64px;
   font-weight: lighter;
   margin: 0; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-divider-subtitle {
       font-size: 56px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-divider-subtitle {
       font-size: 35px; } }
 
@@ -3153,14 +3166,14 @@ input[type="submit"] {
   font-weight: 900;
   letter-spacing: 2px;
   margin-top: -45px; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .section-divider-title {
       font-size: 56px;
       letter-spacing: 0;
       line-height: 50px;
       margin-top: -25px;
       margin-bottom: 20px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .section-divider-title {
       font-size: 30px;
       margin-top: -25px;
@@ -3188,7 +3201,7 @@ textarea {
   font-size: 16px;
   padding: 12px;
   transition: all .4s; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     input[type="text"],
     input[type="email"],
     input[type="url"],
@@ -3207,7 +3220,7 @@ textarea {
     textarea {
       font-size: 14px; } }
 
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   input[type="submit"] {
     font-size: 12px;
     letter-spacing: 1px; } }
@@ -3221,7 +3234,7 @@ input[type="url"]:hover,
 input[type="url"]:focus,
 textarea:hover,
 textarea:focus {
-  border: 1px;
+  border: 1px solid #CFD8DC;
   box-shadow: 0px 0px 10px 1px rgba(38, 50, 56, 0.2);
   color: #263238;
   outline: none; }
@@ -3253,10 +3266,10 @@ textarea {
   outline: 1px solid #ffffff;
   outline-offset: -20px;
   width: 552px; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .contact-image {
       display: none; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .contact-image {
       display: none; } }
 
@@ -3270,10 +3283,10 @@ textarea {
   flex-direction: column;
   height: 100%;
   width: 100%; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-area-front {
       height: 100%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-area-front {
       height: 100%; } }
 
@@ -3288,10 +3301,10 @@ textarea {
   line-height: 55px;
   margin: 0;
   margin-top: -60px; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-front-subtitle {
       font-size: 60px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-front-subtitle {
       font-size: 40px; } }
 
@@ -3303,13 +3316,13 @@ textarea {
   margin-bottom: -15px;
   margin-top: -35px;
   text-transform: uppercase; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-front-title {
       font-size: 70px;
       line-height: 70px;
       margin-top: -10px;
       margin-bottom: 15px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-front-title {
       font-size: 40px;
       line-height: 35px;
@@ -3324,12 +3337,21 @@ textarea {
   color: white;
   height: 350px;
   text-decoration: none; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-area {
       height: 300px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-area {
       height: 230px; } }
+
+.header-section-content {
+  margin-top: 50px; }
+  @media only screen and (max-width: 780px) {
+    .header-section-content {
+      margin-top: 85px; } }
+  @media only screen and (max-width: 480px) {
+    .header-section-content {
+      margin-top: 95px; } }
 
 .header-subtitle {
   font-family: "Great Vibes", cursive;
@@ -3340,13 +3362,15 @@ textarea {
   position: absolute;
   right: 0;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-subtitle {
       font-size: 56px;
+      margin-top: 40px;
       padding: 0 40px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-subtitle {
-      font-size: 36px; } }
+      font-size: 36px;
+      margin-top: 65px; } }
 
 .header-title {
   color: #ffffff;
@@ -3356,18 +3380,15 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
-  margin-top: 50px;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .header-title {
       font-size: 56px;
-      margin-top: 45px;
       padding: 0 40px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .header-title {
       font-size: 32px;
-      letter-spacing: 0;
-      margin-top: 30px; } }
+      letter-spacing: 0; } }
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
@@ -3405,33 +3426,34 @@ textarea {
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .footer-title {
-      font-size: 24px; } }
+      font-size: 24px;
+      margin-top: 20px; } }
 
 .footer-title-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0 350px;
   margin-bottom: 30px; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .footer-title-line {
       margin: 0 200px;
       margin-bottom: 30px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .footer-title-line {
       font-size: 14px;
       margin: 0 60px;
       margin-bottom: 30px; } }
 
 .site-info {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .site-info {
       letter-spacing: 1px; } }
 
@@ -3453,7 +3475,7 @@ textarea {
     .icon-margin .fa-linkedin:hover,
     .icon-margin .fa-pinterest-p:hover {
       color: white; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .icon-margin {
       margin: 0 5px; } }
 
@@ -3620,12 +3642,18 @@ textarea {
   text-align: right;
   width: 50%; }
 
+.testimonial-section {
+  margin: 80px auto; }
+  @media only screen and (max-width: 780px) {
+    .testimonial-section {
+      margin: 40px auto 80px; } }
+
 .testimonial-column-container {
   width: 46%; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .testimonial-column-container {
       width: 100%; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .testimonial-column-container {
       width: 100%; } }
 
@@ -3641,10 +3669,10 @@ textarea {
     left: 0;
     position: absolute;
     top: 0; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .testimonial-container:before {
       font-size: 64px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .testimonial-container {
       font-size: 14px;
       margin-bottom: 20px;
@@ -3658,10 +3686,10 @@ textarea {
   margin-bottom: 10px;
   padding: 30px 0 0 10px;
   position: relative; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .testimonial-quotes {
       padding: 45px 0 0 10px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .testimonial-quotes {
       padding: 25px 0 0 0; } }
 
@@ -3671,7 +3699,7 @@ textarea {
   letter-spacing: 1px;
   margin: 0;
   padding-left: 10px; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .testimonial-name {
       padding-left: 0; } }
 
@@ -3765,16 +3793,22 @@ object {
 ** PLUGINS
 **
 **/
+.reservation-section-content {
+  margin: 80px auto; }
+  @media only screen and (max-width: 480px) {
+    .reservation-section-content {
+      margin: 40px auto 40px; } }
+
 .reservation-ot-title {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0 auto 30px;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .reservation-ot-title {
       padding: 0 40px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .reservation-ot-title {
       font-size: 24px;
       letter-spacing: 0;
@@ -3785,10 +3819,10 @@ object {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin-bottom: 60px;
   text-align: center; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .reservation-ot-description {
       padding: 0 40px; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .reservation-ot-description {
       padding: 0 20px; } }
 
@@ -3801,7 +3835,7 @@ object {
     background: 0 0;
     margin: auto;
     width: 50.5rem; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .ot-dtp-picker {
       margin: auto; } }
 
@@ -3819,14 +3853,20 @@ object {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   height: 50px !important; }
 
+.ot-powered {
+  color: #CFD8DC;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase; }
+
 .ot-dtp-picker.wide .ot-powered-by {
-  background: url(../pappo/assets/powered-ot-grey.png) center no-repeat !important;
-  background-position: center !important;
-  background-size: 200px !important;
-  height: 40px !important;
-  margin-top: 40px !important; }
+  display: none; }
 
 .ot-powered-by {
+  display: none;
   margin-top: 40px !important; }
 
 .contact-container {

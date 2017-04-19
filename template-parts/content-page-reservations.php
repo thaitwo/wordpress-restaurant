@@ -27,8 +27,7 @@ $secondary_color = get_theme_mod('secondary_color', '#263238');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="entry-content">
-
+    <div class="reservation-section-content">
         <?php the_content(); ?>
 
         <h1 class="reservation-ot-title"><?php echo the_field('ot_title') ?></h1>
@@ -45,9 +44,10 @@ $secondary_color = get_theme_mod('secondary_color', '#263238');
             <?php
             } ?>
         </p>
+        <p class="ot-powered">Powered by Open Table</p>
+    </div>
 
-
-    </div><!-- .entry-content -->
+    <!-- .entry-content -->
 
     <?php if ( get_edit_post_link() ) : ?>
         <footer class="entry-footer main-page">

@@ -75,33 +75,34 @@ li:hover > a { color: <?php echo $primary_color ?>; }
             <h2 class="header-subtitle"><?php echo $header_subtitle ?></h2>
         <?php
         endif; ?>
+        <div class="header-section-content">
+            <h2 class="header-title">
+                <?php
+                if ($header_title) {
+                    echo $header_title;
+                }
+                else {
+                    echo $page_title;
+                }
+                ?>
+            </h2>
 
-        <h2 class="header-title">
             <?php
-            if ($header_title) {
-                echo $header_title;
-            }
-            else {
-                echo $page_title;
-            }
-            ?>
-        </h2>
-
-        <?php
-        if ($header_stars === true && wp_is_mobile() ) { ?>
-            <div class="l-center">
-                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-                <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
-            </div>
-        <?php
-        } else { ?>
-            <div class="l-center">
-                <i class="stars fa fa-star" aria-hidden="true"></i>
-                <i class="stars fa fa-star" aria-hidden="true"></i>
-                <i class="stars fa fa-star" aria-hidden="true"></i>
-            </div>
-        <?php
-        } ?>
+            if ($header_stars === true && wp_is_mobile() ) { ?>
+                <div class="l-center">
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                    <i class="stars fa fa-star fa-0x" aria-hidden="true"></i>
+                </div>
+            <?php
+            } else { ?>
+                <div class="l-center">
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
+                    <i class="stars fa fa-star" aria-hidden="true"></i>
+                </div>
+            <?php
+            } ?>
+        </div>
 
     </div>

@@ -10,16 +10,12 @@
     height: 100%;
     width: 100%;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         height: 100%;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         height: 100%;
     }
@@ -38,16 +34,12 @@
     margin: 0;
     margin-top: -60px;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 60px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 40px;
     }
@@ -62,9 +54,7 @@
     margin-top: -35px;
     text-transform: uppercase;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 70px;
         line-height: 70px;
@@ -72,9 +62,7 @@
         margin-bottom: 15px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 40px;
         line-height: 35px;
@@ -94,18 +82,28 @@
     height: 350px;
     text-decoration: none;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         height: 300px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         height: 230px;
+    }
+}
+
+.header-section-content {
+    margin-top: 50px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin-top: 85px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin-top: 95px;
     }
 }
 
@@ -119,19 +117,17 @@
     right: 0;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 56px;
+        margin-top: 40px;
         padding: 0 40px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 36px;
+        margin-top: 65px;
     }
 }
 
@@ -143,24 +139,17 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
-    margin-top: 50px;
     text-align: center;
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         font-size: 56px;
-        margin-top: 45px;
         padding: 0 40px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-      screen and (max-device-width: $breakpoint-small),
-      screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 32px;
         letter-spacing: 0;
-        margin-top: 30px;
     }
 }

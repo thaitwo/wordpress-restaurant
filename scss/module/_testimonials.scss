@@ -1,16 +1,21 @@
+.testimonial-section {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin: 40px auto 80px;
+    }
+}
+
 .testimonial-column-container {
     width: 46%;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         width: 100%;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         width: 100%;
     }
@@ -31,18 +36,14 @@
         top: 0;
     }
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         &:before {
             font-size: 64px;
         }
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 14px;
         margin-bottom: 20px;
@@ -61,16 +62,12 @@
     padding: 30px 0 0 10px;
     position: relative;
 
-    @media handheld and (max-width: $breakpoint-medium),
-    screen and (max-device-width: $breakpoint-medium),
-    screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 45px 0 0 10px;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         padding: 25px 0 0 0;
     }
@@ -83,9 +80,7 @@
     margin: 0;
     padding-left: 10px;
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         padding-left: 0;
     }
