@@ -115,6 +115,8 @@ add_action( 'widgets_init', 'pappo_widgets_init' );
 function pappo_scripts() {
 	wp_enqueue_style( 'pappo-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'fontawesome-style', get_stylesheet_directory_uri() . '/css/font-awesome.min.css' );
+
 	wp_enqueue_script( 'pappo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'pappo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
