@@ -6,7 +6,7 @@ A responsive WordPress restaurant theme that features an elegant full-width layo
 
 [View Project](http://www.wprestaurant.us/ "WordPress Restaurant Theme")
 
-[![wp-restaurant](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/loadcss/assets/wp-display.png)](http://www.wprestaurant.us/)
+[![wp-restaurant](https://raw.githubusercontent.com/thaitwo/wordpress-restaurant/master/assets/wp-display.png)](http://www.wprestaurant.us/)
 
 # Install WordPress Locally
 ### STEP 1. DOWNLOAD WORDPRESS
