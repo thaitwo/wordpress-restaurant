@@ -15,16 +15,12 @@
         display: none;
     }
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding-left: 0;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         padding-left: 0px;
     }
@@ -48,9 +44,7 @@
         transition: .5s all;
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         font-size: 24px;
     }
@@ -131,9 +125,7 @@
     .current-menu-ancestor > a {
     }
 
-    @media handheld and (max-width: $breakpoint-medium),
-      screen and (max-device-width: $breakpoint-medium),
-      screen and (max-width: $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 0 0px 0;
 
@@ -161,9 +153,7 @@
         }
     }
 
-    @media handheld and (max-width: $breakpoint-small),
-    screen and (max-device-width: $breakpoint-small),
-    screen and (max-width: $breakpoint-small) {
+    @media only screen and (max-width: $breakpoint-small) {
 
         float: none;
 
@@ -225,7 +215,17 @@ button.menu-toggle {
     float: right;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: $breakpoint-large) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
     .menu-toggle {
         display: none;
     }

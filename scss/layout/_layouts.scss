@@ -11,6 +11,12 @@
     margin: 0 auto;
     width: 1200px;
 
+    @media only screen and (max-width: $breakpoint-large) {
+
+        padding: 0 40px;
+        width: 100%;
+    }
+
     @media only screen and (max-width: $breakpoint-medium) {
 
         padding: 0 40px;

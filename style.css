@@ -411,6 +411,10 @@ th {
 .main-page {
   margin: 0 auto;
   width: 1200px; }
+  @media only screen and (max-width: 1200px) {
+    .main-page {
+      padding: 0 40px;
+      width: 100%; } }
   @media only screen and (max-width: 780px) {
     .main-page {
       padding: 0 40px;
@@ -743,7 +747,8 @@ input[type="submit"] {
   @media only screen and (max-width: 480px) {
     .button {
       font-size: 12px;
-      letter-spacing: 1px; } }
+      letter-spacing: 1px;
+      margin: 5px auto; } }
 
 .clear:before,
 .clear:after,
@@ -966,7 +971,8 @@ textarea {
       font-size: 60px; } }
   @media only screen and (max-width: 480px) {
     .header-front-subtitle {
-      font-size: 40px; } }
+      font-size: 40px;
+      margin-top: 120px; } }
 
 .header-front-title {
   color: #ffffff;
@@ -1146,10 +1152,10 @@ textarea {
     margin: 0; }
   .site-branding .site-description {
     display: none; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .site-branding {
       padding-left: 0; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .site-branding {
       padding-left: 0px; } }
 
@@ -1168,7 +1174,7 @@ textarea {
   .site-title a:hover {
     color: royalblue;
     transition: .5s all; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .site-title a {
       font-size: 24px; } }
 
@@ -1210,7 +1216,7 @@ textarea {
     padding: 0 20px;
     text-decoration: none;
     transition: 0.4s all; }
-  @media handheld and (max-width: 780px), screen and (max-device-width: 780px), screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     .main-navigation {
       padding: 0 0 0px 0; }
       .main-navigation ul {
@@ -1229,7 +1235,7 @@ textarea {
       .main-navigation a {
         color: white;
         padding: 5px 0; } }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .main-navigation {
       float: none; }
       .main-navigation ul {
@@ -1276,6 +1282,12 @@ textarea {
 .main-navigation.toggled ul {
   display: block;
   float: right; }
+
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
 
 @media screen and (min-width: 780px) {
   .menu-toggle {
